@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1920">
+    <title>Поставка промышленного оборудования</title>
+    <link rel="stylesheet" href="MainPage.css">
+    <script src="producers.js"></script>
+</head>
+<body>
+<!-- HEADER -->
+<header class="main_header">
+    <nav class="main_navigation" aria-label="Главная навигация">
+        <img src="/Assets/Image/Logo.webp" alt="Логотип компании" class="logo" />
+        <ul class="main_navigation__list">
+            <li><a href="#">Каталог</a></li>
+            <li><a href="#">О компании</a></li>
+            <li><a href="#">Бренды</a></li>
+            <li><a href="#">Блог</a></li>
+            <li><a href="#">Индустрии</a></li>
+        </ul>
+        <div class="main_navigation__right">
+            <a href="#" class="main_navigation__search">🔍</a>
+            <a href="tel:88005553535" class="main_navigation__phone">8 (800) 555-35-35</a>
+            <button class="main_navigation__btn">Оставить заявку</button>
+        </div>
+    </nav>
+</header>
+
+<!-- MAIN -->
+<main>
+    <!-- PROMO -->
+    <section class="promo_section">
+        <div class="promo_section__content">
+            <h1>ПОСТАВКА ПРОМЫШЛЕННОГО ОБОРУДОВАНИЯ, ИНСТРУМЕНТОВ И КОМПЛЕКТУЮЩИХ</h1>
+        </div>
+        <img src="/Assets/Image/equip_promo.webp" alt="Промышленное оборудование" class="promo_section__image">
+    </section>
+
+    <!-- КАТАЛОГ -->
+    <section class="catalog_section">
+        <div class="catalog_header">
+            <h2>КАТАЛОГ</h2>
+            <div class="catalog_search">
+                <input type="text" placeholder="Найти" />
+                <img src="/Assets/Image/SearchIcon.svg" alt="<UNK> <UNK>" class="catalog_search__image">
+            </div>
+        </div>
+        <div class="catalog_grid">
+            <article class="catalog_item">
+                <div class="catalog_item__top">
+                    <a href="/catalog/weld-materials" class="catalog_item__link">СВАРОЧНЫЕ МАТЕРИАЛЫ</a>
+                    <img src="/Assets/Image/weld_materials.webp" alt="Сварочные материалы" />
+                </div>
+                <div class="catalog_ul_item">
+                    <ul class="catalog_tags">
+                        <li>ЭНЕРГЕТИКА</li>
+                        <li>НЕФТЕХИМИЧЕСКАЯ ПРОМЫШЛЕННОСТЬ</li>
+                    </ul>
+                    <ul class="catalog_tags">
+                        <li>КОТЕЛЬНОЕ И ТРУБОПРОВОДНОЕ ОБОРУДОВАНИЕ</li>
+                    </ul>
+                </div>
+            </article>
+            <article class="catalog_item">
+                <div class="catalog_item__top">
+                    <a href="/catalog/weld-equipment" class="catalog_item__link">СВАРОЧНОЕ ОБОРУДОВАНИЕ</a>
+                    <img src="/Assets/Image/weld_equip.webp" alt="Сварочное оборудование" />
+                </div>
+                <div class="catalog_ul_item">
+                    <ul class="catalog_tags">
+                        <li>ЭНЕРГЕТИКА</li>
+                        <li>НЕФТЕХИМИЧЕСКАЯ ПРОМЫШЛЕННОСТЬ</li>
+                    </ul>
+                    <ul class="catalog_tags">
+                        <li>КОТЕЛЬНОЕ И ТРУБОПРОВОДНОЕ ОБОРУДОВАНИЕ</li>
+                    </ul>
+                </div>
+            </article>
+            <article class="catalog_item">
+                <div class="catalog_item__top">
+                    <a href="/catalog/welding-automation" class="catalog_item__link">АВТОМАТИЗАЦИЯ СВАРКИ</a>
+                    <img src="/Assets/Image/automation.webp" alt="Автоматизация сварки" />
+                </div>
+                <div class="catalog_ul_item">
+                    <ul class="catalog_tags">
+                        <li>ЭНЕРГЕТИКА</li>
+                        <li>НЕФТЕХИМИЧЕСКАЯ ПРОМЫШЛЕННОСТЬ</li>
+                    </ul>
+                    <ul class="catalog_tags">
+                        <li>КОТЕЛЬНОЕ И ТРУБОПРОВОДНОЕ ОБОРУДОВАНИЕ</li>
+                    </ul>
+                </div>
+            </article>
+            <article class="catalog_item">
+                <div class="catalog_item__top">
+                    <a href="/catalog/safety-equipment" class="catalog_item__link">СРЕДСТВА ИНДИВИДУАЛЬНОЙ ЗАЩИТЫ</a>
+                    <img src="/Assets/Image/protection.webp" alt="Средства индивидуальной защиты" />
+                </div>
+                <div class="catalog_ul_item">
+                    <ul class="catalog_tags">
+                        <li>ЭНЕРГЕТИКА</li>
+                        <li>НЕФТЕХИМИЧЕСКАЯ ПРОМЫШЛЕННОСТЬ</li>
+                    </ul>
+                    <ul class="catalog_tags">
+                        <li>КОТЕЛЬНОЕ И ТРУБОПРОВОДНОЕ ОБОРУДОВАНИЕ</li>
+                    </ul>
+                </div>
+            </article>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- ПРОИЗВОДИТЕЛИ -->
+    <section class="producers_section">
+        <div class="producers_header">
+            <h2>ПРОИЗВОДИТЕЛИ</h2>
+            <p class="producers_description">Мы сотрудничаем с ведущими мировыми брендами, проверенными временем и опытом. Это гарантирует стабильное качество поставляемой продукции и соответствие современным стандартам.</p>
+        </div>
+        <div class="producers_wrapper">
+            <nav class="producers_nav" aria-label="Навигация по производителям">
+                <ul class="producers_list">
+                    <li><button class="producer_btn" data-brand="voestalpine">VOESTALPINE</button></li>
+                    <li><button class="producer_btn active" data-brand="fronius">FRONIUS</button></li>
+                    <li><button class="producer_btn" data-brand="kemppi">KEMPPI</button></li>
+                    <li><button class="producer_btn" data-brand="lincoln">LINCOLN ELECTRIC</button></li>
+                    <li><button class="producer_btn" data-brand="axxair">AXXAIR</button></li>
+                    <li><button class="producer_btn" data-brand="bota">BOTA-WELD</button></li>
+                </ul>
+            </nav>
+            <div class="producers_image_wrapper">
+                <img
+                        src="/Assets/Image/fronius_logo.webp"
+                        alt="Логотип бренда"
+                        class="producers_image"
+                        data-brand="fronius"
+                />
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- НАШИ ИНДУСТРИИ -->
+    <section class="industries_section">
+        <h2>НАШИ ИНДУСТРИИ</h2>
+        <div class="industries_grid">
+            <div class="industries_item">
+                <div class="industries_text">
+                    <h3>НЕФТЕХИМИЯ</h3>
+                    <p>Оборудование и материалы, адаптированные к экстремальным условиям: высокая влажность, коррозия, давление и соленая среда.</p>
+                    <span class="industries_number">01</span>
+                </div>
+                <img src="/Assets/Image/neftehim.webp" alt="Нефтехимия" />
+            </div>
+            <div class="industries_item">
+                <div class="industries_text">
+                    <h3>ЭНЕРГЕТИКА</h3>
+                    <p>Оборудование и материалы, адаптированные к экстремальным условиям: высокая влажность, коррозия, давление и соленая среда.</p>
+                    <span class="industries_number">02</span>
+                </div>
+                <img src="/Assets/Image/energy.webp" alt="Энергетика" />
+            </div>
+            <div class="industries_item">
+                <div class="industries_text">
+                    <h3>СУДОСТРОЕНИЕ</h3>
+                    <p>Оборудование и материалы, адаптированные к экстремальным условиям: высокая влажность, коррозия, давление и соленая среда.</p>
+                    <span class="industries_number">03</span>
+                </div>
+                <img src="/Assets/Image/shipbuilding.webp" alt="Судостроение" />
+            </div>
+            <div class="industries_item">
+                <div class="industries_text">
+                    <h3>ТРУБОПРОВОДЫ</h3>
+                    <p>Оборудование и материалы, адаптированные к экстремальным условиям: высокая влажность, коррозия, давление и соленая среда.</p>
+                    <span class="industries_number">04</span>
+                </div>
+                <img src="/Assets/Image/pipelines.webp" alt="Трубопроводы" />
+            </div>
+            <div class="industries_item">
+                <div class="industries_text">
+                    <h3>МЕТАЛЛУРГИЯ</h3>
+                    <p>Оборудование и материалы, адаптированные к экстремальным условиям: высокая влажность, коррозия, давление и соленая среда.</p>
+                    <span class="industries_number">05</span>
+                </div>
+                <img src="/Assets/Image/metallurgy.webp" alt="Металлургия" />
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- О КОМПАНИИ -->
+    <section class="about_us">
+        <h2>О КОМПАНИИ</h2>
+
+        <img src="/Assets/Image/worker.webp" alt="Работник на производстве" class="about_us__image" />
+
+        <div class="about_us__spacer"></div>
+
+        <p class="about_us__main_text">Мы обеспечиваем стабильную и надёжную работу оборудования даже в условиях интенсивной эксплуатации и в самых разных отраслях — от промышленного производства и энергетики до транспорта и логистики. Такой подход позволяет нашим клиентам добиваться устойчивого развития, укреплять конкурентные позиции и уверенно смотреть в будущее.</p>
+
+       <div class="about_us_container">
+           <div class="about_us__columns">
+
+               <div class="about_us__column">
+                   <p><strong>Наша цель — не просто поставка компонентов, а создание инженерной базы, которая помогает бизнесу расти и адаптироваться к современным требованиям производства.</strong></p>
+               </div>
+               <div class="about_us__column">
+                   <p><strong>Мы понимаем потребности бизнеса, говорим на языке инженеров и всегда стремимся к оптимальному соотношению надёжности, эффективности и стоимости.</strong></p>
+               </div>
+           </div>
+       </div>
+
+        <div class="about_us__container_button">
+            <a href="#" class="about_us__btn">Больше о компании</a>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <!-- БЛОГ -->
+    <section class="blog_section">
+        <div class="blog_header">
+            <h2>БЛОГ</h2>
+            <a href="#" class="blog_section__all_link">Все статьи</a>
+        </div>
+        <div class="blog_wrapper">
+            <div class="blog_item">
+                <div class="blog_main_card">
+                    <div class="blog_main_text">
+                        <span class="blog_main_arrow">↗</span>
+                        <span class="blog_main_title">ЧИТАТЬ<br>СТАТЬЮ</span>
+                    </div>
+                </div>
+                <div class="blog_main_descr">
+                    <span class="blog_main_date">16 июля 2025</span>
+                    <h3>Как выбрать промышленное оборудование под конкретные задачи</h3>
+                    <p>При выборе оборудования важно учитывать не только технические характеристики, но и условия
+                        эксплуатации, требования к безопасности и возможности масштабирования. В статье разбираем
+                        основные критерии, которые помогут принять обоснованное решение и избежать типичных ошибок на
+                        этапе закупки.</p>
+                </div>
+            </div>
+
+            <div class="blog_grid">
+                <div class="blog_flex">
+                    <article class="blog_post">
+                        <img src="/Assets/Image/blog1.webp" alt="Цех с оборудованием" />
+                        <span class="blog_post__date">16 июля 2025</span>
+                        <h4>Как выбрать оборудование под конкретные задачи</h4>
+                    </article>
+                    <article class="blog_post">
+                        <img src="/Assets/Image/blog2.webp" alt="Два работника на производстве" />
+                        <span class="blog_post__date">16 июля 2025</span>
+                        <h4>Как выбрать оборудование под конкретные задачи</h4>
+                    </article>
+                </div>
+                <div class="blog_flex">
+                    <article class="blog_post">
+                        <img src="/Assets/Image/blog2.webp" alt="Два работника на производстве" />
+                        <span class="blog_post__date">16 июля 2025</span>
+                        <h4>Как выбрать оборудование под конкретные задачи</h4>
+                    </article>
+                    <article class="blog_post">
+                        <img src="/Assets/Image/blog1.webp" alt="Цех с оборудованием" />
+                        <span class="blog_post__date">16 июля 2025</span>
+                        <h4>Как выбрать оборудование под конкретные задачи</h4>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about_text_section">
+        <img src="/Assets/Image/about_warehouse.webp" alt="Современный склад компании" />
+        <div class="about_text_section__text">
+            <p>Компания VPG-S занимается поставками промышленного оборудования, инструментов и комплектующих по всей России. Мы предлагаем комплексные решения для автоматизации, модернизации и эффективной работы производств в различных отраслях: от металлургии и машиностроения до нефтегаза и строительства. Работаем напрямую с проверенными брендами, обеспечиваем техническую поддержку, комплектацию и логистику. Независимо от масштаба задачи — поможем подобрать оптимальное оборудование под конкретные цели.</p>
+        </div>
+    </section>
+    <!-- КОНТАКТЫ -->
+    <section class="contact_section">
+        <h2>ОСТАЛИСЬ ВОПРОСЫ? СВЯЖИТЕСЬ С НАМИ</h2>
+        <div class="contact_wrapper">
+            <div class="contact_left">
+                <p>Мы поможем разобраться в технических деталях, подберём решение под ваши задачи и проконсультируем по любым вопросам. Просто оставьте заявку — мы ответим в ближайшее время.</p>
+                <div class="contact_buttons">
+                    <a href="tel:88005553535" class="contact_btn">8 (800) 555-35-35</a>
+                    <a href="#" class="contact_btn whatsapp">
+                        <img src="/Assets/Image/TgIcon.svg" alt="WhatsApp" />
+                    </a>
+                    <a href="#" class="contact_btn telegram">
+                        <img src="/Assets/Image/WhatsappIcon.svg" alt="Telegram" />
+                    </a>
+                </div>
+            </div>
+            <form class="contact_form">
+                <div class="form_group">
+                    <label>Имя</label>
+                    <input type="text" required />
+                </div>
+                <div class="form_group">
+                    <label>Телефон</label>
+                    <input type="tel" required />
+                </div>
+                <div class="form_group">
+                    <label>Сообщение</label>
+                    <textarea required></textarea>
+                </div>
+                <p class="form_agree">Отправляя форму, я соглашаюсь с политикой конфиденциальности</p>
+                <button type="submit" class="form_btn">Оставить заявку</button>
+            </form>
+        </div>
+    </section>
+</main>
+
+<!-- FOOTER -->
+<footer class="main_footer">
+    <div class="footer_content">
+        <div class="footer_col">
+            <h4>О НАС</h4>
+            <ul>
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Блог</a></li>
+                <li><a href="#">Бренды</a></li>
+            </ul>
+        </div>
+        <div class="footer_col">
+            <h4>КАТАЛОГ</h4>
+            <ul>
+                <li><a href="#">Сварочное оборудование</a></li>
+                <li><a href="#">Сварочные припадлежности</a></li>
+                <li><a href="#">Электростанции</a></li>
+                <li><a href="#">Насосное оборудование</a></li>
+            </ul>
+        </div>
+        <div class="footer_col">
+            <h4>СОЦСЕТИ</h4>
+            <ul>
+                <li><a href="#">Telegram</a></li>
+                <li><a href="#">WhatsApp</a></li>
+                <li><a href="#">vpg-s@mail.ru</a></li>
+            </ul>
+        </div>
+        <div class="footer_col">
+            <h4>КОНТАКТЫ</h4>
+            <ul>
+                <li><a href="tel:88005553535">8 (800) 555-35-35</a></li>
+                <li>Наш адрес: г. Москва, ул. Пушкина, 60</li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer_bottom">
+        <a href="#">Политика конфиденциальности</a>
+        <span>Предложения на сайте не являются публичной офертой</span>
+        <a href="#">Пользовательское соглашение</a>
+        <span>Разработка сайта: KANT.studio</span>
+    </div>
+</footer>
+</body>
+</html>

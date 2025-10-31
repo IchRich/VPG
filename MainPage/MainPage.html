@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=1920">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Поставка промышленного оборудования</title>
     <link rel="stylesheet" href="MainPage.css">
     <script src="producers.js"></script>
+    <script src="main.js"></script>
 </head>
 <body>
 <!-- HEADER -->
@@ -13,19 +16,57 @@
     <nav class="main_navigation" aria-label="Главная навигация">
         <img src="/Assets/Image/Logo.webp" alt="Логотип компании" class="logo" />
         <ul class="main_navigation__list">
-            <li><a href="#">Каталог</a></li>
+            <li><a href="#">Каталог
+                <img src="/Assets/Image/GalochkaIcon.svg" alt="<UNK> <UNK>">
+            </a></li>
             <li><a href="#">О компании</a></li>
             <li><a href="#">Бренды</a></li>
             <li><a href="#">Блог</a></li>
             <li><a href="#">Индустрии</a></li>
         </ul>
+        <div class="mobile_navigation__buttons">
+            <img src="/Assets/Image/SearchIconBlue.svg" alt="<UNK> <UNK>" class="catalog_search__image">
+            <button class="burger" id="burger-open" aria-label="Открыть меню">
+
+                <span></span><span></span><span></span>
+            </button>
+        </div>
         <div class="main_navigation__right">
-            <a href="#" class="main_navigation__search">🔍</a>
+            <a href="#" class="main_navigation__search">
+                <img src="/Assets/Image/SearchIconBlue.svg" alt="<UNK> <UNK>" class="catalog_search__image">
+            </a>
             <a href="tel:88005553535" class="main_navigation__phone">8 (800) 555-35-35</a>
             <button class="main_navigation__btn">Оставить заявку</button>
         </div>
     </nav>
 </header>
+<div class="mobile_menu" id="mobile-menu">
+    <header>
+
+        <a href="/" class="logo">
+            <img src="/Assets/Image/Logo.webp" alt="">
+        </a>
+        <div class="mobile_menu__buttons">
+            <img src="/Assets/Image/SearchIconBlue.svg" alt="<UNK> <UNK>" class="catalog_search__image">
+            <a href="tel:88005553535" class="main_navigation__phone">8 (800) 555-35-35</a>
+            <button class="close" id="burger-close">&times;</button>
+        </div>
+
+    </header>
+    <nav class="mobile_nav">
+        <ul>
+            <li><a href="#">Каталог
+                <img src="/Assets/Image/GalochkaIcon.svg" alt="<UNK> <UNK>">
+            </a></li>
+            <li><a href="#">О компании</a></li>
+            <li><a href="#">Бренды</a></li>
+            <li><a href="#">Блог</a></li>
+            <li><a href="#">Индустрии</a></li>
+        </ul>
+    </nav>
+    <button class="mobile_menu__btn">Оставить заявку</button>
+</div>
+<div class="mobile_menu__overlay" id="menu-overlay"></div>
 
 <!-- MAIN -->
 <main>
@@ -295,30 +336,36 @@
                 <p>Мы поможем разобраться в технических деталях, подберём решение под ваши задачи и проконсультируем по любым вопросам. Просто оставьте заявку — мы ответим в ближайшее время.</p>
                 <div class="contact_buttons">
                     <a href="tel:88005553535" class="contact_btn">8 (800) 555-35-35</a>
-                    <a href="#" class="contact_btn whatsapp">
+                    <a href="#" class="contact_btn_whatsapp">
                         <img src="/Assets/Image/TgIcon.svg" alt="WhatsApp" />
                     </a>
-                    <a href="#" class="contact_btn telegram">
+                    <a href="#" class="contact_btn_telegram">
                         <img src="/Assets/Image/WhatsappIcon.svg" alt="Telegram" />
                     </a>
                 </div>
             </div>
             <form class="contact_form">
+                <h3 class="form_title">Ваши данные</h3>
+
                 <div class="form_group">
-                    <label>Имя</label>
-                    <input type="text" required />
+                    <input type="text" placeholder="Имя" required />
                 </div>
+
                 <div class="form_group">
-                    <label>Телефон</label>
-                    <input type="tel" required />
+                    <input type="tel" placeholder="Телефон" required />
                 </div>
+
+                <h3 class="form_title">Сообщение</h3>
+
                 <div class="form_group">
-                    <label>Сообщение</label>
-                    <textarea required></textarea>
+                    <textarea placeholder="Сообщение" required></textarea>
                 </div>
+
                 <p class="form_agree">Отправляя форму, я соглашаюсь с политикой конфиденциальности</p>
+
                 <button type="submit" class="form_btn">Оставить заявку</button>
             </form>
+
         </div>
     </section>
 </main>
@@ -326,6 +373,10 @@
 <!-- FOOTER -->
 <footer class="main_footer">
     <div class="footer_content">
+        <div class="footer_logo">
+            <img src="/Assets/Image/Logo.webp" alt="VPG-S Logo" />
+        </div>
+
         <div class="footer_col">
             <h4>О НАС</h4>
             <ul>
@@ -334,37 +385,42 @@
                 <li><a href="#">Бренды</a></li>
             </ul>
         </div>
+
         <div class="footer_col">
             <h4>КАТАЛОГ</h4>
             <ul>
                 <li><a href="#">Сварочное оборудование</a></li>
-                <li><a href="#">Сварочные припадлежности</a></li>
+                <li><a href="#">Сварочные принадлежности</a></li>
                 <li><a href="#">Электростанции</a></li>
                 <li><a href="#">Насосное оборудование</a></li>
             </ul>
         </div>
+
         <div class="footer_col">
             <h4>СОЦСЕТИ</h4>
             <ul>
                 <li><a href="#">Telegram</a></li>
                 <li><a href="#">WhatsApp</a></li>
-                <li><a href="#">vpg-s@mail.ru</a></li>
+                <li><a href="mailto:vpg-s@mail.ru">vpg-s@mail.ru</a></li>
             </ul>
         </div>
+
         <div class="footer_col">
             <h4>КОНТАКТЫ</h4>
             <ul>
                 <li><a href="tel:88005553535">8 (800) 555-35-35</a></li>
-                <li>Наш адрес: г. Москва, ул. Пушкина, 60</li>
+                <li>Наш адрес: г. Москва,<br>ул. Пушкина, 60</li>
             </ul>
         </div>
     </div>
+
     <div class="footer_bottom">
         <a href="#">Политика конфиденциальности</a>
-        <span>Предложения на сайте не являются публичной офертой</span>
+        <span>Предложения на сайте не являются<br/> публичной офертой</span>
         <a href="#">Пользовательское соглашение</a>
-        <span>Разработка сайта: KANT.studio</span>
+        <span>Разработка сайта: <strong>KANT.studio</strong></span>
     </div>
 </footer>
+
 </body>
 </html>

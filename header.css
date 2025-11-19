@@ -186,6 +186,7 @@
 
     .main_navigation {
         max-width: var(--content-width);
+        justify-content: space-between;
         margin: 0 auto;
         padding: 0 clamp(16px, 2.6vw, 20px);
         display: flex;
@@ -341,9 +342,9 @@
     }
 
     .main_navigation {
-        max-width: var(--content-width);
+        max-width: 1720px;
         margin: 0 auto;
-        padding: 0 clamp(20px, 2.08vw, 40px);
+
         display: flex;
         align-items: center;
         gap: clamp(32px, 2.08vw, 40px);

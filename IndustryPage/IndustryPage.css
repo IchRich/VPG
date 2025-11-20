@@ -1148,25 +1148,7 @@ html, body {
         background: #ddd;
     }
 
-    .image_item--small {
 
-    }
-
-    .image_item--large {
-
-    }
-
-    .image_item--medium {
-
-    }
-
-    .image_item--square {
-
-    }
-
-    .image_item--vertical {
-
-    }
 
     .content_section--second {
         margin-top: clamp(100px, 6.25vw, 120px);

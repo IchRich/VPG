@@ -654,9 +654,9 @@ section {
 
 /* ===== CONTACT SECTION (если используется) ===== */
 .contact_section {
-    max-width: var(--content-width);
+    max-width: 1720px;
     margin: clamp(100px, 6.25vw, 120px) auto;
-    padding: clamp(100px, 6.25vw, 120px) clamp(20px, 2.08vw, 40px);
+
     background: #f0f3f9;
     border-radius: clamp(10px, 0.63vw, 12px);
 }

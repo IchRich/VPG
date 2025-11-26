@@ -18,7 +18,6 @@
 
     --main-text-titel-pad: 2.1vw;
     --main-text-heading-pad:3.2vw;
-
     --maint-text-pad:2.5vw;
 
     --main-text-heading-modail:5vw;
@@ -116,7 +115,7 @@ html, body {
     justify-content: space-between;
     align-items: baseline;
     gap: 1vw;
-    margin: 1.6vw 0;
+    margin: 0 0 1.6vw 0;
 }
 
 .article_manual_main{
@@ -152,7 +151,7 @@ html, body {
 }
 
 .article_advertisement{
-    border-top: 2px solid rgba(0, 0, 0, 0.55);
+    border-top: 1px solid rgba(0, 0, 0, 0.55);
 }
 .article_advertisement p{
     font-size: var(--maint-text-ps);

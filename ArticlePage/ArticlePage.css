@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Moderustic:wght@300..800&display=swap');
+
+
+:root {
+    --main-font: 'Moderustic', Arial, sans-serif;
+    --main-color: #1d3151;
+    --accent-color: rgba(18, 66, 149, 1);
+    --container: 90%;
+    --gap: 2.3vw;
+    --edge: 0.57vw;
+    --blog-bg: #154caa;
+
+
+    --main-radius:0.8vw;
+    --main-text-titel-pc: 0.9vw;
+    --main-text-heading-ps: 2.1vw;
+    --maint-text-ps: 1vw;
+
+    --main-text-titel-pad: 2.1vw;
+    --main-text-heading-pad:3.2vw;
+    --maint-text-pad:2.5vw;
+
+    --main-text-heading-modail:5vw;
+    --main-text-modail:3.9vw;
+
+    --main-text-color: #000000;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    overflow-x: hidden;
+    font-family: var(--main-font);
+    color: var(--main-color);
+    background: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+}
+
+.breadcrumbs
+{
+    display: flex;
+    margin-bottom: 1.7vw;
+    gap: 1vw;
+    flex-direction: column;
+    width: 60%;
+    margin-top: 2.6vw;
+}
+
+.title-min {
+    display: flex;
+    align-items: center;
+    gap: 0.3vw;
+    font-family: 'Geologica', serif;
+    font-size: 0.9vw;
+    margin-top: 0vw;
+    margin-left: -0.05vw;
+}
+.title-min a
+{
+    margin: 0;
+    font-weight: 300;
+    line-height: 1.1;
+    letter-spacing: -0.03rem;
+}
+
+.title {
+    color: var(--accent-color);
+    margin: 0;
+    font-weight: 600;
+    font-family: 'Geologica', serif;
+    font-size: 2.1vw;
+    margin-left: -0.26vw;
+    line-height: 1;
+
+}
+.title_pad{
+    display: none;
+}
+.title-glav{
+    color: #6B6B6B;
+    text-decoration: none;
+}
+.title-glav2{
+    color: #000000;
+    text-decoration: none;
+}
+
+.article_main img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--main-radius);
+    margin: 1.6vw 0;
+}
+
+.button_article{
+    padding: 0.75vw;
+    border: 1px solid  #000000;
+    border-radius: var(--main-radius);
+    background-color: #ffffff;
+    font-weight: 500;
+    font-size: var(--main-text-titel-pc);
+}
+
+.container{
+    width: 90%;
+    margin-inline: auto;
+}
+
+.article_manual{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1vw;
+    margin: 0 0 1.6vw 0;
+}
+
+.article_manual_main{
+    width: 100%;
+}
+.article_manual_main h1{
+    font-size: var(--main-text-heading-ps);
+    color: var(--main-text-color);
+    font-weight: 500;
+    line-height: 110%;
+}
+.article_manual_main p{
+    font-size: var(--maint-text-ps);
+    color: var(--main-text-color);
+    font-weight: 400;
+    line-height: 120%;
+
+}
+.article_manual_notmain{
+    width: 100%;
+}
+.article_manual_notmain h1{
+    font-size: var(--main-text-heading-ps);
+    color: var(--main-text-color);
+    font-weight: 500;
+    line-height: 110%;
+}
+.article_manual_notmain p{
+    font-size: var(--maint-text-ps);
+    color: var(--main-text-color);
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.article_advertisement{
+    border-top: 1px solid rgba(0, 0, 0, 0.55);
+}
+.article_advertisement p{
+    font-size: var(--maint-text-ps);
+    color: var(--main-text-color);
+    font-weight: 400;
+    line-height: 120%;
+}
+.article_advertisement div{
+    display: flex;
+    gap: 1vw;
+}
+
+.articles_related{
+    margin-top: 6.2vw;
+}
+.title_articles_related{
+    color: var(--accent-color);
+    margin: 0;
+    font-weight: 600;
+    font-family: 'Geologica', serif;
+    font-size: 4.2vw;
+    margin-left: -0.26vw;
+    line-height: 1;
+}
+.articles_related_grid{
+    margin: 1.6vw 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);;
+    width: 100%;
+    gap: 1vw;
+}
+.articles_related_grid h1{
+    font-size: var(--maint-text-ps);
+    color: var(--main-text-color);
+}
+
+.articles_related_grid p {
+    font-size: 0.8vw;
+    line-height: 120%;
+    font-weight: 400;
+}
+.articles_related_item img {
+    width: 21.6vw;
+    height: 23.5vw;
+
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container{
+        width: 95%;
+    }
+    .title{
+        display: none;
+    }
+    .title-min {
+        font-size: 1.35vw;
+        gap: 0.4vw;
+        margin-left: -0.10vw;
+    }
+    .button_article{
+        padding:1vw 1.5vw;
+        font-size: var(--main-text-titel-pad);
+    }
+    .article_main img{
+        width: 94.9vw;
+        height: 75.5vw;
+        object-fit: cover;
+        cursor: pointer;
+    }
+    .title_pad{
+        display: flow;
+        color: var(--accent-color);
+        margin: 0;
+        font-weight: 600;
+        font-family: 'Geologica', serif;
+        font-size: 3.9vw;
+        margin-left: -0.26vw;
+        line-height: 110%;
+    }
+    .article_manual{
+        display: block;
+    }
+    .article_manual_main h1 {
+        font-size: var(--main-text-heading-pad);
+        font-weight: 500;
+        line-height: 110%;
+    }
+    .article_manual_main p{
+        font-size: var(--maint-text-pad);
+        font-weight: 400;
+        line-height: 120%;
+    }
+    .article_manual_notmain h1{
+        font-size: var(--main-text-heading-pad);
+        font-weight: 500;
+        line-height: 110%;
+    }
+    .article_manual_notmain p{
+        font-size: var(--maint-text-pad);
+        font-weight: 400;
+        line-height: 120%;
+    }
+    .article_advertisement p{
+        font-size: var(--maint-text-pad);
+    }
+    .article_advertisement div{
+        gap: 2.5vw;
+    }
+    .articles_related{
+        margin-top: 10.4vw;
+    }
+    .title_articles_related{
+        font-size: 6.6vw;
+    }
+    .articles_related_grid{
+        grid-template-columns: repeat(2, 2fr);
+        margin-top: 2.5vw;
+        margin-bottom: 10.5vw;
+        gap: 1.2vw;
+    }
+    .articles_related_item{
+        width: 100%;
+    }
+    .articles_related_item img{
+        width: 47vw;
+        height: 40.4vw;
+    }
+    .articles_related_grid h1{
+        font-size: var(--main-text-heading-pad);
+        font-weight: 500;
+        line-height: 110%;
+    }
+    .articles_related_grid p{
+     font-size: var(--maint-text-pad);
+        font-weight: 400;
+        line-height: 120%;
+    }
+    .articles_related_item_text{
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .title {
+        font-size: 8vw;
+        margin-top: 2vw;
+        margin-left: -0.8vw;
+    }
+    .title-min {
+        font-size: 2.3vw;
+        gap: 1vw;
+        margin-bottom: 0;
+        margin-left: -0.25vw;
+    }
+    .title-min {
+        display: flex;
+        align-items: flex-start;
+    }
+    .breadcrumbs
+    {
+        width: 100%;
+        padding-bottom: 3vw;
+        gap:0;
+    }
+    .article_main img{
+        width: 89vw;
+        height: 73vw;
+        border-radius: 15px;
+        object-fit: cover;
+    }
+    .button_article{
+        padding:1.7vw 4vw;
+        font-size: 4vw;
+        border-radius: 10px;
+    }
+    .title{
+        display: none;
+    }
+    .title_pad{
+        display: flow;
+        color: var(--accent-color);
+        margin: 0;
+        font-weight: 600;
+        font-family: 'Geologica', serif;
+        font-size: 5vw;
+        margin-left: -0.26vw;
+        line-height: 110%;
+    }
+    .article_manual{
+        display: block;
+    }
+    .article_manual_main h1{
+        font-size: var(--main-text-heading-modail) ;
+    }
+    .article_manual_main p{
+        font-size: var(--main-text-modail) ;
+    }
+    .article_manual_notmain h1{
+        font-size: var(--main-text-heading-modail) ;
+    }
+    .article_manual_notmain p{
+        font-size: var(--main-text-modail) ;
+    }
+    .article_advertisement p{
+        font-size: var(--main-text-modail) ;
+    }
+    .article_advertisement div{
+        gap: 2.8vw;
+    }
+    .article_advertisement img{
+        width: 12.5vw;
+    }
+    .title_articles_related{
+        font-size: 6.5vw;
+    }
+    .articles_related{
+        margin-top: 16.2vw;
+    }
+    .articles_related_grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .articles_related_item img{
+        width: 89vw;
+        height: 78vw;
+    }
+    .articles_related_grid p{
+        font-size: var(--main-text-heading-modail) ;
+    }
+    .articles_related_grid h1{
+        font-size: var(--main-text-heading-modail) ;
+        font-weight: 500;
+        line-height: 110%;
+    }
+    .articles_related_item_text{
+         display: none;
+    }
+}

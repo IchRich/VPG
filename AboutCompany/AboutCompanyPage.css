@@ -26,7 +26,7 @@ img {
     display: block;
 }
 
-/* ========== HERO (ДЕСКТОП) ========== */
+/* HERO */
 
 .hero {
     position: relative;
@@ -166,7 +166,8 @@ img {
     display: none;
 }
 
-/* ===== MOBILE MENU ===== */
+/* MOBILE MENU */
+
 .mobile_menu {
     position: fixed;
     z-index: 2000;
@@ -314,29 +315,28 @@ img {
     background: #f0f0f0;
 }
 
-/* ========== ABOUT ========== */
+/* ABOUT */
 
 .about {
     padding: 4.95vw 0 6.25vw;
 }
 
 .about__container {
-    max-width: 89.58%;  /* 1720px из 1920px */
+    max-width: 89.58%;
     margin: 0 auto;
 }
 
-/* Верхняя часть: заголовок слева + lead текст справа */
 .about__content {
     display: grid;
-    grid-template-columns: 26.55vw 1fr;  /* 241px для заголовка */
-    column-gap: 4.17vw;  /* gap между заголовком и текстом */
+    grid-template-columns: 26.55vw 1fr;
+    column-gap: 4.17vw;
     align-items: flex-start;
     margin-bottom: 3.13vw;
 }
 
 .about__label {
     font-family: var(--main-font);
-    font-size: 4.17vw;  /* 80px из Figma */
+    font-size: 4.17vw;
     font-weight: 600;
     color: var(--blue);
     text-transform: uppercase;
@@ -345,20 +345,19 @@ img {
 }
 
 .about__lead {
-    font-size: 2.08vw;  /* 40px из Figma */
+    font-size: 2.08vw;
     font-weight: 500;
     letter-spacing: -0.04em;
     line-height: 100%;
     text-align: justify;
-    text-indent: 14.95vw;  /* 287px из Figma - красная строка */
+    text-indent: 14.95vw;
     margin: 0;
 }
 
-/* Нижняя часть: картинка слева + два столбца текста справа */
 .about__grid {
     display: grid;
-    grid-template-columns: 29.17vw 29.17vw;  /* 560px + 560px */
-    column-gap: 2.08vw;  /* 40px gap */
+    grid-template-columns: 29.17vw 29.17vw;
+    column-gap: 2.08vw;
     align-items: center;
     justify-content: center;
 }
@@ -370,20 +369,20 @@ img {
 .about__image img {
     width: 100%;
     height: auto;
-    aspect-ratio: 560/356;  /* соотношение из Figma */
+    aspect-ratio: 560/356;
     object-fit: cover;
-    border-radius: 0.52vw;  /* 10px */
+    border-radius: 0.52vw;
     display: block;
 }
 
 .about__texts {
     display: flex;
     flex-direction: column;
-    gap: 1.04vw;  /* 20px - paragraphSpacing из Figma */
+    gap: 1.04vw;
 }
 
 .about__texts p {
-    font-size: 1.04vw;  /* 20px из Figma */
+    font-size: 1.04vw;
     font-weight: 400;
     letter-spacing: -0.04em;
     line-height: 120%;
@@ -391,8 +390,7 @@ img {
     text-align: left;
 }
 
-
-/* ========== NUMBERS ========== */
+/* NUMBERS */
 
 .numbers {
     padding: 6.25vw 0;
@@ -405,7 +403,6 @@ img {
     position: relative;
 }
 
-/* Обертка для всего контента */
 .numbers__wrapper {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -414,7 +411,6 @@ img {
     position: relative;
 }
 
-/* Левая колонка с крупными числами */
 .numbers__left {
     display: flex;
     flex-direction: column;
@@ -423,7 +419,7 @@ img {
 
 .numbers__main {
     font-family: var(--main-font);
-    font-size: 7.81vw;  /* 150px */
+    font-size: 7.81vw;
     font-weight: 500;
     letter-spacing: -0.03em;
     line-height: 100%;
@@ -431,7 +427,6 @@ img {
     margin: 0;
 }
 
-/* Правая колонка с текстами */
 .numbers__right {
     display: flex;
     flex-direction: column;
@@ -445,14 +440,13 @@ img {
 }
 
 .numbers__row p {
-    font-size: 1.04vw;  /* 20px */
+    font-size: 1.04vw;
     font-weight: 500;
     letter-spacing: -0.04em;
     line-height: 120%;
     margin: 0;
 }
 
-/* ===== ОТДЕЛЬНЫЙ СЛОЙ ДЛЯ GHOST-ЧИСЕЛ ===== */
 .numbers__ghost-container {
     position: absolute;
     top: 46px;
@@ -466,7 +460,7 @@ img {
 .numbers__ghost {
     position: absolute;
     font-family: var(--main-font);
-    font-size: 7.81vw;  /* 150px */
+    font-size: 7.81vw;
     font-weight: 500;
     letter-spacing: -0.03em;
     color: var(--blue);
@@ -475,23 +469,22 @@ img {
     white-space: nowrap;
 }
 
-/* Точное позиционирование ghost-чисел лесенкой */
 .numbers__ghost--15 {
     top: -1.04vw;
-    right: 20.83vw;  /* ~400px */
+    right: 20.83vw;
 }
 
 .numbers__ghost--500 {
     top: 8.85vw;
-    right: 12.5vw;  /* ~240px */
+    right: 12.5vw;
 }
 
 .numbers__ghost--50 {
     top: 18.75vw;
-    right: 4.17vw;  /* ~80px */
+    right: 4.17vw;
 }
 
-/* ========== WAREHOUSE ========== */
+/* WAREHOUSE */
 
 .warehouse {
     padding: 6.25vw 0;
@@ -502,10 +495,9 @@ img {
     margin: 0 auto;
 }
 
-/* Верхняя часть: заголовок + lead */
 .warehouse__header {
     display: grid;
-    grid-template-columns: 25.84vw 1fr;  /* 285px для заголовка */
+    grid-template-columns: 25.84vw 1fr;
     column-gap: 4.17vw;
     align-items: flex-start;
     margin-bottom: 3.13vw;
@@ -513,7 +505,7 @@ img {
 
 .warehouse__label {
     font-family: var(--main-font);
-    font-size: 4.17vw;  /* 80px */
+    font-size: 4.17vw;
     font-weight: 600;
     color: var(--blue);
     text-transform: uppercase;
@@ -523,32 +515,29 @@ img {
 
 .warehouse__lead {
     font-family: var(--text-font);
-    font-size: 2.08vw;  /* 40px */
+    font-size: 2.08vw;
     font-weight: 500;
     letter-spacing: -0.04em;
     line-height: 100%;
     text-align: justify;
-    text-indent: 14.95vw;  /* 287px - красная строка */
+    text-indent: 14.95vw;
     margin: 0;
 }
 
-/* Нижняя часть: текст справа + фотки под ним */
 .warehouse__content {
-
     gap: 3.13vw;
 }
 
-/* Текстовые блоки в две колонки справа */
 .warehouse__texts {
     display: grid;
-    grid-template-columns: 21.61vw 21.61vw;  /* 415px + 415px */
-    column-gap: 2.08vw;  /* 40px */
+    grid-template-columns: 21.61vw 21.61vw;
+    column-gap: 2.08vw;
     justify-content: end;
 }
 
 .warehouse__texts p {
     font-family: var(--text-font);
-    font-size: 1.04vw;  /* 20px */
+    font-size: 1.04vw;
     font-weight: 400;
     letter-spacing: -0.04em;
     line-height: 120%;
@@ -556,29 +545,27 @@ img {
     text-align: left;
 }
 
-/* Изображения лесенкой под текстом */
 .warehouse__images {
     display: grid;
-    grid-template-columns: repeat(4, 21.61vw);  /* 4 колонки по 415px */
-    column-gap: 1vw;  /* 30px */
+    grid-template-columns: repeat(4, 21.61vw);
+    column-gap: 1vw;
     align-items: flex-start;
 }
 
 .warehouse__images img {
     width: 100%;
     object-fit: cover;
-    border-radius: 0.52vw;  /* 10px */
+    border-radius: 0.52vw;
     display: block;
 }
 
-/* Лесенка изображений (505px = 26.30vw высота) */
 .warehouse__images img:nth-child(1) {
     margin-top: 0;
-    height: 26.30vw;  /* 505px */
+    height: 26.30vw;
 }
 
 .warehouse__images img:nth-child(2) {
-    margin-top: 6.25vw;  /* смещение вниз */
+    margin-top: 6.25vw;
     height: 26.30vw;
 }
 
@@ -592,66 +579,60 @@ img {
     height: 26.30vw;
 }
 
-/* ========== SERVICE ========== */
-
+/* SERVICE */
 
 .service {
     padding: 6.25vw 0;
 }
 
 .service__container {
-    max-width: 90.58%;  /* 1720px */
+    max-width: 90.58%;
     margin: 0 auto;
 }
 
-/* Lead текст сверху на всю ширину с красной строкой */
 .service__lead {
     font-family: var(--text-font);
-    font-size: 2.08vw;  /* 40px */
+    font-size: 2.08vw;
     font-weight: 500;
     letter-spacing: -0.04em;
     line-height: 100%;
     text-align: justify;
-    text-indent: 45.26vw;  /* 869px - красная строка */
-    margin: 0 0 1.07vw 0;  /* 60px */
+    text-indent: 45.26vw;
+    margin: 0 0 1.07vw 0;
 }
 
-/* Контейнер для контента с float */
 .service__content {
-    overflow: hidden;  /* clearfix */
+    overflow: hidden;
 }
 
-/* Большое изображение слева с float */
 .service__image-main {
     float: left;
-    width: 44.27vw;  /* 850px */
-    margin-right: 1.08vw;  /* 40px gap */
+    width: 44.27vw;
+    margin-right: 1.08vw;
 }
 
 .service__image-main img {
     width: 100%;
-    height: 32.45vw;  /* 623px */
+    height: 32.45vw;
     object-fit: cover;
-    border-radius: 0.52vw;  /* 10px */
+    border-radius: 0.52vw;
     display: block;
 }
 
-/* Правая часть: тексты + маленькие фото */
 .service__right {
-    overflow: hidden;  /* создает новый контекст для обтекания */
+    overflow: hidden;
 }
 
-/* Текстовые блоки в две колонки */
 .service__texts {
     display: grid;
-    grid-template-columns: 21.61vw 21.61vw;  /* 415px + 415px */
-    column-gap: 1.08vw;  /* 40px */
-    margin-bottom: 1.08vw;  /* 40px до фото */
+    grid-template-columns: 21.61vw 21.61vw;
+    column-gap: 1.08vw;
+    margin-bottom: 1.08vw;
 }
 
 .service__texts p {
     font-family: var(--text-font);
-    font-size: 1.04vw;  /* 20px */
+    font-size: 1.04vw;
     font-weight: 400;
     letter-spacing: -0.04em;
     line-height: 120%;
@@ -659,34 +640,31 @@ img {
     text-align: left;
 }
 
-/* Маленькие изображения в две колонки */
 .service__images {
     display: grid;
-    grid-template-columns: 21.61vw 21.61vw;  /* 415px + 415px */
-    column-gap: 1.08vw;  /* 40px */
+    grid-template-columns: 21.61vw 21.61vw;
+    column-gap: 1.08vw;
 }
 
 .service__images img {
     width: 100%;
-    height: 21.41vw;  /* 411px */
+    height: 21.41vw;
     object-fit: cover;
-    border-radius: 0.52vw;  /* 10px */
+    border-radius: 0.52vw;
     display: block;
 }
 
-/* Clearfix */
 .service__content::after {
     content: "";
     display: table;
     clear: both;
 }
 
-/* ========== CONTACT ========== */
+/* CONTACT */
 
 .contact_section {
     max-width: 1720px;
     margin: clamp(100px, 6.25vw, 120px) auto;
-
     background: #f0f3f9;
     border-radius: clamp(10px, 0.63vw, 12px);
 }
@@ -819,95 +797,22 @@ img {
 .form_btn:active {
     transform: translateY(0);
 }
+
 .search_wrapper{
     display: none;
 }
 
+/* FOOTER */
 
 
-/* ========== FOOTER ========== */
 
-.footer {
-    background: #e8ecf4;
-    padding: 3.13vw 0 1.56vw;
-}
-
-.footer__container {
-    max-width: 89.58%;
-    margin: 0 auto;
-}
-
-.footer__top {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2.60vw;
-    margin-bottom: 2.08vw;
-}
-
-.footer__col h3 {
-    font-size: 0.94vw;
-    font-weight: 600;
-    margin-bottom: 1.04vw;
-    letter-spacing: -0.04em;
-}
-
-.footer__col ul {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 0.52vw;
-}
-
-.footer__col a {
-    color: var(--black);
-    text-decoration: none;
-    font-size: 0.83vw;
-    transition: color 0.3s ease;
-}
-
-.footer__col a:hover {
-    color: var(--blue);
-}
-
-.footer__bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 0.73vw;
-    flex-wrap: wrap;
-    gap: 2.08vw;
-}
-
-.footer__brand {
-    display: flex;
-    align-items: center;
-    gap: 0.83vw;
-}
-
-.footer__brand img {
-    width: 6.25vw;
-}
-
-.footer__links {
-    display: flex;
-    gap: 1.56vw;
-    flex-wrap: wrap;
-}
-
-.footer__links a {
-    color: var(--black);
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.footer__links a:hover {
-    color: var(--blue);
-}
 .mobile_menu{
     display: none;
 }
+
+/* DESKTOP */
+
 @media (min-width: 1025px) {
-    /* Показываем десктоп, скрываем мобильную версию */
     .about__desktop {
         display: block;
     }
@@ -916,7 +821,6 @@ img {
         display: none;
     }
 
-    /* Ваши текущие десктопные стили */
     .about {
         padding: 4.95vw 0 6.25vw;
     }
@@ -989,6 +893,7 @@ img {
         margin: 0;
         text-align: left;
     }
+
     .numbers__desktop {
         display: block;
     }
@@ -1008,7 +913,6 @@ img {
         position: relative;
     }
 
-    /* Обертка для всего контента */
     .numbers__wrapper {
         display: grid;
         grid-template-columns: auto 1fr;
@@ -1017,7 +921,6 @@ img {
         position: relative;
     }
 
-    /* Левая колонка с крупными числами */
     .numbers__left {
         display: flex;
         flex-direction: column;
@@ -1026,7 +929,7 @@ img {
 
     .numbers__main {
         font-family: var(--main-font);
-        font-size: 7.81vw;  /* 150px */
+        font-size: 7.81vw;
         font-weight: 500;
         letter-spacing: -0.03em;
         line-height: 100%;
@@ -1034,7 +937,6 @@ img {
         margin: 0;
     }
 
-    /* Правая колонка с текстами */
     .numbers__right {
         display: flex;
         flex-direction: column;
@@ -1048,14 +950,13 @@ img {
     }
 
     .numbers__row p {
-        font-size: 1.04vw;  /* 20px */
+        font-size: 1.04vw;
         font-weight: 500;
         letter-spacing: -0.04em;
         line-height: 120%;
         margin: 0;
     }
 
-    /* ===== ОТДЕЛЬНЫЙ СЛОЙ ДЛЯ GHOST-ЧИСЕЛ ===== */
     .numbers__ghost-container {
         position: absolute;
         top: 46px;
@@ -1069,7 +970,7 @@ img {
     .numbers__ghost {
         position: absolute;
         font-family: var(--main-font);
-        font-size: 7.81vw;  /* 150px */
+        font-size: 7.81vw;
         font-weight: 500;
         letter-spacing: -0.03em;
         color: var(--blue);
@@ -1078,21 +979,21 @@ img {
         white-space: nowrap;
     }
 
-    /* Точное позиционирование ghost-чисел лесенкой */
     .numbers__ghost--15 {
         top: -1.04vw;
-        right: 20.83vw;  /* ~400px */
+        right: 20.83vw;
     }
 
     .numbers__ghost--500 {
         top: 8.85vw;
-        right: 12.5vw;  /* ~240px */
+        right: 12.5vw;
     }
 
     .numbers__ghost--50 {
         top: 18.75vw;
-        right: 4.17vw;  /* ~80px */
+        right: 4.17vw;
     }
+
     .service__desktop {
         display: block;
     }
@@ -1180,10 +1081,10 @@ img {
         clear: both;
     }
 }
-/* ========== TABLET 768–1024px ========== */
+
+/* TABLET */
 
 @media (min-width: 768px) and (max-width: 1024px) {
-    /* Контейнеры на планшете */
     .hero__container,
     .about__container,
     .numbers__container,
@@ -1193,11 +1094,11 @@ img {
         max-width: 94.79%;
     }
 
-    /* HEADER */
     .main_navigation__list,
     .main_navigation__right {
         display: none !important;
     }
+
     .main_navigation__phone{
         font-size: 3vw;
     }
@@ -1235,37 +1136,33 @@ img {
         height: 3.13vw;
     }
 
-    /* HERO */
     .hero {
-        min-height: 83.33vw;  /* 640px из 768px */
+        min-height: 83.33vw;
     }
 
     .hero__container {
-
         padding: 2.6vw 0 6.25vw;
         min-height: 83.33vw;
     }
 
     .hero__title {
-        font-size: 9.11vw;  /* 70px */
+        font-size: 9.11vw;
         margin-bottom: 2.6vw;
     }
 
     .hero__text {
-        font-size: 2.86vw;  /* 22px */
+        font-size: 2.86vw;
         max-width: 100%;
         margin-bottom: 3.91vw;
     }
 
     .hero__btn {
-
         font-family: var(--main-font);
-        font-size: 2.08vw;  /* 16px */
+        font-size: 2.08vw;
         padding: 0.82vw 3.12vw;
         height: 5.73vw;
     }
 
-    /* ABOUT */
     .about__desktop {
         display: none;
     }
@@ -1339,7 +1236,6 @@ img {
         text-align: left;
     }
 
-    /* NUMBERS */
     .numbers__desktop {
         display: none;
     }
@@ -1357,7 +1253,6 @@ img {
         margin: 0 auto;
     }
 
-    /* Таблица из строк с бордерами */
     .numbers__mobile {
         display: flex;
         flex-direction: column;
@@ -1367,18 +1262,18 @@ img {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: 19.14vw;  /* 147px из 768px */
-        padding: 1.3vw 0;  /* 10px сверху и снизу */
+        gap: 19.14vw;
+        padding: 1.3vw 0;
         border-bottom: 0.13vw solid rgba(0, 0, 0, 0.2);
     }
 
     .numbers__item:last-child {
-        border-bottom: none;  /* убираем бордер у последней строки */
+        border-bottom: none;
     }
 
     .numbers__value {
         font-family: var(--main-font);
-        font-size: 10.42vw;  /* 80px из 768px */
+        font-size: 10.42vw;
         font-weight: 600;
         letter-spacing: -0.04em;
         line-height: 100%;
@@ -1389,15 +1284,14 @@ img {
 
     .numbers__text {
         font-family: var(--text-font);
-        font-size: 2.6vw;  /* 20px из 768px */
+        font-size: 2.6vw;
         font-weight: 500;
         letter-spacing: -0.04em;
         line-height: 120%;
         color: var(--black);
-        max-width: 46.74vw;  /* 359px из 768px */
+        max-width: 46.74vw;
     }
 
-    /* WAREHOUSE */
     .warehouse {
         padding: 6.25vw 0;
     }
@@ -1413,11 +1307,11 @@ img {
     }
 
     .warehouse__label {
-        font-size: 6.51vw;  /* 50px */
+        font-size: 6.51vw;
     }
 
     .warehouse__lead {
-        font-size: 3.91vw;  /* 30px */
+        font-size: 3.91vw;
         text-indent: 0;
         line-height: 110%;
     }
@@ -1435,12 +1329,11 @@ img {
     }
 
     .warehouse__texts p {
-        font-size: 2.34vw;  /* 18px */
+        font-size: 2.34vw;
     }
 
-    /* ИЗМЕНЕНИЕ: лесенка как на десктопе */
     .warehouse__images {
-        grid-template-columns: repeat(4, 1fr);  /* 4 колонки */
+        grid-template-columns: repeat(4, 1fr);
         column-gap: 2.6vw;
         align-items: flex-start;
     }
@@ -1452,14 +1345,13 @@ img {
         display: block;
     }
 
-    /* Лесенка изображений */
     .warehouse__images img:nth-child(1) {
         margin-top: 0;
-        height: 27.6vw;  /* пропорционально уменьшено */
+        height: 27.6vw;
     }
 
     .warehouse__images img:nth-child(2) {
-        margin-top: 6.51vw;  /* смещение вниз */
+        margin-top: 6.51vw;
         height: 27.6vw;
     }
 
@@ -1473,7 +1365,6 @@ img {
         height: 27.6vw;
     }
 
-    /* SERVICE */
     .service__desktop {
         display: none;
     }
@@ -1533,10 +1424,9 @@ img {
         text-align: left;
     }
 
-    /* ИЗМЕНЕНИЕ: 2 фотки в СТРОКУ (горизонтально) */
     .service__images {
         display: grid;
-        grid-template-columns: 1fr 1fr;  /* 2 колонки - в строку */
+        grid-template-columns: 1fr 1fr;
         column-gap: 2.6vw;
     }
 
@@ -1549,7 +1439,6 @@ img {
         display: block;
     }
 
-    /* CONTACT: значения из Figma 768px */
     .contact_section {
         padding: 6.25vw 0;
     }
@@ -1559,7 +1448,7 @@ img {
     }
 
     .contact_section h2 {
-        font-size: 6.51vw;  /* 50px */
+        font-size: 6.51vw;
         margin-bottom: 2.6vw;
     }
 
@@ -1570,7 +1459,7 @@ img {
     }
 
     .contact_left p {
-        font-size: 3.12vw;  /* 24px */
+        font-size: 3.12vw;
         margin-bottom: 2.6vw;
     }
 
@@ -1582,23 +1471,23 @@ img {
 
     .contact_btn {
         width: 33%;
-        font-size: 2.95vw;  /* 24px */
+        font-size: 2.95vw;
         padding: 1.82vw 2.08vw;
     }
 
     .contact_btn_whatsapp,
     .contact_btn_telegram {
-        width: 7.42vw;  /* 57px */
+        width: 7.42vw;
         height: 7.42vw;
     }
 
     .form_title {
-        font-size: 3.12vw;  /* 24px */
+        font-size: 3.12vw;
     }
 
     .form_group input,
     .form_group textarea {
-        font-size: 2.08vw;  /* 16px */
+        font-size: 2.08vw;
         padding: 1.56vw 0;
     }
 
@@ -1607,13 +1496,13 @@ img {
     }
 
     .form_agree {
-        font-size: 1.82vw;  /* 14px */
+        font-size: 1.82vw;
     }
 
     .form_btn {
-        font-size: 2.08vw;  /* 16px */
+        font-size: 2.08vw;
         padding: 1.82vw 3.12vw;
-        height: 5.73vw;  /* 44px */
+        height: 5.73vw;
     }
 
     .form_title {
@@ -1636,7 +1525,6 @@ img {
         height: clamp(44px, 5.73vw, 44px);
     }
 
-    /* FOOTER */
     .footer__top {
         grid-template-columns: repeat(2, 1fr);
         gap: 4vw;
@@ -1661,10 +1549,9 @@ img {
     }
 }
 
-/* ========== MOBILE <= 767px (360px base) ========== */
+/* MOBILE */
 
 @media (max-width: 767px) {
-    /* Контейнеры на мобильном */
     .hero__container,
     .about__container,
     .numbers__container,
@@ -1673,7 +1560,6 @@ img {
         max-width: 87.5%;
     }
 
-    /* HEADER */
     .main_navigation__list,
     .main_navigation__right {
         display: none !important;
@@ -1712,9 +1598,8 @@ img {
         height: 6.67vw;
     }
 
-    /* HERO */
     .hero {
-        min-height: 177.78vw;  /* 640px из 360px */
+        min-height: 177.78vw;
     }
 
     .hero__container {
@@ -1723,25 +1608,24 @@ img {
     }
 
     .hero__title {
-        font-size: 10vw;  /* 36px */
+        font-size: 10vw;
         margin-bottom: 4.44vw;
         max-width: 100%;
     }
 
     .hero__text {
-        font-size: 4.72vw;  /* 17px */
+        font-size: 4.72vw;
         max-width: 100%;
         margin-bottom: 5.56vw;
     }
 
     .hero__btn {
         font-family: var(--main-font);
-        font-size: 3.61vw;  /* 13px */
+        font-size: 3.61vw;
         padding: 3.33vw 6.67vw;
         height: 12.22vw;
     }
 
-    /* ABOUT */
     .about__desktop {
         display: none;
     }
@@ -1815,7 +1699,6 @@ img {
         text-align: left;
     }
 
-    /* NUMBERS */
     .numbers__desktop {
         display: none;
     }
@@ -1833,7 +1716,6 @@ img {
         margin: 0 auto;
     }
 
-    /* Таблица из строк с бордерами - КАК НА ПЛАНШЕТЕ */
     .numbers__mobile {
         display: flex;
         flex-direction: column;
@@ -1841,9 +1723,8 @@ img {
 
     .numbers__item {
         display: flex;
-
-        justify-content: space-between;  /* как на планшете */
-        padding: 3.13vw 0;  /* 10px сверху и снизу */
+        justify-content: space-between;
+        padding: 3.13vw 0;
         border-bottom: 0.31vw solid rgba(0, 0, 0, 0.2);
     }
 
@@ -1853,29 +1734,28 @@ img {
 
     .numbers__value {
         font-family: var(--main-font);
-        font-size: 12.5vw;  /* 40px из 320px */
+        font-size: 12.5vw;
         font-weight: 600;
         letter-spacing: -0.04em;
         line-height: 100%;
         color: var(--black);
         white-space: nowrap;
         flex-shrink: 0;
-        width: 36.06vw;  /* фиксированная ширина как "500+" (93px) */
+        width: 36.06vw;
         text-align: left;
     }
 
     .numbers__text {
         font-family: var(--text-font);
-        font-size: 4.38vw;  /* 14px из 320px */
+        font-size: 4.38vw;
         font-weight: 500;
         letter-spacing: -0.04em;
         line-height: 120%;
         color: var(--black);
         flex: 1;
-        padding-left: 6vw;  /* небольшой отступ от числа */
+        padding-left: 6vw;
     }
 
-    /* WAREHOUSE */
     .warehouse {
         padding: 8.89vw 0;
     }
@@ -1891,11 +1771,11 @@ img {
     }
 
     .warehouse__label {
-        font-size: 6.67vw;  /* 24px */
+        font-size: 6.67vw;
     }
 
     .warehouse__lead {
-        font-size: 4.44vw;  /* 16px */
+        font-size: 4.44vw;
         text-indent: 0;
         line-height: 120%;
     }
@@ -1912,11 +1792,10 @@ img {
     }
 
     .warehouse__texts p {
-        font-size: 3.61vw;  /* 13px */
+        font-size: 3.61vw;
         line-height: 140%;
     }
 
-    /* ИЗМЕНЕНИЕ: 2 фотки в ряд вместо одной колонки */
     .warehouse__images {
         border-radius: 10px;
         grid-template-columns: repeat(2, 1fr);
@@ -1927,11 +1806,10 @@ img {
     .warehouse__images img {
         margin-top: 0 !important;
         height: auto !important;
-        aspect-ratio: 134/145;  /* примерно квадратные */
+        aspect-ratio: 134/145;
         width: 100%;
     }
 
-    /* SERVICE */
     .service__desktop {
         display: none;
     }
@@ -2011,12 +1889,15 @@ img {
         gap: 5.56vw;
         padding: 4.44vw;
     }
+
     .contact_section h2{
         font-size: 7vw;
     }
+
     .contact_left p{
         font-size: 4.5vw;
     }
+
     .contact_buttons {
         flex-direction: row;
         width: 100%;
@@ -2040,43 +1921,8 @@ img {
         height: 47px;
     }
 
-    /* FOOTER */
-    .footer {
-        padding: 8.89vw 0 5.56vw;
-    }
 
-    .footer__top {
-        grid-template-columns: 1fr;
-        gap: 6.67vw;
-    }
 
-    .footer__col h3 {
-        font-size: 4.44vw;
-    }
-
-    .footer__col ul {
-        gap: 2.78vw;
-    }
-
-    .footer__col a {
-        font-size: 3.89vw;
-    }
-
-    .footer__bottom {
-        font-size: 3.33vw;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 5.56vw;
-    }
-
-    .footer__brand img {
-        width: 25vw;
-    }
-
-    .footer__links {
-        flex-direction: column;
-        gap: 2.78vw;
-    }
     .main_navigation__phone{
         display: none;
     }

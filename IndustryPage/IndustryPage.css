@@ -34,7 +34,7 @@ html, body {
     .main_navigation {
         max-width: var(--content-width);
         margin: 0 auto;
-        padding: 0 clamp(16px, 4.44vw, 20px);
+
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -473,6 +473,9 @@ html, body {
     .form_btn:active {
         background: #001f66;
     }
+    .main_navigation__phone{
+        display: none;
+    }
 }
 
 /* ПЛАНШЕТНЫЙ АДАПТИВ: 768px - 1024px */
@@ -511,7 +514,7 @@ html, body {
 
     .burger {
         width: clamp(26px, 3.91vw, 30px);
-        height: clamp(26px, 3.91vw, 30px);
+
         flex-direction: column;
         gap: clamp(3px, 0.52vw, 4px);
         background: none;

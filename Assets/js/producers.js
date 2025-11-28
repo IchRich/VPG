@@ -39,7 +39,7 @@ function switchProducer(button, imageElement) {
 
     // После анимации меняем src
     setTimeout(() => {
-        imageElement.src = `/Assets/Image/${brand}_logo.webp`;
+        imageElement.src = `Assets\Image\${brand}_logo.webp`;
         imageElement.alt = `Логотип ${brand}`;
         imageElement.classList.remove('fade-out');
     }, 300);

@@ -3,90 +3,72 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Каталог - Оборудование для сварки</title>
-  <link rel="stylesheet" href="WeldingCatalogPage.css">
-  <link rel="stylesheet" href="../fotter.css">
-  <script src="catalog.js"></script>
-  <script src="main.js"></script>
+  <title>Каталог</title>
+  <link rel="stylesheet" href="Assets\css\CatalogPage.css">
+  <link rel="stylesheet" href="Assets\css\header.css"/>
+  <link rel="stylesheet" href="Assets\css\fotter.css"/>
+  <script src="Assets\js\catalog.js"></script>
+  <script src="Assets\js\main.js"></script>
 </head>
 <body>
+<header class="main_header">
+  <nav class="main_navigation" aria-label="Главная навигация">
+    <img src="Assets\Image\Logo.webp" alt="Логотип компании" class="logo" />
+    <ul class="main_navigation__list">
+      <li><a href="CatalogPage.html">Каталог
+        <img src="Assets\Image\GalochkaIcon.svg" alt="<UNK> <UNK>">
+      </a></li>
+      <li><a href="AboutCompanyPage.html">О компании</a></li>
+      <li><a href="BrandPage.html">Бренды</a></li>
+      <li><a href="#">Блог</a></li>
+      <li><a href="IndustryPage.html">Индустрии</a></li>
+    </ul>
+    <div class="mobile_navigation__buttons">
+      <img src="Assets\Image\SearchIconBlue.svg" alt="<UNK> <UNK>" class="catalog_search__image">
+      <a href="tel:88005553535" class="main_navigation__phone">8 (800) 555-35-35</a>
+      <button class="burger" id="burger-open" aria-label="Открыть меню">
 
-<!-- Hero Section with Header -->
-<section class="hero_section">
-  <div class="hero_overlay"></div>
-
-  <!-- Header inside Hero -->
-  <header class="main_header">
-    <nav class="main_navigation" aria-label="Главная навигация">
-      <img src="/Assets/Image/WhiteLogo.svg" alt="Логотип компании" class="logo" />
-
-      <ul class="main_navigation__list">
-        <li><a href="#">Каталог
-          <img src="/Assets/Image/WhiteGalochka.svg" alt="Иконка">
-        </a></li>
-        <li><a href="#">О компании</a></li>
-        <li><a href="#">Бренды</a></li>
-        <li><a href="#">Блог</a></li>
-        <li><a href="#">Индустрии</a></li>
-      </ul>
-
-      <div class="mobile_navigation__buttons">
-        <img src="/Assets/Image/SearchIconWhite.svg" alt="Поиск" class="catalog_search__image">
-        <a href="tel:88005553535" class="main_navigation__phone">8 (800) 555-35-35</a>
-        <button class="burger" id="burger-open" aria-label="Открыть меню">
-          <img src="/Assets/Image/burger.svg" alt="<UNK> <UNK>">
-        </button>
-      </div>
-
-      <div class="main_navigation__right">
-        <a href="#" class="main_navigation__search">
-          <img src="/Assets/Image/SearchIconWhite.svg" alt="Поиск" class="catalog_search__image">
-        </a>
-        <a href="tel:88005553535" class="main_navigation__phone">8 (800) 555-35-35</a>
-        <button class="main_navigation__btn">Оставить заявку</button>
-      </div>
-    </nav>
-  </header>
-
-  <!-- Mobile Menu -->
-  <div class="mobile_menu" id="mobile-menu">
-    <header>
-      <a href="/" class="logo">
-        <img src="/Assets/Image/Logo.webp" alt="Логотип">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="main_navigation__right">
+      <a href="#" class="main_navigation__search">
+        <img src="Assets\Image\SearchIconBlue.svg" alt="<UNK> <UNK>" class="catalog_search__image">
       </a>
-      <div class="mobile_menu__buttons">
-        <img src="/Assets/Image/SearchIconBlue.svg" alt="Поиск" class="catalog_search__image">
-        <a href="tel:88005553535" class="mobile_navigation__phone">8 (800) 555-35-35</a>
-        <button class="close" id="burger-close">&times;</button>
-      </div>
-    </header>
+      <a href="tel:88005553535" class="main_navigation__phone">8 (800) 555-35-35</a>
+      <button class="main_navigation__btn">Оставить заявку</button>
+    </div>
+  </nav>
+</header>
+<div class="mobile_menu" id="mobile-menu">
+  <header>
 
-    <nav class="mobile_nav">
-      <ul>
-        <li><a href="#">Каталог
-          <img src="/Assets/Image/GalochkaIcon.svg" alt="Иконка">
-        </a></li>
-        <li><a href="#">О компании</a></li>
-        <li><a href="#">Бренды</a></li>
-        <li><a href="#">Блог</a></li>
-        <li><a href="#">Индустрии</a></li>
-      </ul>
-    </nav>
+    <a href="/" class="logo">
+      <img src="Assets\Image\Logo.webp" alt="">
+    </a>
+    <div class="mobile_menu__buttons">
+      <img src="Assets\Image\SearchIconBlue.svg" alt="<UNK> <UNK>" class="catalog_search__image">
+      <a href="tel:88005553535" class="main_navigation__phone">8 (800) 555-35-35</a>
+      <button class="close" id="burger-close">&times;</button>
+    </div>
 
-    <button class="mobile_menu__btn">Оставить заявку</button>
-  </div>
+  </header>
+  <nav class="mobile_nav">
+    <ul>
+      <li><a href="CatalogPage.html">Каталог
+        <img src="Assets\Image\GalochkaIcon.svg" alt="<UNK> <UNK>">
+      </a></li>
+      <li><a href="AboutCompanyPage.html">О компании</a></li>
+      <li><a href="BrandPage.html">Бренды</a></li>
+      <li><a href="#">Блог</a></li>
+      <li><a href="IndustryPage.html">Индустрии</a></li>
+    </ul>
+  </nav>
+  <button class="mobile_menu__btn">Оставить заявку</button>
+</div>
+<div class="mobile_menu__overlay" id="menu-overlay"></div>
 
-  <div class="mobile_menu__overlay" id="menu-overlay"></div>
 
-  <!-- Hero Content -->
-  <div class="hero_content">
-
-    <h1>Оборудование для сварки</h1>
-    <p class="hero_description">В нашем каталоге представлены аппараты для ручной, полуавтоматической, автоматической и аргонодуговой сварки, а также источники питания, горелки, кабели и комплектующие.</p>
-  </div>
-</section>
-
-<!-- Catalog Section -->
 <main class="catalog_page">
 
 
@@ -107,8 +89,8 @@
 
     <!-- Filter Button (mobile/tablet only) -->
     <button class="filter_btn" id="filter-btn">
-      <img src="/Assets/Image/FilterIcon.svg" alt="<UNK> <UNK>">
-
+      <img src="Assets\Image\FilterIcon.svg" alt="<UNK> <UNK>">
+      <span class="filter_badge">3</span>
     </button>
   </div>
 
@@ -128,7 +110,7 @@
       <div class="filter_section">
         <button class="filter_section_header">
           <h3>Сварочные материалы</h3>
-          <img src="/Assets/Image/GalochkaIcon.svg" alt="<UNK> <UNK>">
+          <img src="Assets\Image\GalochkaIcon.svg" alt="<UNK> <UNK>">
         </button>
         <div class="filter_section_content">
           <label class="filter_checkbox">
@@ -158,7 +140,7 @@
       <div class="filter_section collapsed">
         <button class="filter_section_header">
           <h3>Сварочное оборудование</h3>
-          <img src="/Assets/Image/GalochkaIcon.svg" alt="<UNK> <UNK>">
+          <img src="Assets\Image\GalochkaIcon.svg" alt="<UNK> <UNK>">
         </button>
         <div class="filter_section_content"></div>
       </div>
@@ -167,7 +149,7 @@
       <div class="filter_section collapsed">
         <button class="filter_section_header">
           <h3>Автоматизация сварки</h3>
-          <img src="/Assets/Image/GalochkaIcon.svg" alt="<UNK> <UNK>">
+          <img src="Assets\Image\GalochkaIcon.svg" alt="<UNK> <UNK>">
         </button>
         <div class="filter_section_content"></div>
       </div>
@@ -176,7 +158,7 @@
       <div class="filter_section collapsed">
         <button class="filter_section_header">
           <h3>Средства индивидуальной защиты</h3>
-          <img src="/Assets/Image/GalochkaIcon.svg" alt="<UNK> <UNK>">
+          <img src="Assets\Image\GalochkaIcon.svg" alt="<UNK> <UNK>">
         </button>
         <div class="filter_section_content"></div>
       </div>
@@ -188,7 +170,7 @@
         <!-- Card 1-8 -->
         <div class="product_card">
           <div class="product_image">
-            <img src="../Assets/Image/Boehler.svg"/>
+            <img src="Assets\Image\Boehler.svg"/>
           </div>
           <div class="product_info">
             <h3>СВАРОЧНЫЙ ЭЛЕКТРОД BOEHLER FOX DMO KB</h3>
@@ -197,7 +179,7 @@
 
         <div class="product_card">
           <div class="product_image">
-            <img src="../Assets/Image/Boehler.svg"/>
+            <img src="Assets\Image\Boehler.svg"/>
           </div>
           <div class="product_info">
             <h3>СВАРОЧНЫЙ ЭЛЕКТРОД BOEHLER FOX DMO KB</h3>
@@ -206,7 +188,7 @@
 
         <div class="product_card">
           <div class="product_image">
-            <img src="../Assets/Image/Boehler.svg"/>
+            <img src="Assets\Image\Boehler.svg"/>
           </div>
           <div class="product_info">
             <h3>СВАРОЧНЫЙ ЭЛЕКТРОД BOEHLER FOX DMO KB</h3>
@@ -215,7 +197,7 @@
 
         <div class="product_card">
           <div class="product_image">
-            <img src="../Assets/Image/Boehler.svg"/>
+            <img src="Assets\Image\Boehler.svg"/>
           </div>
           <div class="product_info">
             <h3>СВАРОЧНЫЙ ЭЛЕКТРОД BOEHLER FOX DMO KB</h3>
@@ -224,7 +206,7 @@
 
         <div class="product_card">
           <div class="product_image">
-            <img src="../Assets/Image/Boehler.svg"/>
+            <img src="Assets\Image\Boehler.svg"/>
           </div>
           <div class="product_info">
             <h3>СВАРОЧНЫЙ ЭЛЕКТРОД BOEHLER FOX DMO KB</h3>
@@ -233,7 +215,7 @@
 
         <div class="product_card">
           <div class="product_image">
-            <img src="../Assets/Image/Boehler.svg"/>
+            <img src="Assets\Image\Boehler.svg"/>
           </div>
           <div class="product_info">
             <h3>СВАРОЧНЫЙ ЭЛЕКТРОД BOEHLER FOX DMO KB</h3>
@@ -242,7 +224,7 @@
 
         <div class="product_card">
           <div class="product_image">
-            <img src="../Assets/Image/Boehler.svg"/>
+            <img src="Assets\Image\Boehler.svg"/>
           </div>
           <div class="product_info">
             <h3>СВАРОЧНЫЙ ЭЛЕКТРОД BOEHLER FOX DMO KB</h3>
@@ -251,7 +233,7 @@
 
         <div class="product_card">
           <div class="product_image">
-            <img src="../Assets/Image/Boehler.svg"/>
+            <img src="Assets\Image\Boehler.svg"/>
           </div>
           <div class="product_info">
             <h3>СВАРОЧНЫЙ ЭЛЕКТРОД BOEHLER FOX DMO KB</h3>
@@ -278,7 +260,9 @@
       <div class="filter_section">
         <button class="filter_section_header">
           <h3>Сварочные материалы</h3>
-
+          <svg width="24" height="24" viewBox="0 0 24 24" class="arrow_icon">
+            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" fill="none"/>
+          </svg>
         </button>
         <div class="filter_section_content">
           <label class="filter_checkbox">
@@ -340,68 +324,18 @@
   </div>
 </div>
 
-<!-- About Text Section -->
-<section class="about_text_section">
-  <img src="/Assets/Image/blog1.webp" alt="Equipment" class="about_image">
-  <div class="about_text_content">
-    <p>Сварочное оборудование позволяет быстро и надежно соединить металлические детали, в зависимости от технологии (ММА, MIG/MAG или TIG), формируется прочный сварной шов или сварная точка. Поэтому оборудование для сварки различных видов широко используется во многих отраслях: на производствах, в строительстве, возведении металлических конструкций, автомобилестроении и автосервисах.</p>
-  </div>
-</section>
-
-<!-- Contact Form Section -->
-<section class="contact_section">
-  <h2>ОСТАЛИСЬ ВОПРОСЫ? СВЯЖИТЕСЬ С НАМИ</h2>
-  <div class="contact_wrapper">
-    <div class="contact_left">
-      <p>Мы поможем разобраться в технических деталях, подберём решение под ваши задачи и проконсультируем по любым вопросам. Просто оставьте заявку — мы ответим в ближайшее время.</p>
-      <div class="contact_buttons">
-        <a href="tel:88005553535" class="contact_btn">8 (800) 555-35-35</a>
-        <a href="#" class="contact_btn_whatsapp">
-          <img src="/Assets/Image/TgIcon.svg" alt="WhatsApp" />
-        </a>
-        <a href="#" class="contact_btn_telegram">
-          <img src="/Assets/Image/WhatsappIcon.svg" alt="Telegram" />
-        </a>
-      </div>
-    </div>
-    <form class="contact_form">
-      <h3 class="form_title">Ваши данные</h3>
-
-      <div class="form_group">
-        <input type="text" placeholder="Имя" required />
-      </div>
-
-      <div class="form_group">
-        <input type="tel" placeholder="Телефон" required />
-      </div>
-
-      <h3 class="form_title">Сообщение</h3>
-
-      <div class="form_group">
-        <textarea placeholder="Сообщение" required></textarea>
-      </div>
-
-      <p class="form_agree">Отправляя форму, я соглашаюсь с политикой конфиденциальности</p>
-
-      <button type="submit" class="form_btn">Оставить заявку</button>
-    </form>
-
-  </div>
-</section>
-
-<!-- Footer -->
 <footer class="main_footer">
   <div class="footer_content">
     <div class="footer_logo">
-      <img src="/Assets/Image/Logo.webp" alt="VPG-S Logo" />
+      <img src="Assets\Image\Logo.webp" alt="VPG-S Logo" />
     </div>
 
     <div class="footer_col">
       <h4>О НАС</h4>
       <ul>
-        <li><a href="#">О компании</a></li>
+        <li><a href="AboutCompanyPage.html">О компании</a></li>
         <li><a href="#">Блог</a></li>
-        <li><a href="#">Бренды</a></li>
+        <li><a href="BrandPage.html">Бренды</a></li>
       </ul>
     </div>
 
@@ -441,6 +375,6 @@
   </div>
 </footer>
 
-<script src="main.js"></script>
+
 </body>
 </html>

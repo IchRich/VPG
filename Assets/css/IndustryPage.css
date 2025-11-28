@@ -202,7 +202,7 @@ html, body {
         position: relative;
         width: 100%;
         height: clamp(600px, 166.67vw, 700px);
-        background-image: url('../Assets/Image/Background.svg');
+        background-image: url('../Image/Background.svg');
         background-size: cover;
         background-position: center;
         display: flex;
@@ -642,7 +642,7 @@ html, body {
         position: relative;
         width: 100%;
         height: clamp(900px, 133.33vw, 1024px);
-        background-image: url('../Assets/Image/Background.svg');
+        background-image: url('../Image/Background.svg');
         background-size: cover;
         background-position: center;
         display: flex;
@@ -1026,12 +1026,11 @@ html, body {
         position: relative;
         width: 100%;
         height: clamp(800px, 50.26vw, 965px);
-        background-image: url('../Assets/Image/Background.svg');
+        background-image: url('../Image/Background.svg');
         background-size: cover;
         background-position: center;
         display: flex;
         flex-direction: column;
-
         padding: clamp(20px, 2.6vw, 20px);
     }
 

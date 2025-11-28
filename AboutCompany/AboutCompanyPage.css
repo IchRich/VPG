@@ -171,7 +171,7 @@ img {
 .mobile_menu {
     position: fixed;
     z-index: 2000;
-    left: -100%;
+    left: -101%;
     top: 0;
     width: 100vw;
     height: 100vh;
@@ -806,9 +806,7 @@ img {
 
 
 
-.mobile_menu{
-    display: none;
-}
+
 
 /* DESKTOP */
 

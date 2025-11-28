@@ -171,9 +171,10 @@ img {
 
 /* ===== MOBILE MENU ===== */
 .mobile_menu {
+
     position: fixed;
     z-index: 2000;
-    left: -100%;
+    left: -101%;
     top: 0;
     width: 100vw;
     height: 100vh;
@@ -276,6 +277,7 @@ img {
 .mobile_menu__overlay.active {
     display: block;
 }
+
 
 /* ========== HERO CONTENT ========== */
 
@@ -562,6 +564,7 @@ img {
     transform: translateY(0);
 }
 
+
 /* ========== RESPONSIVE ========== */
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -814,7 +817,7 @@ img {
 
     /* CONTACT */
     .contact_section {
-        padding: 5.56vw;
+
     }
 
     .contact_section h2 {

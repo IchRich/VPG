@@ -287,6 +287,25 @@ img {
     flex-direction: row;
     margin-top: auto;
 }
+.hero_description{
+    display: flex;
+    flex-direction: column;
+    gap: 1.55vw;
+}
+.hero__btn{
+    width: 49%;
+    font-family: var(--main-font);
+    padding: 0.73vw 0.25vw;
+    border-radius: 0.52vw;
+
+    background: none;
+    border: solid 1px white;
+    color: white;
+    font-size: 0.83vw;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
 
 .breadcrumbs__wrapper {
     display: flex;
@@ -466,7 +485,7 @@ img {
 }
 
 .numbers__item--4 {
-    left: 50%;
+    left: 41%;
     transform: translateX(-50%);
     top: 27.08vw;
     z-index: 4;
@@ -705,7 +724,16 @@ img {
         max-width: 100%;
         margin-bottom: 3.91vw;
     }
+    .hero_description {
+        gap: 2.6vw;
+    }
 
+    .hero__btn {
+        width: 49%;
+        padding: 1.82vw 2.08vw;
+        border-radius: 1.04vw;
+        font-size: 2.08vw;
+    }
     .breadcrumbs {
         font-size: 1.8vw;
         margin-bottom: 2.6vw;
@@ -762,7 +790,7 @@ img {
 
     .numbers__grid-mobile {
         position: relative;
-        height: 127.47vw;
+        height: 140vw; /* Увеличил высоту */
         width: 100%;
     }
 
@@ -778,20 +806,20 @@ img {
     }
 
     .numbers__item-mobile:nth-child(2) {
-        right: -100px;
+        right: 0;
         top: 7.81vw;
         z-index: 3;
     }
 
     .numbers__item-mobile:nth-child(3) {
-        left: 52px;
-        top: 39vw;
+        left: 0;
+        top: 35vw; /* Увеличил отступ */
         z-index: 2;
     }
 
     .numbers__item-mobile:nth-child(4) {
         right: 0;
-        top: 71.42vw;
+        top: 66vw; /* Увеличил отступ */
         z-index: 4;
     }
 
@@ -842,8 +870,8 @@ img {
 
     .catalog__header {
         margin-bottom: 3.91vw;
-        flex-direction: column;
-        align-items: flex-start;
+        flex-direction: row;
+        align-items: flex-end;
         gap: 2.6vw;
     }
 
@@ -957,6 +985,16 @@ img {
     .breadcrumbs {
         font-size: 3.89vw;
         margin-bottom: 5.56vw;
+    }
+    .hero_description {
+        gap: 4.44vw;
+    }
+
+    .hero__btn {
+        width: 100%;
+        padding: 3.33vw 4.44vw;
+        border-radius: 2.08vw;
+        font-size: 3.89vw;
     }
 
     .our-mission__desktop {

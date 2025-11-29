@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIG 200 Y (J03) - Карточка товара</title>
+    <link rel="stylesheet" href="Assets\css\ProductPage.css">
+    <link rel="stylesheet" href="Assets\css\fotter.css">
+    <script src="Assets/js/main.js"></script>
+    <script src="Assets/js/product.js"></script>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="main_header">
+    <nav class="main_navigation" aria-label="Главная навигация">
+        <img src="Assets\Image\Logo.webp" alt="Логотип компании" class="logo" />
+        <ul class="main_navigation__list">
+            <li><a href="CatalogPage.html">Каталог
+                <img src="Assets\Image\GalochkaIcon.svg" alt="">
+            </a></li>
+            <li><a href="AboutCompanyPage.html">О компании</a></li>
+            <li><a href="BrandPage.html">Бренды</a></li>
+            <li><a href="#">Блог</a></li>
+            <li><a href="IndustryPage.html">Индустрии</a></li>
+        </ul>
+        <div class="mobile_navigation__buttons">
+            <img src="Assets\Image\SearchIconBlue.svg" alt="" class="catalog_search__image">
+            <a href="tel:88005553535" class="main_navigation__phone">8 (800) 555-35-35</a>
+            <button class="burger" id="burger-open" aria-label="Открыть меню">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <div class="main_navigation__right">
+            <a href="#" class="main_navigation__search">
+                <img src="Assets\Image\SearchIconBlue.svg" alt="" class="catalog_search__image">
+            </a>
+            <a href="tel:88005553535" class="main_navigation__phone">8 (800) 555-35-35</a>
+            <button class="main_navigation__btn">Оставить заявку</button>
+        </div>
+    </nav>
+</header>
+
+<!-- Mobile Menu -->
+<div class="mobile_menu" id="mobile-menu">
+    <header>
+        <a href="/" class="logo">
+            <img src="Assets\Image\Logo.webp" alt="">
+        </a>
+        <div class="mobile_menu__buttons">
+            <img src="Assets\Image\SearchIconBlue.svg" alt="" class="catalog_search__image">
+            <a href="tel:88005553535" class="main_navigation__phone">8 (800) 555-35-35</a>
+            <button class="close" id="burger-close">&times;</button>
+        </div>
+    </header>
+    <nav class="mobile_nav">
+        <ul>
+            <li><a href="CatalogPage.html">Каталог
+                <img src="Assets\Image\GalochkaIcon.svg" alt="">
+            </a></li>
+            <li><a href="AboutCompanyPage.html">О компании</a></li>
+            <li><a href="BrandPage.html">Бренды</a></li>
+            <li><a href="#">Блог</a></li>
+            <li><a href="IndustryPage.html">Индустрии</a></li>
+        </ul>
+    </nav>
+    <button class="mobile_menu__btn">Оставить заявку</button>
+</div>
+<div class="mobile_menu__overlay" id="menu-overlay"></div>
+
+<!-- PRODUCT CARD DESKTOP -->
+<section class="product product--desktop">
+    <div class="product__container">
+        <div class="product__layout">
+            <!-- Левая часть: информация и аккордеон -->
+            <div class="product__left-wrapper">
+                <!-- Карточка с фоном -->
+                <div class="product__card">
+                    <h1 class="product__title">MIG 200 Y (J03)</h1>
+                    <p class="product__description">
+                        Многофункциональный сварочный аппарат STANDART MIG 200 Y (J03) предназначенный для полуавтоматической сварки в среде защитного газа (MIG/MAG), а также полуавтоматической сварки порошковой проволокой (FCAW).
+                    </p>
+                    <button class="product__btn">Оставить заявку</button>
+                </div>
+
+                <!-- Аккордеон отдельно -->
+                <div class="product__accordion">
+                    <div class="accordion__item">
+                        <div class="accordion__header">
+                            <h3 class="accordion__title">Ключевые особенности</h3>
+                            <img src="Assets/Image/GalochkaPrime.svg">
+                        </div>
+                        <div class="accordion__content">
+                            <p>Содержимое ключевых особенностей</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion__item">
+                        <div class="accordion__header">
+                            <h3 class="accordion__title">Технические характеристики</h3>
+                            <img src="Assets/Image/GalochkaPrime.svg">
+                        </div>
+                        <div class="accordion__content">
+                            <p>Содержимое технических характеристик</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Правая часть: изображения -->
+            <div class="product__right">
+                <div class="product__images">
+                    <div class="product__image">
+                        <img src="Assets/Image/product-1.svg" alt="MIG 200 Y J03 - вид 1">
+                    </div>
+                    <div class="product__image">
+                        <img src="Assets/Image/product-2.svg" alt="MIG 200 Y J03 - вид 2">
+                    </div>
+                    <div class="product__image">
+                        <img src="Assets/Image/product-3.svg" alt="MIG 200 Y J03 - вид 3">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PRODUCT CARD MOBILE/TABLET -->
+<section class="product product--mobile">
+    <div class="product__container">
+        <h1 class="product__title">MIG 200 Y (J03)</h1>
+
+        <!-- Слайдер изображений с индикаторами -->
+        <div class="product__slider-wrapper">
+            <div class="product__images-slider" id="productSlider">
+                <div class="product__image">
+                    <img src="Assets/Image/product-1.svg" alt="MIG 200 Y J03 - вид 1">
+                </div>
+                <div class="product__image">
+                    <img src="Assets/Image/product-2.svg" alt="MIG 200 Y J03 - вид 2">
+                </div>
+                <div class="product__image">
+                    <img src="Assets/Image/product-3.svg" alt="MIG 200 Y J03 - вид 3">
+                </div>
+            </div>
+
+            <!-- Индикаторы-точки -->
+            <div class="product__slider-dots">
+                <span class="slider-dot active" data-slide="0"></span>
+                <span class="slider-dot" data-slide="1"></span>
+                <span class="slider-dot" data-slide="2"></span>
+            </div>
+        </div>
+
+        <!-- Карточка с фоном -->
+        <div class="product__card">
+            <p class="product__description">
+                Многофункциональный сварочный аппарат STANDART MIG 200 Y (J03) предназначенный для полуавтоматической сварки в среде защитного газа (MIG/MAG), а также полуавтоматической сварки порошковой проволокой (FCAW).
+            </p>
+            <button class="product__btn">Оставить заявку</button>
+        </div>
+
+        <!-- Аккордеон -->
+        <div class="product__accordion">
+            <div class="accordion__item">
+                <div class="accordion__header">
+                    <h3 class="accordion__title">Ключевые особенности</h3>
+                    <img src="Assets/Image/GalochkaPrime.svg">
+                </div>
+                <div class="accordion__content">
+                    <p>Содержимое ключевых особенностей</p>
+                </div>
+            </div>
+
+            <div class="accordion__item">
+                <div class="accordion__header">
+                    <h3 class="accordion__title">Технические характеристики</h3>
+                    <img src="Assets/Image/GalochkaPrime.svg">
+                </div>
+                <div class="accordion__content">
+                    <p>Содержимое технических характеристик</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- RELEVANT PRODUCTS -->
+<section class="relevant">
+    <div class="relevant__container">
+        <h2 class="relevant__title">Вам может понравиться</h2>
+        <div class="relevant__grid">
+            <div class="relevant__card">
+                <div class="relevant__card-image">
+                    <img src="Assets/Image/Boehler.svg" alt="Сварочный электрод">
+                </div>
+                <h3 class="relevant__card-title">Сварочный электрод Bohler Fox DМО КВ</h3>
+            </div>
+            <div class="relevant__card">
+                <div class="relevant__card-image">
+                    <img src="Assets/Image/Boehler.svg" alt="Сварочный электрод">
+                </div>
+                <h3 class="relevant__card-title">Сварочный электрод Bohler Fox DМО КВ</h3>
+            </div>
+            <div class="relevant__card">
+                <div class="relevant__card-image">
+                    <img src="Assets/Image/Boehler.svg" alt="Сварочный электрод">
+                </div>
+                <h3 class="relevant__card-title">Сварочный электрод Bohler Fox DМО КВ</h3>
+            </div>
+        </div>
+
+        <!-- Pagination -->
+        <div class="pagination">
+            <span class="pagination__number active">1</span>
+            <div class="pagination__dots">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <span class="pagination__number">20</span>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section class="contact_section">
+    <div class="contact_section__container">
+        <h2>ОСТАЛИСЬ ВОПРОСЫ? <br/>СВЯЖИТЕСЬ С НАМИ</h2>
+        <div class="contact_wrapper">
+            <div class="contact_left">
+                <p>Мы поможем разобраться в технических деталях, подберём решение под ваши задачи и проконсультируем по любым вопросам. Просто оставьте заявку — мы ответим в ближайшее время.</p>
+                <div class="contact_buttons">
+                    <a href="tel:88005553535" class="contact_btn">8 (800) 555-35-35</a>
+                    <a href="#" class="contact_btn_whatsapp">
+                        <img src="Assets\Image\WhatsappIcon.svg" alt="WhatsApp" />
+                    </a>
+                    <a href="#" class="contact_btn_telegram">
+                        <img src="Assets\Image\TgIcon.svg" alt="Telegram" />
+                    </a>
+                </div>
+            </div>
+            <form class="contact_form">
+                <h3 class="form_title">Ваши данные</h3>
+
+                <div class="form_group">
+                    <input type="text" placeholder="Имя" required />
+                </div>
+
+                <div class="form_group">
+                    <input type="tel" placeholder="Телефон" required />
+                </div>
+
+                <h3 class="form_title">Сообщение</h3>
+
+                <div class="form_group">
+                    <textarea placeholder="Сообщение" required></textarea>
+                </div>
+
+                <p class="form_agree">Отправляя форму, я соглашаюсь с политикой конфиденциальности</p>
+
+                <button type="submit" class="form_btn">Оставить заявку</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer class="main_footer">
+    <div class="footer_content">
+        <div class="footer_logo">
+            <img src="Assets\Image\Logo.webp" alt="VPG-S Logo" />
+        </div>
+
+        <div class="footer_col">
+            <h4>О НАС</h4>
+            <ul>
+                <li><a href="AboutCompanyPage.html">О компании</a></li>
+                <li><a href="#">Блог</a></li>
+                <li><a href="BrandPage.html">Бренды</a></li>
+            </ul>
+        </div>
+
+        <div class="footer_col">
+            <h4>КАТАЛОГ</h4>
+            <ul>
+                <li><a href="#">Сварочное оборудование</a></li>
+                <li><a href="#">Сварочные принадлежности</a></li>
+                <li><a href="#">Электростанции</a></li>
+                <li><a href="#">Насосное оборудование</a></li>
+            </ul>
+        </div>
+
+        <div class="footer_col">
+            <h4>СОЦСЕТИ</h4>
+            <ul>
+                <li><a href="#">Telegram</a></li>
+                <li><a href="#">WhatsApp</a></li>
+                <li><a href="mailto:vpg-s@mail.ru">vpg-s@mail.ru</a></li>
+            </ul>
+        </div>
+
+        <div class="footer_col">
+            <h4>КОНТАКТЫ</h4>
+            <ul>
+                <li><a href="tel:88005553535">8 (800) 555-35-35</a></li>
+                <li>Наш адрес: г. Москва,<br>ул. Пушкина, 60</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer_bottom">
+        <a href="#">Политика конфиденциальности</a>
+        <span>Предложения на сайте не являются<br/> публичной офертой</span>
+        <a href="#">Пользовательское соглашение</a>
+        <span>Разработка сайта: <strong>KANT.studio</strong></span>
+    </div>
+</footer>
+
+</body>
+</html>

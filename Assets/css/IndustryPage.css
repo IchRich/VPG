@@ -26,22 +26,19 @@ html, body {
 /* МОБИЛЬНЫЙ АДАПТИВ: 360px - 767px */
 @media (min-width: 360px) and (max-width: 767px) {
     .main_header {
-
-        padding: clamp(16px, 4.44vw, 20px) 0;
-
+        padding: 4.44vw 0;
     }
 
     .main_navigation {
         max-width: var(--content-width);
         margin: 0 auto;
-
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
 
     .logo {
-        height: clamp(30px, 9.44vw, 34px);
+        height: 9.44vw;
         width: auto;
     }
 
@@ -54,12 +51,12 @@ html, body {
         display: flex;
         flex-direction: row;
         align-items: center;
-        gap: clamp(16px, 5.56vw, 20px);
+        gap: 5.56vw;
     }
 
     .mobile_navigation__buttons img {
-        width: clamp(20px, 6.67vw, 24px);
-        height: clamp(20px, 6.67vw, 24px);
+        width: 6.67vw;
+        height: 6.67vw;
     }
 
     .mobile_navigation__phone {
@@ -68,9 +65,9 @@ html, body {
 
     .burger {
         display: flex !important;
-        width: clamp(26px, 8.33vw, 30px);
-        height: clamp(26px, 8.33vw, 30px);
-        gap: clamp(2px, 0.83vw, 3px);
+        width: 8.33vw;
+        height: 8.33vw;
+        gap: 0.83vw;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -82,8 +79,8 @@ html, body {
 
     .burger span {
         display: block;
-        width: clamp(24px, 7.78vw, 28px);
-        height: clamp(3px, 1.11vw, 4px);
+        width: 7.78vw;
+        height: 1.11vw;
         background: white;
         border-radius: 2px;
     }
@@ -98,7 +95,7 @@ html, body {
         background: #fff;
         display: none;
         flex-direction: column;
-        padding: clamp(20px, 7.22vw, 26px) clamp(16px, 5.56vw, 20px) clamp(20px, 6.67vw, 24px);
+        padding: 7.22vw 5.56vw 6.67vw;
         box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
         overflow-y: auto;
     }
@@ -110,7 +107,7 @@ html, body {
     .mobile_menu__buttons {
         display: flex;
         flex-direction: row;
-        gap: clamp(16px, 5.56vw, 20px);
+        gap: 5.56vw;
         align-items: center;
     }
 
@@ -119,30 +116,30 @@ html, body {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: clamp(24px, 8.33vw, 30px);
-        padding-bottom: clamp(16px, 5.56vw, 20px);
+        margin-bottom: 8.33vw;
+        padding-bottom: 5.56vw;
         border-bottom: 1px solid #e0e0e0;
     }
 
     .mobile_menu header .logo {
-        height: clamp(28px, 8.89vw, 32px);
+        height: 8.89vw;
     }
 
     .catalog_search__image {
-        width: clamp(20px, 6.67vw, 24px);
-        height: clamp(20px, 6.67vw, 24px);
+        width: 6.67vw;
+        height: 6.67vw;
     }
 
     .close {
         background: none;
         border: none;
-        font-size: clamp(40px, 13.89vw, 50px);
+        font-size: 13.89vw;
         line-height: 1;
         cursor: pointer;
         color: var(--accent-color);
         padding: 0;
-        width: clamp(28px, 8.89vw, 32px);
-        height: clamp(28px, 8.89vw, 32px);
+        width: 8.89vw;
+        height: 8.89vw;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -155,12 +152,11 @@ html, body {
         margin: 0;
         display: flex;
         flex-direction: column;
-        gap: clamp(16px, 5.56vw, 20px);
-
+        gap: 5.56vw;
     }
 
     .mobile_menu nav ul li a {
-        font-size: clamp(24px, 8.33vw, 30px);
+        font-size: 8.33vw;
         color: black;
         text-decoration: none;
         font-weight: 400;
@@ -168,18 +164,18 @@ html, body {
     }
 
     .mobile_nav {
-        margin-top: clamp(120px, 41.67vw, 150px);
+        margin-top: 41.67vw;
     }
 
     .mobile_menu__btn {
         margin-top: auto;
-        padding: clamp(12px, 3.89vw, 14px) clamp(20px, 6.67vw, 24px);
+        padding: 3.89vw 6.67vw;
         width: 100%;
-        font-size: clamp(14px, 4.44vw, 16px);
+        font-size: 4.44vw;
         color: white;
         background: var(--accent-color);
         border: none;
-        border-radius: clamp(6px, 2.22vw, 8px);
+        border-radius: 2.22vw;
         font-weight: 700;
         cursor: pointer;
     }
@@ -198,37 +194,37 @@ html, body {
     .mobile_menu.active + .mobile_menu__overlay {
         display: block;
     }
+
     .hero_section {
         position: relative;
         width: 100%;
-        height: clamp(600px, 166.67vw, 700px);
+        height: 166.67vw;
         background-image: url('../Image/Background.svg');
         background-size: cover;
         background-position: center;
         display: flex;
         flex-direction: column;
-
-        padding: clamp(20px, 5.56vw, 24px);
+        padding: 5.56vw;
     }
 
     .hero_content {
-        max-width: clamp(300px, 83.33vw, 320px);
+        max-width: 83.33vw;
         margin-top: auto;
     }
 
     .hero_content h1 {
         font-family: var(--heading-font);
-        font-size: clamp(32px, 10vw, 40px);
+        font-size: 10vw;
         font-weight: 600;
         line-height: 100%;
         letter-spacing: -0.04em;
         color: var(--white);
         text-transform: uppercase;
-        margin-bottom: clamp(16px, 4.44vw, 20px);
+        margin-bottom: 4.44vw;
     }
 
     .hero_description {
-        font-size: clamp(14px, 4.44vw, 16px);
+        font-size: 4.44vw;
         font-weight: 500;
         line-height: 120%;
         letter-spacing: -0.04em;
@@ -236,126 +232,131 @@ html, body {
         margin: 0;
     }
 
-
     .content_section {
-
-        padding: 20px clamp(16px, 4.44vw, 20px);
+        padding: 20px 1.44vw;
     }
 
     .content_text--large {
-        font-size: clamp(16px, 5vw, 18px);
+        font-size: 4.2vw;
         font-weight: 500;
         line-height: 100%;
         letter-spacing: -0.04em;
         text-align: justify;
-
-        margin-bottom: clamp(20px, 5.56vw, 24px);
+        margin-bottom: 5.56vw;
     }
+    .content_text__large{
+        font-size: 4.2vw;
+        font-weight: 500;
+        line-height: 100%;
+        letter-spacing: -0.04em;
+        text-align: justify;
+        margin-bottom: 5.56vw;
+    }
+
 
     .content_grid {
         display: flex;
         flex-direction: column;
-        gap: clamp(20px, 5.56vw, 24px);
+        gap: 5.56vw;
     }
 
     .content_column {
         display: flex;
         flex-direction: column;
-        gap: clamp(12px, 3.33vw, 16px);
+        gap: 3.33vw;
     }
 
     .content_text--medium {
-        font-size: clamp(14px, 4.44vw, 16px);
-        font-weight: 500;
+        font-size:  3.3vw;
+        font-weight: 400;
         line-height: 120%;
         letter-spacing: -0.04em;
     }
 
     .content_images {
-       display: none;
+        display: none;
     }
 
     .image_item {
-        border-radius: clamp(8px, 2.78vw, 10px);
+        border-radius: 2.78vw;
         background: #ddd;
     }
 
     .image_item--small {
-        width: clamp(100px, 33.33vw, 120px);
-        height: clamp(65px, 21.67vw, 78px);
+        width: 33.33vw;
+        height: 21.67vw;
     }
 
     .image_item--large {
-        width: clamp(280px, 88.89vw, 320px);
-        height: clamp(140px, 44.44vw, 160px);
+        width: 88.89vw;
+        height: 44.44vw;
     }
 
     .image_item--medium {
-        width: clamp(85px, 27.78vw, 100px);
-        height: clamp(80px, 26.67vw, 96px);
+        width: 27.78vw;
+        height: 26.67vw;
     }
 
     .image_item--square {
-        width: clamp(130px, 41.67vw, 150px);
-        height: clamp(65px, 21.67vw, 78px);
+        width: 41.67vw;
+        height: 21.67vw;
     }
 
     .image_item--vertical {
-        width: clamp(85px, 27.78vw, 100px);
-        height: clamp(100px, 33.33vw, 120px);
+        width: 27.78vw;
+        height: 33.33vw;
     }
 
     .content_split {
         display: flex;
         flex-direction: column;
-        gap: clamp(16px, 4.44vw, 20px);
-        margin-top: clamp(30px, 8.33vw, 36px);
+        gap: 4.44vw;
+        margin-top: 8.33vw;
     }
 
     .content_image--main {
         width: 100%;
-
-        border-radius: clamp(10px, 3.33vw, 12px);
+        border-radius: 3.33vw;
         background: #ddd;
     }
 
     .content_text--small {
-        font-size: clamp(13px, 3.89vw, 14px);
+        font-size: 3.3vw;
         line-height: 120%;
         letter-spacing: -0.04em;
     }
 
     .contact_section {
-
-        margin: clamp(50px, 13.89vw, 60px) auto;
-        padding: clamp(20px, 5.56vw, 24px) clamp(16px, 4.44vw, 20px);
+        margin: 13.89vw auto;
+        padding: 5.56vw 1.44vw;
         background: #f0f3f9;
-        border-radius: clamp(10px, 3.33vw, 12px);
+        border-radius: 3.33vw;
     }
 
     .contact_section h2 {
-        font-size: clamp(28px, 8.89vw, 34px);
+        font-size: 6.7vw;
         font-weight: 600;
         line-height: 110%;
         text-transform: uppercase;
         color: var(--accent-color);
-        margin: 0 0 clamp(20px, 5.56vw, 24px) 0;
+        margin: 0 0 5.56vw 0;
     }
 
     .contact_wrapper {
         display: flex;
         flex-direction: column;
-        gap: clamp(20px, 5.56vw, 24px);
+        gap: 5.56vw;
     }
 
     .contact_left {
         display: flex;
         flex-direction: column;
-        gap: clamp(16px, 4.44vw, 20px);
+        gap: 4.44vw;
     }
 
     .contact_left p {
-        font-size: clamp(13px, 4.44vw, 16px);
+        padding: 2vw;
+        font-size: 4.44vw;
         line-height: 120%;
         letter-spacing: -0.04em;
         color: black;
@@ -364,7 +365,7 @@ html, body {
 
     .contact_buttons {
         display: flex;
-        gap: clamp(8px, 2.22vw, 10px);
+        gap: 2.22vw;
     }
 
     .contact_btn {
@@ -372,22 +373,22 @@ html, body {
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        height: clamp(40px, 13.06vw, 47px);
+        height: 13.06vw;
         background: linear-gradient(90deg, #9AB6DF 0%, #0E468C 100%);
         color: white;
         text-decoration: none;
         border: none;
-        border-radius: clamp(6px, 2.22vw, 8px);
+        border-radius: 2.22vw;
         font-weight: 400;
-        font-size: clamp(14px, 4.44vw, 16px);
+        font-size: 4.44vw;
         cursor: pointer;
     }
 
     .contact_btn_whatsapp,
     .contact_btn_telegram {
         flex: 0 0 auto;
-        width: clamp(40px, 13.06vw, 47px);
-        height: clamp(40px, 13.06vw, 47px);
+        width: 13.06vw;
+        height: 13.06vw;
         padding: 0;
         display: flex;
         align-items: center;
@@ -396,21 +397,20 @@ html, body {
 
     .contact_btn_whatsapp img,
     .contact_btn_telegram img {
-        width: clamp(50px, 6.67vw, 60px);
-
+        width: 13.67vw;
     }
 
     .contact_form {
         display: flex;
         flex-direction: column;
-        gap: clamp(12px, 3.33vw, 16px);
+        gap: 3.33vw;
     }
 
     .form_title {
-        font-size: clamp(14px, 4.44vw, 16px);
+        font-size: 4.44vw;
         font-weight: 500;
         letter-spacing: -0.04em;
-        margin: 0 0 clamp(6px, 1.67vw, 8px) 0;
+        margin: 0 0 1.67vw 0;
         color: #000;
     }
 
@@ -422,12 +422,12 @@ html, body {
     .form_group input,
     .form_group textarea {
         width: 100%;
-        padding: clamp(8px, 2.78vw, 10px) 0;
+        padding: 2.78vw 0;
         border: none;
         border-bottom: 1px solid rgba(0, 0, 0, 0.3);
         background: transparent;
         font-family: var(--main-font);
-        font-size: clamp(12px, 3.61vw, 13px);
+        font-size: 3.61vw;
         outline: none;
         transition: border-color 0.3s ease;
     }
@@ -444,11 +444,11 @@ html, body {
 
     .form_group textarea {
         resize: vertical;
-        min-height: clamp(60px, 16.67vw, 80px);
+        min-height: 16.67vw;
     }
 
     .form_agree {
-        font-size: clamp(10px, 3.33vw, 12px);
+        font-size: 3.33vw;
         line-height: 110%;
         letter-spacing: -0.02em;
         color: black;
@@ -458,22 +458,23 @@ html, body {
 
     .form_btn {
         width: 100%;
-        height: clamp(36px, 11.11vw, 40px);
+        height: 11.11vw;
         background: var(--accent-color);
         color: #fff;
         border: none;
-        border-radius: clamp(6px, 2.22vw, 8px);
-        font-size: clamp(13px, 3.89vw, 14px);
+        border-radius: 2.22vw;
+        font-size: 3.89vw;
         font-weight: 700;
         cursor: pointer;
-        margin-top: clamp(8px, 2.22vw, 10px);
+        margin-top: 2.22vw;
         transition: all 0.3s ease;
     }
 
     .form_btn:active {
         background: #001f66;
     }
-    .main_navigation__phone{
+
+    .main_navigation__phone {
         display: none;
     }
 }
@@ -481,22 +482,21 @@ html, body {
 /* ПЛАНШЕТНЫЙ АДАПТИВ: 768px - 1024px */
 @media (min-width: 768px) and (max-width: 1024px) {
     .main_header {
-        padding: clamp(16px, 2.6vw, 20px) 0;
-
+        padding: 2.6vw 0;
     }
 
     .main_navigation {
         justify-content: space-between;
         max-width: var(--content-width);
         margin: 0 auto;
-        padding: 0 clamp(16px, 2.6vw, 20px);
+        padding: 0 2.6vw;
         display: flex;
         align-items: center;
-        gap: clamp(24px, 3.91vw, 30px);
+        gap: 3.91vw;
     }
 
     .logo {
-        height: clamp(40px, 5.73vw, 44px);
+        height: 5.73vw;
         width: auto;
     }
 
@@ -507,16 +507,15 @@ html, body {
 
     .burger,
     .mobile_navigation__buttons {
-        gap: clamp(16px, 2.6vw, 20px);
+        gap: 2.6vw;
         display: flex !important;
         align-items: center;
     }
 
     .burger {
-        width: clamp(26px, 3.91vw, 30px);
-
+        width: 3.91vw;
         flex-direction: column;
-        gap: clamp(3px, 0.52vw, 4px);
+        gap: 0.52vw;
         background: none;
         border: none;
         cursor: pointer;
@@ -525,8 +524,8 @@ html, body {
 
     .burger span {
         display: block;
-        width: clamp(24px, 3.65vw, 28px);
-        height: clamp(3px, 0.52vw, 4px);
+        width: 3.65vw;
+        height: 0.52vw;
         background: white;
         border-radius: 2px;
     }
@@ -541,7 +540,7 @@ html, body {
         z-index: 1000;
         display: none;
         flex-direction: column;
-        padding: clamp(20px, 3.39vw, 26px) clamp(16px, 2.6vw, 20px) clamp(20px, 3.13vw, 24px);
+        padding: 3.39vw 2.6vw 3.13vw;
         box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
         overflow-y: auto;
     }
@@ -549,7 +548,7 @@ html, body {
     .mobile_menu__buttons {
         display: flex;
         flex-direction: row;
-        gap: clamp(16px, 2.6vw, 20px);
+        gap: 2.6vw;
         align-items: center;
     }
 
@@ -558,23 +557,24 @@ html, body {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: clamp(24px, 3.91vw, 30px);
-        padding-bottom: clamp(16px, 2.6vw, 20px);
+        margin-bottom: 3.91vw;
+        padding-bottom: 2.6vw;
         border-bottom: 1px solid #e0e0e0;
     }
 
-    .main_navigation__phone{
+    .main_navigation__phone {
         display: flex;
         text-decoration: none;
         color: white;
-        font-size: clamp(18px, 2.86vw, 22px);
+        font-size: 2.86vw;
         font-weight: 600;
     }
+
     .mobile_navigation__phone {
         display: flex;
         text-decoration: none;
         color: var(--accent-color);
-        font-size: clamp(18px, 2.86vw, 22px);
+        font-size: 2.86vw;
         font-weight: 600;
     }
 
@@ -583,11 +583,11 @@ html, body {
     }
 
     .close {
-        font-size: clamp(42px, 6.51vw, 50px);
+        font-size: 6.51vw;
         color: var(--accent-color);
         cursor: pointer;
-        width: clamp(28px, 4.17vw, 32px);
-        height: clamp(28px, 4.17vw, 32px);
+        width: 4.17vw;
+        height: 4.17vw;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -597,20 +597,20 @@ html, body {
     }
 
     .mobile_nav {
-       text-align: center;
+        text-align: center;
     }
 
     .mobile_nav ul {
         list-style: none;
         align-items: center;
         flex-direction: column;
-        gap: clamp(16px, 2.6vw, 20px);
+        gap: 2.6vw;
         padding: 0;
-        margin-top: clamp(120px, 19.53vw, 150px);
+        margin-top: 19.53vw;
     }
 
     .mobile_nav ul li a {
-        font-size: clamp(24px, 3.91vw, 30px);
+        font-size: 3.91vw;
         font-weight: 400;
         color: black;
         text-decoration: none;
@@ -618,19 +618,19 @@ html, body {
     }
 
     .mobile_nav ul li a img {
-        width: clamp(20px, 3.13vw, 24px);
-        height: clamp(20px, 3.13vw, 24px);
+        width: 3.13vw;
+        height: 3.13vw;
     }
 
     .mobile_menu__btn {
         margin-top: auto;
-        padding: clamp(12px, 1.82vw, 14px) clamp(20px, 3.13vw, 24px);
+        padding: 1.82vw 3.13vw;
         width: 100%;
-        font-size: clamp(14px, 2.08vw, 16px);
+        font-size: 2.08vw;
         color: white;
         background: var(--accent-color);
         border: none;
-        border-radius: clamp(6px, 1.04vw, 8px);
+        border-radius: 1.04vw;
         font-weight: 700;
         cursor: pointer;
     }
@@ -638,75 +638,73 @@ html, body {
     .mobile_menu__btn:hover {
         background: #001f66;
     }
+
     .hero_section {
         position: relative;
         width: 100%;
-        height: clamp(900px, 133.33vw, 1024px);
+        height: 133.33vw;
         background-image: url('../Image/Background.svg');
         background-size: cover;
         background-position: center;
         display: flex;
         flex-direction: column;
-
-        padding: clamp(30px, 4.17vw, 32px);
+        padding: 4.17vw;
     }
 
     .hero_content {
-        max-width: clamp(650px, 94.79vw, 728px);
+        max-width: 94.79vw;
         margin-top: auto;
     }
 
     .hero_content h1 {
         font-family: var(--heading-font);
-        font-size: clamp(56px, 9.11vw, 70px);
+        font-size: 9.11vw;
         font-weight: 600;
         line-height: 100%;
         letter-spacing: -0.04em;
         color: var(--white);
         text-transform: uppercase;
-        margin-bottom: clamp(20px, 3.13vw, 24px);
+        margin-bottom: 3.13vw;
     }
 
     .hero_description {
-        font-size: clamp(18px, 2.6vw, 20px);
+        font-size: 2.6vw;
         font-weight: 500;
         line-height: 120%;
         letter-spacing: -0.04em;
         color: var(--white);
-        max-width: clamp(400px, 58.33vw, 448px);
+        max-width: 58.33vw;
         margin-top: auto;
     }
 
     .content_section {
-
-        margin: clamp(60px, 9.11vw, 70px) auto;
-        padding: 0 clamp(16px, 2.6vw, 20px);
+        margin: 9.11vw auto;
+        padding: 0 2.6vw;
     }
 
     .content_text--large {
-        font-size: clamp(26px, 3.91vw, 30px);
+        font-size: 3.91vw;
         font-weight: 500;
         line-height: 100%;
         letter-spacing: -0.04em;
         text-align: justify;
-
-        margin-bottom: clamp(30px, 4.69vw, 36px);
+        margin-bottom: 4.69vw;
     }
 
     .content_grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: clamp(30px, 4.69vw, 36px);
+        gap: 4.69vw;
     }
 
     .content_column {
         display: flex;
         flex-direction: column;
-        gap: clamp(300px, 38.6vw, 430px);
+        gap: 38.6vw;
     }
 
     .content_text--medium {
-        font-size: clamp(18px, 2.86vw, 22px);
+        font-size: 2.86vw;
         font-weight: 500;
         line-height: 120%;
         letter-spacing: -0.04em;
@@ -715,91 +713,88 @@ html, body {
     .content_images {
         display: flex;
         flex-direction: column;
-        gap: clamp(14px, 2.08vw, 16px);
+        gap: 2.08vw;
         align-items: flex-end;
     }
 
     .image_item {
-        border-radius: clamp(10px, 1.56vw, 12px);
+        border-radius: 1.56vw;
         background: #ddd;
     }
 
     .image_item--small {
-        width: clamp(120px, 19.79vw, 152px);
-        height: clamp(75px, 12.89vw, 99px);
+        width: 19.79vw;
+        height: 12.89vw;
     }
 
-
-    .image_item--large img{
-        width: 275px ;
+    .image_item--large img {
+        width: 275px;
     }
 
     .image_item--medium {
-        width: clamp(100px, 16.27vw, 125px);
-        height: clamp(95px, 15.76vw, 121px);
+        width: 16.27vw;
+        height: 15.76vw;
     }
 
     .image_item--square {
-        width: clamp(150px, 25.52vw, 196px);
-        height: clamp(75px, 13.28vw, 102px);
+        width: 25.52vw;
+        height: 13.28vw;
     }
 
     .image_item--vertical {
-        width: clamp(100px, 16.27vw, 125px);
-        height: clamp(120px, 20.7vw, 159px);
+        width: 16.27vw;
+        height: 20.7vw;
     }
 
     .content_split {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: clamp(24px, 3.91vw, 30px);
-        margin-top: clamp(50px, 7.81vw, 60px);
+        gap: 3.91vw;
+        margin-top: 7.81vw;
     }
 
     .content_image--main {
         width: 100%;
-
-        border-radius: clamp(12px, 1.95vw, 15px);
+        border-radius: 1.95vw;
         background: #ddd;
     }
 
     .content_text--small {
-        font-size: clamp(16px, 2.6vw, 20px);
+        font-size: 2.6vw;
         line-height: 120%;
         letter-spacing: -0.04em;
     }
 
     .contact_section {
-
-        margin: clamp(70px, 10.94vw, 84px) auto;
-        padding: clamp(30px, 5.21vw, 40px) clamp(16px, 2.6vw, 20px);
+        margin: 10.94vw auto;
+        padding: 5.21vw 2.6vw;
         background: #f0f3f9;
-        border-radius: clamp(12px, 1.95vw, 15px);
+        border-radius: 1.95vw;
     }
 
     .contact_section h2 {
-        font-size: clamp(42px, 6.51vw, 50px);
+        font-size: 6.51vw;
         font-weight: 600;
         line-height: 110%;
         text-transform: uppercase;
         color: var(--accent-color);
-        margin: 0 0 clamp(24px, 3.91vw, 30px) 0;
+        margin: 0 0 3.91vw 0;
     }
 
     .contact_wrapper {
         display: flex;
         flex-direction: column;
-        gap: clamp(24px, 3.91vw, 30px);
+        gap: 3.91vw;
     }
 
     .contact_left {
         display: flex;
         flex-direction: column;
-        gap: clamp(20px, 3.13vw, 24px);
+        gap: 3.13vw;
     }
 
     .contact_left p {
-        font-size: clamp(20px, 3.13vw, 24px);
+        font-size: 3.13vw;
         line-height: 120%;
         letter-spacing: -0.04em;
         color: black;
@@ -808,7 +803,7 @@ html, body {
 
     .contact_buttons {
         display: flex;
-        gap: clamp(12px, 1.82vw, 14px);
+        gap: 1.82vw;
     }
 
     .contact_btn {
@@ -816,14 +811,14 @@ html, body {
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        height: clamp(50px, 7.42vw, 57px);
+        height: 7.42vw;
         background: linear-gradient(90deg, #9AB6DF 0%, #0E468C 100%);
         color: white;
         text-decoration: none;
         border: none;
-        border-radius: clamp(8px, 1.3vw, 10px);
+        border-radius: 1.3vw;
         font-weight: 400;
-        font-size: clamp(20px, 3.13vw, 24px);
+        font-size: 3.13vw;
         cursor: pointer;
         transition: transform 0.2s ease;
     }
@@ -835,8 +830,8 @@ html, body {
     .contact_btn_whatsapp,
     .contact_btn_telegram {
         flex: 0 0 auto;
-        width: clamp(50px, 7.42vw, 57px);
-        height: clamp(50px, 7.42vw, 57px);
+        width: 7.42vw;
+        height: 7.42vw;
         padding: 0;
         display: flex;
         align-items: center;
@@ -845,21 +840,20 @@ html, body {
 
     .contact_btn_whatsapp img,
     .contact_btn_telegram img {
-        width: clamp(60px, 3.91vw, 70px);
-
+        width: 9.91vw;
     }
 
     .contact_form {
         display: flex;
         flex-direction: column;
-        gap: clamp(16px, 2.6vw, 20px);
+        gap: 2.6vw;
     }
 
     .form_title {
-        font-size: clamp(20px, 3.13vw, 24px);
+        font-size: 3.13vw;
         font-weight: 400;
         letter-spacing: -0.04em;
-        margin: 0 0 clamp(8px, 1.3vw, 10px) 0;
+        margin: 0 0 1.3vw 0;
         color: #000;
     }
 
@@ -871,12 +865,12 @@ html, body {
     .form_group input,
     .form_group textarea {
         width: 100%;
-        padding: clamp(10px, 1.3vw, 10px) 0;
+        padding: 1.3vw 0;
         border: none;
         border-bottom: 1px solid rgba(0, 0, 0, 0.3);
         background: transparent;
         font-family: var(--main-font);
-        font-size: clamp(14px, 2.08vw, 16px);
+        font-size: 2.08vw;
         outline: none;
         transition: border-color 0.3s ease;
     }
@@ -893,11 +887,11 @@ html, body {
 
     .form_group textarea {
         resize: vertical;
-        min-height: clamp(80px, 13.02vw, 100px);
+        min-height: 13.02vw;
     }
 
     .form_agree {
-        font-size: clamp(12px, 1.82vw, 14px);
+        font-size: 1.82vw;
         line-height: 120%;
         letter-spacing: -0.04em;
         color: black;
@@ -906,15 +900,15 @@ html, body {
 
     .form_btn {
         width: 100%;
-        height: clamp(40px, 5.73vw, 44px);
+        height: 5.73vw;
         background: var(--accent-color);
         color: #fff;
         border: none;
-        border-radius: clamp(8px, 1.3vw, 10px);
-        font-size: clamp(14px, 2.08vw, 16px);
+        border-radius: 1.3vw;
+        font-size: 2.08vw;
         font-weight: 700;
         cursor: pointer;
-        margin-top: clamp(10px, 1.3vw, 10px);
+        margin-top: 1.3vw;
         transition: all 0.3s ease;
     }
 
@@ -927,28 +921,26 @@ html, body {
 /* ДЕСКТОПНЫЙ АДАПТИВ: 1025px+ */
 @media (min-width: 1025px) {
     .main_header {
-
-        padding: clamp(16px, 1.04vw, 20px) 0;
-
+        padding: 1.04vw 0;
     }
 
     .main_navigation {
         max-width: var(--content-width);
         margin: 0 auto;
-        padding: 0 clamp(20px, 2.08vw, 40px);
+
         display: flex;
         align-items: center;
-        gap: clamp(32px, 2.08vw, 40px);
+        gap: 2.08vw;
     }
 
     .logo {
-        height: clamp(42px, 2.6vw, 50px);
+        height: 2.6vw;
         margin-right: auto;
     }
 
     .main_navigation__list {
         display: flex !important;
-        gap: clamp(24px, 1.56vw, 30px);
+        gap: 1.56vw;
         list-style: none;
         margin: 0;
         padding: 0;
@@ -958,7 +950,7 @@ html, body {
         color: white;
         text-decoration: none;
         font-weight: 400;
-        font-size: clamp(18px, 1.15vw, 22px);
+        font-size: 1.15vw;
         align-items: center;
         display: flex;
         transition: color 0.3s ease;
@@ -969,30 +961,30 @@ html, body {
     }
 
     .main_navigation__list a img {
-        margin-left: clamp(4px, 0.31vw, 6px);
-        width: clamp(10px, 0.73vw, 14px);
-        height: clamp(10px, 0.73vw, 14px);
+        margin-left: 0.31vw;
+        width: 0.73vw;
+        height: 0.73vw;
     }
 
     .main_navigation__right {
         display: flex !important;
         align-items: center;
-        gap: clamp(24px, 1.56vw, 30px);
+        gap: 1.56vw;
         margin-left: auto;
     }
 
     .main_navigation__search img {
         color: white;
-        font-size: clamp(16px, 1.04vw, 20px);
+        font-size: 1.04vw;
         cursor: pointer;
     }
 
     .main_navigation__phone {
         text-decoration: underline;
         color: white;
-        text-underline-offset: clamp(6px, 0.42vw, 8px);
+        text-underline-offset: 0.42vw;
         font-weight: 600;
-        font-size: clamp(22px, 1.35vw, 26px);
+        font-size: 1.35vw;
         transition: color 0.3s ease;
     }
 
@@ -1004,11 +996,11 @@ html, body {
         background: white;
         color: black;
         border: none;
-        padding: clamp(10px, 0.63vw, 12px) clamp(20px, 1.25vw, 24px);
-        border-radius: clamp(5px, 0.31vw, 6px);
+        padding: 0.63vw 1.25vw;
+        border-radius: 0.31vw;
         font-weight: 500;
         cursor: pointer;
-        font-size: clamp(14px, 0.83vw, 16px);
+        font-size: 0.83vw;
         transition: all 0.3s ease;
     }
 
@@ -1022,117 +1014,130 @@ html, body {
     .mobile_navigation__buttons {
         display: none !important;
     }
+
     .hero_section {
         position: relative;
         width: 100%;
-        height: clamp(800px, 50.26vw, 965px);
+        height: 50.26vw;
         background-image: url('../Image/Background.svg');
         background-size: cover;
         background-position: center;
         display: flex;
         flex-direction: column;
-        padding: clamp(20px, 2.6vw, 20px);
+        padding: 2.6vw;
     }
 
     .hero_content {
-        gap: clamp(50px, 5.82vw, 79px);
+        gap: 5.82vw;
         display: flex;
         flex-direction: row;
-
-        max-width: clamp(1025px, 89.58vw, 1720px);
+        max-width: 89.58vw;
         margin-top: auto;
-        padding: 0 clamp(20px, 2.08vw, 40px);
+
     }
 
     .hero_content h1 {
         font-family: var(--heading-font);
-        font-size: clamp(70px, 5.21vw, 100px);
+        font-size: 5.21vw;
         font-weight: 600;
         line-height: 100%;
         letter-spacing: -0.04em;
         color: var(--white);
         text-transform: uppercase;
-        margin-bottom: clamp(20px, 1.56vw, 30px);
-        max-width: clamp(650px, 41.15vw, 791px);
+        margin-bottom: 1.56vw;
+        max-width: 41.15vw;
     }
 
     .hero_description {
-
-        font-size: clamp(20px, 1.25vw, 24px);
+        font-size: 1.25vw;
         font-weight: 500;
         line-height: 120%;
         letter-spacing: -0.04em;
         color: var(--white);
-        max-width: clamp(450px, 29.17vw, 560px);
+        max-width: 29.17vw;
         margin-top: auto;
     }
 
     .content_section {
-        max-width: clamp(1025px, 89.58vw, 1720px);
-        margin: clamp(100px, 6.25vw, 120px) auto;
-        padding: 0 clamp(20px, 2.08vw, 40px);
+        max-width: 89.58vw;
+        margin: 6.25vw auto;
+
     }
+
+
     .content_section--second {
-        max-width: clamp(1025px, 89.58vw, 1720px);
-        margin: clamp(100px, 6.25vw, 120px) auto;
-        padding: 0 clamp(20px, 2.08vw, 40px);
+        max-width: 89.58vw;
+        margin: 6.25vw auto;
+
     }
+
     .content_split_full {
         display: grid;
-        grid-template-columns: clamp(450px, 29.17vw, 560px) 1fr;
-        gap: clamp(50px, 4.17vw, 80px);
+        grid-template-columns: 29.17vw 1fr;
+        gap: 4.17vw;
         align-items: flex-start;
     }
+
     .content_image--main {
         width: 100%;
         height: auto;
         aspect-ratio: 560 / 618;
-        border-radius: clamp(12px, 0.78vw, 15px);
+        border-radius: 0.78vw;
         object-fit: cover;
         box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
     }
+
     .content_text_wrapper {
         align-items: center;
         display: flex;
         flex-direction: column;
-        gap: clamp(30px, 2.6vw, 30px);
+        gap: 2.6vw;
     }
-
-    .content_text--large {
-        font-size: clamp(32px, 2.08vw, 40px);
+    .content_text__large{
+        font-size: 2.08vw;
         font-weight: 500;
         line-height: 100%;
         letter-spacing: -0.04em;
         text-align: justify;
-        text-indent: clamp(287px, 24.38vw, 287px);
-        margin: 0;
+        text-indent: 24.38vw;
+        margin-bottom: 120px;
     }
-    .content_text__col{
+    .content_text--large {
+
+        font-size: 2.08vw;
+        font-weight: 500;
+        line-height: 100%;
+        letter-spacing: -0.04em;
+        text-align: justify;
+        text-indent: 24.38vw;
+
+    }
+
+    .content_text__col {
         text-indent: 20px;
-
         line-height: 120%;
-
         gap: 20px;
         width: 50%;
         display: flex;
         flex-direction: column;
     }
+
     .content_grid {
         display: grid;
         grid-template-columns: 1fr auto;
-        gap: clamp(50px, 3.13vw, 60px);
+        gap: 3.13vw;
         align-items: flex-start;
     }
 
     .content_column {
         display: flex;
         flex-direction: column;
-        gap: clamp(724px, 35.56vw, 676px);
-        max-width: clamp(450px, 30.21vw, 580px);
+        gap: 35.56vw;
+        max-width: 30.21vw;
     }
 
     .content_text--medium {
-        font-size: clamp(20px, 1.25vw, 24px);
+        font-size: 1.25vw;
         font-weight: 500;
         line-height: 120%;
         letter-spacing: -0.04em;
@@ -1141,38 +1146,36 @@ html, body {
     .content_images {
         display: flex;
         flex-direction: column;
-        gap: clamp(60px, 1.04vw, 80px);
+        gap: 3.04vw;
         align-items: flex-end;
     }
 
     .image_item {
-        border-radius: clamp(10px, 0.52vw, 10px);
+        border-radius: 0.52vw;
         background: #ddd;
     }
 
-
-
     .content_section--second {
-        margin-top: clamp(100px, 6.25vw, 120px);
+        margin-top: 6.25vw;
     }
 
     .content_split {
         display: grid;
-        grid-template-columns: 1fr clamp(450px, 29.17vw, 560px);
-        gap: clamp(40px, 3.13vw, 60px);
-        margin-top: clamp(60px, 4.17vw, 80px);
+        grid-template-columns: 1fr 29.17vw;
+        gap: 3.13vw;
+        margin-top: 4.17vw;
         align-items: flex-start;
     }
 
     .content_image--main {
         width: 100%;
-        height: clamp(500px, 32.19vw, 618px);
-        border-radius: clamp(12px, 0.78vw, 15px);
+        height: 35.19vw;
+        border-radius: 0.78vw;
         background: #ddd;
     }
 
     .content_text--small {
-        font-size: clamp(16px, 1.04vw, 20px);
+        font-size: 1.04vw;
         line-height: 120%;
         letter-spacing: -0.04em;
         text-align: justify;
@@ -1180,31 +1183,31 @@ html, body {
     }
 
     .contact_section {
-        max-width: var(--content-width);
-        margin: clamp(100px, 6.25vw, 120px) auto;
-        padding: clamp(100px, 6.25vw, 120px) clamp(20px, 2.08vw, 40px);
+        max-width:89.58vw;
+        margin: 6.25vw auto;
+
         background: #f0f3f9;
-        border-radius: clamp(10px, 0.63vw, 12px);
+        border-radius: 0.63vw;
     }
 
     .contact_section h2 {
-        font-size: clamp(60px, 4.17vw, 80px);
+        font-size: 4.17vw;
         font-weight: 600;
-        margin: 0 0 clamp(48px, 3.13vw, 60px) 0;
+        margin: 0 0 3.13vw 0;
         color: var(--accent-color);
     }
 
     .contact_wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: clamp(64px, 4.17vw, 80px);
+        gap: 4.17vw;
     }
 
     .contact_left p {
-        font-size: clamp(24px, 1.56vw, 30px);
+        font-size: 1.56vw;
         line-height: 120%;
         color: black;
-        margin: 0 0 clamp(24px, 1.56vw, 30px) 0;
+        margin: 0 0 1.56vw 0;
     }
 
     .contact_left {
@@ -1215,21 +1218,21 @@ html, body {
 
     .contact_buttons {
         display: flex;
-        gap: clamp(28px, 1.88vw, 36px);
+        gap: 1.88vw;
     }
 
     .contact_btn {
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        width: clamp(210px, 14.74vw, 283px);
-        height: clamp(52px, 3.33vw, 64px);
+        width: 14.74vw;
+        height: 3.33vw;
         background: linear-gradient(90deg, #9AB6DF 0%, #0E468C 100%);
         color: white;
         text-decoration: none;
-        border-radius: clamp(5px, 0.31vw, 6px);
+        border-radius: 0.31vw;
         font-weight: 400;
-        font-size: clamp(22px, 1.56vw, 30px);
+        font-size: 1.56vw;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
@@ -1241,11 +1244,11 @@ html, body {
     .contact_form {
         display: flex;
         flex-direction: column;
-        gap: clamp(16px, 1.04vw, 20px);
+        gap: 1.04vw;
     }
 
     .form_title {
-        font-size: clamp(24px, 1.56vw, 30px);
+        font-size: 1.56vw;
         font-weight: 400;
         margin: 0;
         color: #000;
@@ -1260,9 +1263,9 @@ html, body {
     .form_group textarea {
         border: none;
         border-bottom: 1px solid #ccc;
-        padding: clamp(10px, 0.63vw, 12px) 0;
+        padding: 0.63vw 0;
         font-family: var(--main-font);
-        font-size: clamp(14px, 0.83vw, 16px);
+        font-size: 0.83vw;
         background: transparent;
         outline: none;
         transition: border-color 0.3s ease;
@@ -1280,14 +1283,14 @@ html, body {
 
     .form_group textarea {
         resize: none;
-        min-height: clamp(80px, 5.21vw, 100px);
+        min-height: 5.21vw;
         border: none;
         border-bottom: 1px solid #ccc;
-        padding: clamp(10px, 0.63vw, 12px) 0;
+        padding: 0.63vw 0;
     }
 
     .form_agree {
-        font-size: clamp(12px, 0.73vw, 14px);
+        font-size: 0.73vw;
         color: black;
         margin: 0;
         line-height: 120%;
@@ -1298,10 +1301,10 @@ html, body {
         background: rgba(18, 66, 149, 1);
         color: #fff;
         border: none;
-        padding: clamp(14px, 0.83vw, 16px) clamp(40px, 2.6vw, 50px);
-        border-radius: clamp(5px, 0.31vw, 6px);
+        padding: 0.83vw 2.6vw;
+        border-radius: 0.31vw;
         font-weight: 700;
-        font-size: clamp(14px, 0.83vw, 16px);
+        font-size: 0.83vw;
         cursor: pointer;
         transition: all 0.3s ease;
     }

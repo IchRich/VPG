@@ -1111,7 +1111,9 @@ section {
         grid-template-rows: auto auto auto 1fr;
         gap: 4.44vw;
     }
-
+    .mobile_navigation__phone{
+        display: none;
+    }
     .catalog_controls {
         display: flex;
         flex-direction: row-reverse;
@@ -1222,6 +1224,7 @@ section {
         height: 24px;
     }
     .about_text_section {
+        padding: 0;
         grid-template-columns: 1fr;
         gap: 4.44vw;
     }

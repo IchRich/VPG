@@ -12,7 +12,7 @@
 
 .burger span {
     display: block;
-    background: rgba(18, 66, 149, 1);
+    background: white;
     border-radius: 0.1vw;
     transition: all 0.3s ease;
 }

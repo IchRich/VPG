@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Moderustic:wght@600&family=Inter:wght@400;500&display=swap');
 
 :root {
-    --main-font: 'Inter', Arial, sans-serif;
+    --main-font: 'Moderustic', Arial, sans-serif;
     --heading-font: 'Moderustic', Arial, sans-serif;
     --main-color: #000000;
     --accent-color: #124295;
@@ -20,51 +20,129 @@ body {
     background: var(--bg-color);
     color: var(--main-color);
 }
+.main_header {
+    background: #fff;
+    padding: 1.04vw 0;
+    box-shadow: 0 0.05vw 0.21vw rgba(0, 0, 0, 0.05);
+}
+
+.main_navigation {
+    max-width: var(--container);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 2.08vw;
+}
+
+.logo {
+    height: 2.6vw;
+    margin-right: auto;
+}
+
+.main_navigation__list {
+    display: flex;
+    gap: 1.56vw;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main_navigation__list a {
+    color: black;
+    text-decoration: none;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+.main_navigation__list a:hover {
+    color: var(--accent-color);
+}
+
+.main_navigation__right {
+    display: flex;
+    align-items: center;
+    gap: 1.56vw;
+    margin-left: auto;
+}
+
+.main_navigation__search img {
+    cursor: pointer;
+}
+
+.main_navigation__phone {
+    text-decoration: underline;
+    color: var(--accent-color);
+    text-underline-offset: 0.42vw;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.main_navigation__phone:hover {
+    color: #001f66;
+}
+
+.main_navigation__btn {
+    background: var(--accent-color);
+    color: #fff;
+    border: none;
+    padding: 0.63vw 1.25vw;
+    border-radius: 0.31vw;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.main_navigation__btn:hover {
+    background: #001f66;
+    transform: translateY(-0.1vw);
+}
 
 /* МОБИЛЬНЫЙ АДАПТИВ: 360px - 767px */
 @media (min-width: 360px) and (max-width: 767px) {
     .catalog_page {
-
         margin: 0 auto;
-        padding: clamp(20px, 5.56vw, 20px);
+        padding: 5.56vw;
     }
 
     /* Breadcrumbs */
     .breadcrumbs {
         display: flex;
         align-items: center;
-        gap: clamp(5px, 1.39vw, 5px);
-        margin-bottom: clamp(16px, 4.44vw, 16px);
+        gap: 1.39vw;
+        margin-bottom: 4.44vw;
     }
 
     .breadcrumbs span {
-        font-size: clamp(12px, 3.33vw, 12px);
+        font-size: 3.33vw;
         font-weight: 400;
         letter-spacing: -0.02em;
         line-height: 110%;
     }
 
     .breadcrumb_icon {
-        width: clamp(16px, 4.44vw, 16px);
-        height: clamp(16px, 4.44vw, 16px);
+        width: 4.44vw;
+        height: 4.44vw;
     }
 
     /* Title */
     .catalog_title {
         font-family: var(--heading-font);
-        font-size: clamp(24px, 6.67vw, 24px);
+        font-size: 6.67vw;
         font-weight: 600;
         line-height: 110%;
         text-transform: uppercase;
         color: var(--accent-color);
-        margin-bottom: clamp(16px, 4.44vw, 16px);
+        margin-bottom: 4.44vw;
     }
 
     /* Controls */
     .catalog_controls {
+        flex-direction: row-reverse;
         display: flex;
-        gap: clamp(16px, 4.44vw, 16px);
-        margin-bottom: clamp(24px, 6.67vw, 24px);
+        gap: 4.44vw;
+        margin-bottom: 6.67vw;
     }
 
     .search_wrapper {
@@ -72,14 +150,14 @@ body {
         display: flex;
         align-items: center;
         border-bottom: 1px solid var(--main-color);
-        padding-bottom: clamp(5px, 1.39vw, 5px);
+        padding-bottom: 1.39vw;
     }
 
     .search_input {
         flex: 1;
         border: none;
         background: transparent;
-        font-size: clamp(13px, 3.61vw, 13px);
+        font-size: 3.61vw;
         font-weight: 400;
         letter-spacing: -0.04em;
         line-height: 120%;
@@ -91,8 +169,8 @@ body {
         border: none;
         padding: 0;
         cursor: pointer;
-        width: clamp(24px, 6.67vw, 24px);
-        height: clamp(24px, 6.67vw, 24px);
+        width: 6.67vw;
+        height: 6.67vw;
     }
 
     .filter_btn {
@@ -100,16 +178,16 @@ body {
         background: none;
         border: none;
         cursor: pointer;
-        width: clamp(24px, 6.67vw, 24px);
-        height: clamp(24px, 6.67vw, 24px);
+        width: 6.67vw;
+        height: 6.67vw;
     }
 
     .filter_badge {
         position: absolute;
-        top: clamp(-3px, -0.83vw, -3px);
-        right: clamp(-3px, -0.83vw, -3px);
-        width: clamp(8px, 2.22vw, 8px);
-        height: clamp(8px, 2.22vw, 8px);
+        top: -0.83vw;
+        right: -0.83vw;
+        width: 2.22vw;
+        height: 2.22vw;
         background: var(--accent-color);
         border-radius: 50%;
     }
@@ -131,42 +209,46 @@ body {
     .products_grid {
         display: flex;
         flex-direction: column;
-        gap: clamp(16px, 4.44vw, 16px);
+        gap: 4.44vw;
     }
 
     .product_card {
         background: var(--white);
-        border-radius: clamp(12px, 3.33vw, 12px);
+        border-radius: 3.33vw;
         overflow: hidden;
     }
 
     .product_image {
+        display: flex;
+        justify-content: center;
         width: 100%;
-        height: clamp(160px, 44.44vw, 160px);
+        height: 44.44vw;
         background: #e0e0e0;
     }
-
+    .boehler_image{
+        width: 29.55vw;
+    }
     .product_info {
-        width: 60%;
+        width: 71%;
         color: var(--accent-color);
-        padding: clamp(16px, 4.44vw, 16px);
+        padding: 4.44vw;
     }
 
     .product_info h3 {
-        font-size: clamp(16px, 4.44vw, 16px);
+        font-size: 4.44vw;
         font-weight: 600;
         line-height: 120%;
         letter-spacing: -0.02em;
-        margin-bottom: clamp(8px, 2.22vw, 8px);
+        margin-bottom: 2.22vw;
     }
 
     .product_info p {
-        font-size: clamp(13px, 3.61vw, 13px);
+        font-size: 3.61vw;
         font-weight: 400;
         line-height: 120%;
         letter-spacing: -0.02em;
         color: #666;
-        margin-bottom: clamp(12px, 3.33vw, 12px);
+        margin-bottom: 3.33vw;
     }
 
     .product_footer {
@@ -176,7 +258,7 @@ body {
     }
 
     .product_code {
-        font-size: clamp(11px, 3.06vw, 11px);
+        font-size: 3.06vw;
         color: #999;
     }
 
@@ -184,22 +266,22 @@ body {
         background: var(--accent-color);
         color: var(--white);
         border: none;
-        padding: clamp(6px, 1.67vw, 6px) clamp(14px, 3.89vw, 14px);
-        border-radius: clamp(6px, 1.67vw, 6px);
-        font-size: clamp(12px, 3.33vw, 12px);
+        padding: 1.67vw 3.89vw;
+        border-radius: 1.67vw;
+        font-size: 3.33vw;
         font-weight: 600;
         cursor: pointer;
     }
 
     .show_more_btn {
         width: 100%;
-        height: clamp(44px, 12.22vw, 44px);
-        margin-top: clamp(24px, 6.67vw, 24px);
+        height: 12.22vw;
+        margin-top: 6.67vw;
         background: transparent;
         color: var(--accent-color);
         border: 1px solid var(--accent-color);
-        border-radius: clamp(10px, 2.78vw, 10px);
-        font-size: clamp(14px, 3.89vw, 14px);
+        border-radius: 2.78vw;
+        font-size: 3.89vw;
         font-weight: 600;
         cursor: pointer;
     }
@@ -214,11 +296,10 @@ body {
         height: 100vh;
         background: rgba(18, 66, 149, 0.1);
         z-index: 1000;
-        padding: clamp(20px, 5.56vw, 20px);
+        padding: 5.56vw;
     }
 
     .filter_modal.active {
-
         margin-top: 25px;
         display: flex;
         align-items: center;
@@ -227,22 +308,22 @@ body {
 
     .filter_modal_content {
         width: 100%;
-        max-width: clamp(280px, 88.89vw, 320px);
+        max-width: 88.89vw;
         max-height: 90vh;
         background: var(--white);
-        border-radius: clamp(15px, 4.17vw, 15px);
-        padding: clamp(20px, 5.56vw, 20px);
+        border-radius: 4.17vw;
+        padding: 5.56vw;
         overflow-y: auto;
         position: relative;
     }
 
     .filter_close {
         position: absolute;
-        top: clamp(10px, 2.78vw, 10px);
-        right: clamp(10px, 2.78vw, 10px);
+        top: 2.78vw;
+        right: 2.78vw;
         background: none;
         border: none;
-        font-size: clamp(32px, 8.89vw, 32px);
+        font-size: 8.89vw;
         color: var(--main-color);
         cursor: pointer;
         line-height: 1;
@@ -252,20 +333,20 @@ body {
         display: flex;
         align-items: center;
         border-bottom: 1px solid var(--main-color);
-        padding-bottom: clamp(10px, 2.78vw, 10px);
-        margin-bottom: clamp(40px, 11.11vw, 40px);
+        padding-bottom: 2.78vw;
+        margin-bottom: 11.11vw;
     }
 
     .filter_search_input {
         flex: 1;
         border: none;
         background: transparent;
-        font-size: clamp(16px, 4.44vw, 16px);
+        font-size: 4.44vw;
         outline: none;
     }
 
     .filter_section {
-        margin-bottom: clamp(20px, 5.56vw, 20px);
+        margin-bottom: 5.56vw;
     }
 
     .filter_section_header {
@@ -273,7 +354,7 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: clamp(20px, 5.56vw, 20px) 0;
+        padding: 5.56vw 0;
         border-bottom: 1px solid rgba(0, 0, 0, 0.2);
         background: none;
         border-left: none;
@@ -283,7 +364,7 @@ body {
     }
 
     .filter_section_header h3 {
-        font-size: clamp(16px, 4.44vw, 16px);
+        font-size: 4.44vw;
         font-weight: 500;
         letter-spacing: -0.03em;
         line-height: 100%;
@@ -291,8 +372,8 @@ body {
     }
 
     .arrow_icon {
-        width: clamp(24px, 6.67vw, 24px);
-        height: clamp(24px, 6.67vw, 24px);
+        width: 6.67vw;
+        height: 6.67vw;
         transition: transform 0.3s;
     }
 
@@ -303,8 +384,8 @@ body {
     .filter_section_content {
         display: flex;
         flex-direction: column;
-        gap: clamp(10px, 2.78vw, 10px);
-        padding: clamp(20px, 5.56vw, 20px) 0;
+        gap: 2.78vw;
+        padding: 5.56vw 0;
     }
 
     .filter_section.collapsed .filter_section_content {
@@ -314,81 +395,86 @@ body {
     .filter_checkbox {
         display: flex;
         align-items: center;
-        gap: clamp(10px, 2.78vw, 10px);
+        gap: 2.78vw;
         cursor: pointer;
     }
 
     .filter_checkbox input {
-        width: clamp(16px, 4.44vw, 16px);
-        height: clamp(16px, 4.44vw, 16px);
+        width: 4.44vw;
+        height: 4.44vw;
         cursor: pointer;
     }
 
     .filter_checkbox span {
-        font-size: clamp(14px, 3.89vw, 14px);
+        font-size: 3.89vw;
         font-weight: 400;
         letter-spacing: -0.02em;
     }
+
 }
+
 /* ПЛАНШЕТНЫЙ АДАПТИВ: 768px - 1024px */
 @media (min-width: 768px) and (max-width: 1024px) {
-    .catalog_page {
+    .main_navigation{
+        max-width: 94%;
+    }
 
+    .catalog_page {
         margin: 0 auto;
-        padding: clamp(20px, 2.6vw, 20px);
+        padding: 2.6vw;
     }
 
     .breadcrumbs {
         display: flex;
         align-items: center;
-        gap: clamp(5px, 0.65vw, 5px);
-        margin-bottom: clamp(16px, 2.08vw, 16px);
+        gap: 0.65vw;
+        margin-bottom: 2.08vw;
     }
 
     .breadcrumbs span {
-        font-size: clamp(16px, 2.08vw, 16px);
+        font-size: 2.08vw;
         font-weight: 400;
         letter-spacing: -0.03em;
         line-height: 100%;
     }
 
     .breadcrumb_icon {
-        width: clamp(16px, 2.08vw, 16px);
-        height: clamp(16px, 2.08vw, 16px);
+        width: 2.08vw;
+        height: 2.08vw;
     }
 
     .catalog_title {
         font-family: var(--heading-font);
-        font-size: clamp(50px, 6.51vw, 50px);
+        font-size: 6.51vw;
         font-weight: 600;
         line-height: 110%;
         text-transform: uppercase;
         color: var(--accent-color);
-        margin-bottom: clamp(20px, 2.6vw, 20px);
+        margin-bottom: 2.6vw;
     }
 
     .catalog_controls {
         justify-content: space-between;
         flex-direction: row-reverse;
         display: flex;
-        gap: clamp(20px, 2.6vw, 20px);
-        margin-bottom: clamp(30px, 3.91vw, 30px);
+        gap: 2.6vw;
+        margin-bottom: 3.91vw;
     }
 
     .search_wrapper {
         flex: 1;
-        max-width: clamp(359px, 46.74vw, 359px);
+        max-width: 46.74vw;
         display: flex;
         align-items: center;
         border-bottom: 1px solid var(--main-color);
-        padding-bottom: clamp(10px, 1.3vw, 10px);
+        padding-bottom: 1.3vw;
     }
 
     .search_input {
         flex: 1;
         border: none;
         background: transparent;
-        font-size: clamp(16px, 2.08vw, 16px);
+        font-size: 2.08vw;
         font-weight: 400;
         letter-spacing: -0.02em;
         line-height: 120%;
@@ -400,8 +486,8 @@ body {
         border: none;
         padding: 0;
         cursor: pointer;
-        width: clamp(24px, 3.13vw, 24px);
-        height: clamp(24px, 3.13vw, 24px);
+        width: 3.13vw;
+        height: 3.13vw;
     }
 
     .filter_btn {
@@ -409,16 +495,16 @@ body {
         background: none;
         border: none;
         cursor: pointer;
-        width: clamp(24px, 3.13vw, 24px);
-        height: clamp(24px, 3.13vw, 24px);
+        width: 3.13vw;
+        height: 3.13vw;
     }
 
     .filter_badge {
         position: absolute;
-        top: clamp(-3px, -0.39vw, -3px);
-        right: clamp(-3px, -0.39vw, -3px);
-        width: clamp(8px, 1.04vw, 8px);
-        height: clamp(8px, 1.04vw, 8px);
+        top: -0.39vw;
+        right: -0.39vw;
+        width: 1.04vw;
+        height: 1.04vw;
         background: var(--accent-color);
         border-radius: 50%;
     }
@@ -438,43 +524,45 @@ body {
     .products_grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: clamp(16px, 2.08vw, 16px);
+        gap: 2.08vw;
     }
 
     .product_card {
-
         background: var(--white);
-        border-radius: clamp(12px, 1.56vw, 12px);
+        border-radius: 1.56vw;
         overflow: hidden;
     }
 
     .product_image {
+        display: flex;
+        justify-content: center;
         width: 100%;
-        height: clamp(175px, 22.79vw, 175px);
+        height: 22.79vw;
         background: #e0e0e0;
     }
 
+
     .product_info {
-        width: 60%;
+        width: 71%;
         color: var(--accent-color);
-        padding: clamp(16px, 2.08vw, 16px);
+        padding: 2.08vw;
     }
 
     .product_info h3 {
-        font-size: clamp(18px, 2.34vw, 18px);
+        font-size: 2.34vw;
         font-weight: 600;
         line-height: 120%;
         letter-spacing: -0.02em;
-        margin-bottom: clamp(8px, 1.04vw, 8px);
+        margin-bottom: 1.04vw;
     }
 
     .product_info p {
-        font-size: clamp(14px, 1.82vw, 14px);
+        font-size: 1.82vw;
         font-weight: 400;
         line-height: 120%;
         letter-spacing: -0.02em;
         color: #666;
-        margin-bottom: clamp(12px, 1.56vw, 12px);
+        margin-bottom: 1.56vw;
     }
 
     .product_footer {
@@ -484,7 +572,7 @@ body {
     }
 
     .product_code {
-        font-size: clamp(12px, 1.56vw, 12px);
+        font-size: 1.56vw;
         color: #999;
     }
 
@@ -492,23 +580,23 @@ body {
         background: var(--accent-color);
         color: var(--white);
         border: none;
-        padding: clamp(8px, 1.04vw, 8px) clamp(16px, 2.08vw, 16px);
-        border-radius: clamp(6px, 0.78vw, 6px);
-        font-size: clamp(13px, 1.69vw, 13px);
+        padding: 1.04vw 2.08vw;
+        border-radius: 0.78vw;
+        font-size: 1.69vw;
         font-weight: 600;
         cursor: pointer;
     }
 
     .show_more_btn {
-        width: clamp(158px, 20.57vw, 158px);
-        height: clamp(44px, 5.73vw, 44px);
-        margin: clamp(30px, 3.91vw, 30px) auto 0;
+        width: 20.57vw;
+        height: 5.73vw;
+        margin: 3.91vw auto 0;
         display: block;
         background: transparent;
         color: var(--accent-color);
         border: 1px solid var(--accent-color);
-        border-radius: clamp(10px, 1.3vw, 10px);
-        font-size: clamp(14px, 1.82vw, 14px);
+        border-radius: 1.3vw;
+        font-size: 1.82vw;
         font-weight: 600;
         cursor: pointer;
     }
@@ -523,22 +611,21 @@ body {
         height: 100vh;
         background: rgba(18, 66, 149, 0.1);
         z-index: 1000;
-        padding: clamp(20px, 2.6vw, 20px);
+        padding: 2.6vw;
     }
 
     .filter_modal.active {
         margin-top: 100px;
         display: flex;
         align-items: center;
-
     }
 
     .filter_modal_content {
-        width: clamp(416px, 54.17vw, 416px);
+        width: 54.17vw;
         max-height: 90vh;
         background: var(--white);
-        border-radius: clamp(15px, 1.95vw, 15px);
-        padding: clamp(20px, 2.6vw, 20px);
+        border-radius: 1.95vw;
+        padding: 2.6vw;
         overflow-y: auto;
         position: relative;
         box-shadow: 5px 5px 5px rgba(18, 66, 149, 0.1);
@@ -546,11 +633,11 @@ body {
 
     .filter_close {
         position: absolute;
-        top: clamp(15px, 1.95vw, 15px);
-        right: clamp(15px, 1.95vw, 15px);
+        top: 1.95vw;
+        right: 1.95vw;
         background: none;
         border: none;
-        font-size: clamp(36px, 4.69vw, 36px);
+        font-size: 4.69vw;
         color: var(--main-color);
         cursor: pointer;
         line-height: 1;
@@ -560,20 +647,20 @@ body {
         display: flex;
         align-items: center;
         border-bottom: 1px solid var(--main-color);
-        padding-bottom: clamp(10px, 1.3vw, 10px);
-        margin-bottom: clamp(40px, 5.21vw, 40px);
+        padding-bottom: 1.3vw;
+        margin-bottom: 5.21vw;
     }
 
     .filter_search_input {
         flex: 1;
         border: none;
         background: transparent;
-        font-size: clamp(16px, 2.08vw, 16px);
+        font-size: 2.08vw;
         outline: none;
     }
 
     .filter_section {
-        margin-bottom: clamp(20px, 2.6vw, 20px);
+        margin-bottom: 2.6vw;
     }
 
     .filter_section_header {
@@ -581,7 +668,7 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: clamp(20px, 2.6vw, 20px) 0;
+        padding: 2.6vw 0;
         border-bottom: 1px solid rgba(0, 0, 0, 0.2);
         background: none;
         border-left: none;
@@ -591,7 +678,7 @@ body {
     }
 
     .filter_section_header h3 {
-        font-size: clamp(22px, 2.86vw, 22px);
+        font-size: 2.86vw;
         font-weight: 500;
         letter-spacing: -0.03em;
         line-height: 100%;
@@ -599,8 +686,8 @@ body {
     }
 
     .arrow_icon {
-        width: clamp(24px, 3.13vw, 24px);
-        height: clamp(24px, 3.13vw, 24px);
+        width: 3.13vw;
+        height: 3.13vw;
         transition: transform 0.3s;
     }
 
@@ -611,8 +698,8 @@ body {
     .filter_section_content {
         display: flex;
         flex-direction: column;
-        gap: clamp(10px, 1.3vw, 10px);
-        padding: clamp(20px, 2.6vw, 20px) 0;
+        gap: 1.3vw;
+        padding: 2.6vw 0;
     }
 
     .filter_section.collapsed .filter_section_content {
@@ -622,18 +709,18 @@ body {
     .filter_checkbox {
         display: flex;
         align-items: center;
-        gap: clamp(10px, 1.3vw, 10px);
+        gap: 1.3vw;
         cursor: pointer;
     }
 
     .filter_checkbox input {
-        width: clamp(16px, 2.08vw, 16px);
-        height: clamp(16px, 2.08vw, 16px);
+        width: 2.08vw;
+        height: 2.08vw;
         cursor: pointer;
     }
 
     .filter_checkbox span {
-        font-size: clamp(16px, 2.08vw, 16px);
+        font-size: 2.08vw;
         font-weight: 400;
         letter-spacing: -0.02em;
     }
@@ -641,39 +728,39 @@ body {
 
 /* ДЕСКТОПНЫЙ АДАПТИВ: 1025px+ */
 @media (min-width: 1025px) {
-    .catalog_page {
-        max-width: clamp(1720px, 89.58vw, 1720px);
-        margin: 0 auto;
 
+    .catalog_page {
+        max-width: 89.58vw;
+        margin: 0 auto;
     }
 
     .breadcrumbs {
         display: flex;
         align-items: center;
-        gap: clamp(5px, 0.26vw, 5px);
-        margin-bottom: clamp(30px, 1.56vw, 30px);
+        gap: 0.26vw;
+        margin-bottom: 1.56vw;
     }
 
     .breadcrumbs span {
-        font-size: clamp(16px, 0.83vw, 16px);
+        font-size: 0.83vw;
         font-weight: 400;
         letter-spacing: -0.04em;
         line-height: 120%;
     }
 
     .breadcrumb_icon {
-        width: clamp(16px, 0.83vw, 16px);
-        height: clamp(16px, 0.83vw, 16px);
+        width: 0.83vw;
+        height: 0.83vw;
     }
 
     .catalog_title {
         font-family: var(--heading-font);
-        font-size: clamp(80px, 4.17vw, 80px);
+        font-size: 4.17vw;
         font-weight: 600;
         line-height: 110%;
         text-transform: uppercase;
         color: var(--accent-color);
-        margin-bottom: clamp(60px, 3.13vw, 60px);
+        margin-bottom: 3.13vw;
     }
 
     .catalog_controls {
@@ -683,34 +770,34 @@ body {
     /* Desktop Layout with Sidebar */
     .catalog_layout {
         display: grid;
-        grid-template-columns: clamp(560px, 29.17vw, 560px) 1fr;
-        gap: clamp(60px, 3.13vw, 60px);
+        grid-template-columns: 29.17vw 1fr;
+        gap: 3.13vw;
     }
 
     /* Desktop Filter Sidebar */
     .filter_sidebar {
         display: block;
         background: var(--white);
-        border-radius: clamp(15px, 0.78vw, 15px);
-        padding: clamp(20px, 1.04vw, 20px);
+        border-radius: 0.78vw;
+        padding: 1.04vw;
         height: fit-content;
         position: sticky;
-        top: clamp(20px, 1.04vw, 20px);
+        top: 1.04vw;
     }
 
     .filter_search {
         display: flex;
         align-items: center;
         border-bottom: 1px solid var(--main-color);
-        padding-bottom: clamp(10px, 0.52vw, 10px);
-        margin-bottom: clamp(40px, 2.08vw, 40px);
+        padding-bottom: 0.52vw;
+        margin-bottom: 2.08vw;
     }
 
     .filter_search_input {
         flex: 1;
         border: none;
         background: transparent;
-        font-size: clamp(16px, 0.83vw, 16px);
+        font-size: 0.83vw;
         font-weight: 400;
         letter-spacing: -0.02em;
         line-height: 120%;
@@ -718,8 +805,8 @@ body {
     }
 
     .filter_search svg {
-        width: clamp(30px, 1.56vw, 30px);
-        height: clamp(30px, 1.56vw, 30px);
+        width: 1.56vw;
+        height: 1.56vw;
     }
 
     .filter_section {
@@ -735,14 +822,14 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: clamp(20px, 1.04vw, 20px) 0;
+        padding: 1.04vw 0;
         background: none;
         border: none;
         cursor: pointer;
     }
 
     .filter_section_header h3 {
-        font-size: clamp(22px, 1.15vw, 22px);
+        font-size: 1.15vw;
         font-weight: 500;
         letter-spacing: -0.03em;
         line-height: 100%;
@@ -750,8 +837,8 @@ body {
     }
 
     .arrow_icon {
-        width: clamp(24px, 1.25vw, 24px);
-        height: clamp(24px, 1.25vw, 24px);
+        width: 1.25vw;
+        height: 1.25vw;
         transition: transform 0.3s;
     }
 
@@ -762,8 +849,8 @@ body {
     .filter_section_content {
         display: flex;
         flex-direction: column;
-        gap: clamp(10px, 0.52vw, 10px);
-        padding: clamp(20px, 1.04vw, 20px) 0;
+        gap: 0.52vw;
+        padding: 1.04vw 0;
     }
 
     .filter_section.collapsed .filter_section_content {
@@ -773,18 +860,18 @@ body {
     .filter_checkbox {
         display: flex;
         align-items: center;
-        gap: clamp(10px, 0.52vw, 10px);
+        gap: 0.52vw;
         cursor: pointer;
     }
 
     .filter_checkbox input {
-        width: clamp(16px, 0.83vw, 16px);
-        height: clamp(16px, 0.83vw, 16px);
+        width: 0.83vw;
+        height: 0.83vw;
         cursor: pointer;
     }
 
     .filter_checkbox span {
-        font-size: clamp(16px, 0.83vw, 16px);
+        font-size: 0.83vw;
         font-weight: 400;
         letter-spacing: -0.02em;
     }
@@ -797,13 +884,13 @@ body {
     .products_grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: clamp(20px, 1.04vw, 20px);
+        gap: 1.04vw;
     }
 
     .product_card {
         cursor: pointer;
         background: var(--white);
-        border-radius: clamp(15px, 0.78vw, 15px);
+        border-radius: 0.78vw;
         overflow: hidden;
         transition: transform 0.3s;
     }
@@ -817,31 +904,31 @@ body {
         display: flex;
         align-items: center;
         width: 100%;
-        height: clamp(214px, 11.15vw, 214px);
+        height: 11.15vw;
         background: #e0e0e0;
     }
 
     .product_info {
         width: 60%;
         color: var(--accent-color);
-        padding: clamp(20px, 1.04vw, 20px);
+        padding: 1.04vw;
     }
 
     .product_info h3 {
-        font-size: clamp(20px, 1.04vw, 20px);
+        font-size: 1.04vw;
         font-weight: 600;
         line-height: 120%;
         letter-spacing: -0.02em;
-        margin-bottom: clamp(10px, 0.52vw, 10px);
+        margin-bottom: 0.52vw;
     }
 
     .product_info p {
-        font-size: clamp(16px, 0.83vw, 16px);
+        font-size: 0.83vw;
         font-weight: 400;
         line-height: 120%;
         letter-spacing: -0.02em;
         color: #666;
-        margin-bottom: clamp(16px, 0.83vw, 16px);
+        margin-bottom: 0.83vw;
     }
 
     .product_footer {
@@ -851,7 +938,7 @@ body {
     }
 
     .product_code {
-        font-size: clamp(14px, 0.73vw, 14px);
+        font-size: 0.73vw;
         color: #999;
     }
 
@@ -859,9 +946,9 @@ body {
         background: var(--accent-color);
         color: var(--white);
         border: none;
-        padding: clamp(10px, 0.52vw, 10px) clamp(20px, 1.04vw, 20px);
-        border-radius: clamp(8px, 0.42vw, 8px);
-        font-size: clamp(14px, 0.73vw, 14px);
+        padding: 0.52vw 1.04vw;
+        border-radius: 0.42vw;
+        font-size: 0.73vw;
         font-weight: 600;
         cursor: pointer;
         transition: all 0.3s;
@@ -873,15 +960,15 @@ body {
     }
 
     .show_more_btn {
-        width: clamp(158px, 8.23vw, 158px);
-        height: clamp(44px, 2.29vw, 44px);
-        margin: clamp(40px, 2.08vw, 40px) auto 0;
+        width: 8.23vw;
+        height: 2.29vw;
+        margin: 2.08vw auto 0;
         display: block;
         background: transparent;
         color: var(--accent-color);
         border: 1px solid var(--accent-color);
-        border-radius: clamp(10px, 0.52vw, 10px);
-        font-size: clamp(14px, 0.73vw, 14px);
+        border-radius: 0.52vw;
+        font-size: 0.73vw;
         font-weight: 600;
         cursor: pointer;
         transition: all 0.3s;
@@ -900,4 +987,5 @@ body {
     .filter_btn {
         display: none;
     }
+
 }

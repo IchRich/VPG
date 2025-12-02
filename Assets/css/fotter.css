@@ -67,6 +67,11 @@
     transition: color 0.3s ease;
 }
 
+.footer_col ul li.adress
+{
+    line-height: 1.35;
+}
+
 .footer_col ul li a:hover {
     color: var(--blue);
 }

@@ -143,6 +143,12 @@
     width: 1.15vw;
 }
 
+.catalog_search__image
+{
+    width: 1.4vw;
+    height: auto;
+}
+
 @media (min-width: 1025px) {
     .burger,
     .mobile_menu,

@@ -30,8 +30,8 @@ section {
     max-width: var(--container);
     margin-left: auto;
     margin-right: auto;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
+    padding-top: 3.1vw;
+    padding-bottom: 3.1vw;
 }
 
 img {
@@ -147,13 +147,13 @@ img {
 /* ===== CATALOG ===== */
 .catalog_section {
 
-    margin: 6.25vw auto;
+    
 }
 
 .catalog_header {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 4.17vw;
+    gap: 1.04vw;
     align-items: flex-end;
     margin-bottom: 1.56vw;
 }
@@ -199,7 +199,6 @@ img {
 
 .catalog_item {
     width: 100%;
-    height: 20.68vw;
     background: #f8f9fb;
     border-radius: 0.63vw;
     padding: 1.56vw;
@@ -239,16 +238,12 @@ img {
 .catalog_item img {
     object-fit: contain;
     transition: transform 0.3s ease;
+    height: 14.1vw;
+    width: auto;
 }
 
 .catalog_item:hover img {
     transform: scale(1.05);
-}
-
-
-
-.catalog_ul_item {
-    margin-left: 0.52vw;
 }
 
 .catalog_tags {
@@ -259,22 +254,21 @@ img {
     margin: 0;
     padding: 0;
     color: black;
+    list-style-position: inside;
 }
 
 /* ===== PRODUCERS ===== */
 .producers_section {
     max-width: var(--container);
-    margin: 6.25vw auto;
+    
 }
 
 .producers_header {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 3.13vw;
+    gap: 1.04vw;
     align-items: flex-start;
-    margin-bottom: 3.13vw;
-    padding-bottom: 1.56vw;
-    border-bottom: 0.05vw solid #e0e0e0;
+    margin-bottom: 2.2vw;
 }
 
 .producers_header h2 {
@@ -294,7 +288,7 @@ img {
 .producers_wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 3.13vw;
+    gap: 1.04vw;
     align-items: center;
 }
 
@@ -309,7 +303,7 @@ img {
     padding: 0;
     display: flex;
     flex-direction: column;
-    gap: 0;
+    gap: 1vw;
 }
 
 .producers_list li {
@@ -329,7 +323,7 @@ img {
 .producer_btn {
     background: none;
     border: none;
-    padding: 0;
+    padding: 0 1.04vw;
     color: var(--main-color);
     font-weight: 700;
     cursor: pointer;
@@ -348,6 +342,9 @@ img {
     color: #fff;
     padding: 1.04vw;
     border-radius: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .producer_btn.active::after {
@@ -382,12 +379,11 @@ img {
 /* ===== INDUSTRIES ===== */
 .industries_section {
     max-width: var(--container);
-    margin: 6.25vw auto;
 }
 
 .industries_section h2 {
     font-weight: 600;
-    margin: 0 0 3.13vw 0;
+    margin-bottom: 2.2vw;
     color: var(--accent-color);
 }
 
@@ -401,7 +397,7 @@ img {
     background-color: white;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 3.13vw;
+    gap: 1.04vw;
     align-items: center;
 }
 
@@ -445,17 +441,16 @@ img {
 /* ===== ABOUT US ===== */
 .about_us {
     max-width: var(--container);
-    margin: 6.25vw auto;
 }
 
 .about_us h2 {
     font-weight: 600;
-    margin: 0 0 3.13vw 0;
+    margin-bottom: 2.2vw;
     color: var(--accent-color);
 }
 
 .about_us__image {
-    width: 38.8vw;
+    width: calc(50% - (1.04vw / 2));
     height: auto;
     float: left;
     object-fit: cover;
@@ -464,15 +459,16 @@ img {
 }
 
 .about_us__spacer {
-    width: 38.8vw;
-    height: 24.66vw;
+    width: calc(50% - (1.04vw / 2));
+    height: 27.8vw;
     clear: none;
 }
 
 .about_us__main_text {
     line-height: 100%;
-    margin: 0 0 2.08vw 0;
+    margin: 0 0 1vw 0;
     color: black;
+    line-height: 1;
 }
 
 .about_us_container {
@@ -482,13 +478,13 @@ img {
 }
 
 .about_us__container_button {
-    width: 68.8%;
+    margin-left: calc(50% + (1.04vw / 2));
     display: flex;
     justify-content: end;
 }
 
 .about_us__columns {
-    width: 47%;
+    width: calc(50% - (1.04vw / 2));
     clear: left;
     display: flex;
     gap: 3.54vw;
@@ -504,6 +500,7 @@ img {
 .about_us__column strong {
     font-weight: 400;
     color: black;
+    line-height: 1.2;
 }
 
 .about_us__btn {
@@ -516,8 +513,9 @@ img {
     height: 2.34vw;
     border-radius: 0.42vw;
     text-decoration: none;
-    font-weight: 700;
+    font-weight: 500;
     transition: all 0.3s ease;
+    margin-right: auto;
 }
 
 .about_us__btn:hover {
@@ -529,7 +527,6 @@ img {
 /* ===== ABOUT TEXT ===== */
 .about_text_section {
     max-width: var(--container);
-    margin: 6.25vw auto;
     display: flex;
     gap: 1.04vw;
 }
@@ -537,8 +534,10 @@ img {
 .about_text_section img {
     width: 100%;
     max-width: 50%;
-    height: auto;
+    height: 52vw;
     border-radius: 0.63vw;
+    object-fit: cover;
+    object-position: bottom;
 }
 
 .about_text_section__text {
@@ -556,13 +555,12 @@ img {
 }
 
 .about_text_section__text p:first-of-type {
-    text-indent: 24.38vw;
+    text-indent: 21.4vw;
 }
 
 /* ===== BLOG ===== */
 .blog_section {
     max-width: var(--container);
-    margin: 6.25vw auto;
 }
 
 .blog_header {
@@ -581,7 +579,7 @@ img {
 .blog_section__all_link {
     color: var(--accent-color);
     text-decoration: underline;
-    font-weight: 700;
+    font-weight: 500;
     transition: color 0.3s ease;
     cursor: pointer;
 }
@@ -593,7 +591,7 @@ img {
 .blog_wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2.08vw;
+    gap: 1.04vw;
 }
 
 .blog_main_card {
@@ -635,7 +633,7 @@ img {
 }
 
 .blog_main_title {
-    font-weight: 900;
+    font-weight: 600;
     line-height: 1;
 }
 
@@ -704,19 +702,16 @@ img {
 
 .blog_post img {
     width: 100%;
-    height: 13vw;
+    height: 15vw;
     object-fit: cover;
     display: block;
     transition: transform 0.3s ease;
-}
-
-.blog_post:hover img {
-    transform: scale(1.08);
+    border-radius: 0.63vw;
 }
 
 .blog_post__date {
     display: block;
-    padding: 0.52vw 0.83vw 0;
+    padding-top: 0.55vw;
     color: black;
     transition: color 0.3s ease;
 }
@@ -728,10 +723,11 @@ img {
 .blog_post h4 {
     line-height: 110%;
     margin: 0;
-    padding: 0 0.83vw 0.83vw;
+    padding-top: 1vw;
     font-weight: 500;
     color: black;
     transition: color 0.3s ease;
+    letter-spacing: -0.04em;
 }
 
 .blog_post:hover h4 {
@@ -741,15 +737,14 @@ img {
 /* ===== CONTACT ===== */
 .contact_section {
     max-width: var(--container);
-    margin: 6.25vw auto;
-    padding: 6.25vw 2.08vw;
-    background: #f0f3f9;
     border-radius: 0.63vw;
 }
 
 .contact_section h2 {
     font-weight: 600;
-    margin: 0 0 3.13vw 0;
+    margin: 0;
+    margin-bottom: 1.6vw;
+    width: 80%;
     color: var(--accent-color);
 }
 
@@ -757,6 +752,9 @@ img {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4.17vw;
+    padding: 1.6vw;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 0.85vw;
 }
 
 .contact_left {
@@ -844,7 +842,7 @@ img {
     color: #fff;
     border: none;
     padding: 0.83vw 2.6vw;
-    border-radius: 0.31vw;
+    border-radius: 0.55vw;
     font-weight: 700;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -860,7 +858,6 @@ img {
 .main_footer {
     background: #f0f3f9;
     padding: 3.13vw 0 1.56vw;
-    margin-top: 6.25vw;
 }
 
 .footer_content {
@@ -1042,7 +1039,7 @@ img {
     }
 
     .producer_btn.active::after {
-        font-size: 0.83vw;
+        font-size: 1.33vw;
     }
 
     .industries_section h2 {
@@ -1166,9 +1163,20 @@ img {
 /* ===== TABLET 768-1024px ===== */
 @media (min-width: 768px) and (max-width: 1024px) {
     :root {
-        --container: 85vw;
+        --container: calc(100% - 40px);
         --gap: 2.5vw;
         --edge: 2.5vw;
+    }
+
+    section
+    {
+        padding-top: 5.2vw;
+        padding-bottom: 5.2vw;
+    }
+
+    .main_footer
+    {
+        padding: 5.2vw 0 2.5vw;
     }
 
     .main_navigation__list,
@@ -1221,11 +1229,23 @@ img {
     }
 
     .catalog_item {
-        width: 86.79vw;
-        height: 47.5vw;
+        width: 100%;
+        height: 51.8vw;
+        padding: 4vw;
     }
     .catalog_tags{
         gap: 2.5vw;
+        font-size: 2.1vw;
+    }
+    .catalog_item img
+    {
+        height: 35.5vw;
+    }
+
+    .producers_description
+    {
+        font-size: 2.9vw;
+        letter-spacing: -0.04em;
     }
 
     .producers_section {
@@ -1243,22 +1263,29 @@ img {
     }
 
     .producer_btn {
-        padding: 2.6vw;
+        padding: 2.65vw;
     }
 
+    .producer_btn.active
+    {
+        padding: 2.65vw;
+    }
+    
     .industries_section {
         margin: 10.42vw auto;
     }
 
     .industries_item {
         grid-template-columns: 1fr;
-        width: 94.79vw;
+        width: 100%;
         height: 71.75vw;
     }
 
     .industries_text {
         gap: 5.21vw;
         padding: 3.91vw;
+        height: 80%;
+        justify-content: space-between;
     }
 
     .industries_text p {
@@ -1274,7 +1301,7 @@ img {
     }
 
     .about_us__image {
-        width: 94.79vw;
+        width: 100%;
     }
 
     .about_us__columns {
@@ -1283,12 +1310,18 @@ img {
     }
 
     .about_us__btn {
-        width: 94.79vw;
+        width: 100%;
         height: 5.73vw;
+        border-radius: 1.3vw;
+    }
+    
+    .blog_main_descr
+    {
+        display: none;
     }
 
     .blog_section {
-        margin: 10.42vw auto;
+        margin: 7.8vw auto;
     }
 
     .blog_wrapper {
@@ -1311,13 +1344,13 @@ img {
     }
 
     .about_text_section {
-        margin: 10.42vw auto;
+        margin: 7.8vw auto;
         flex-direction: column;
         gap: 3.91vw;
     }
 
     .about_text_section img {
-        width: 94.79vw;
+        width: 100%;
         max-width: 100%;
     }
 
@@ -1336,12 +1369,13 @@ img {
     .contact_wrapper {
         grid-template-columns: 1fr;
         gap: 6.51vw;
+        padding: 2.6vw;
     }
 
     .footer_content {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        gap: 0 5.21vw;
+        gap: 0 4.21vw;
         padding-bottom: 2.5vw;
     }
 
@@ -1352,35 +1386,36 @@ img {
 
     /* Tablet font sizes */
     .promo_section__content h1 {
-        font-size: 6.51vw;
+        font-size: 9.2vw;
     }
 
     .catalog_header h2 {
-        font-size: 5.21vw;
+        font-size: 6.5vw;
     }
 
     .catalog_item__link {
-        font-size: 4.17vw;
+        font-size: 4vw;
     }
 
     .producers_header h2 {
-        font-size: 5.21vw;
+        font-size: 6.5vw;
     }
 
     .producer_btn {
         font-size: 3.91vw;
+        padding: 0 2.65vw;
     }
 
     .industries_section h2 {
-        font-size: 5.21vw;
+        font-size: 6.5vw;
     }
 
     .industries_text h3 {
-        font-size: 4.17vw;
+        font-size: 4vw;
     }
 
     .industries_text p {
-        font-size: 2.34vw;
+        font-size: 2.9vw;
     }
 
     .industries_number {
@@ -1388,15 +1423,27 @@ img {
     }
 
     .about_us h2 {
-        font-size: 5.21vw;
+        font-size: 6.5vw;
     }
 
     .about_us__main_text {
         font-size: 3.91vw;
+        margin-top: 37vw;
+        margin-bottom: 4vw;
+    }
+    .about_us__column strong
+    {
+        font-size: 2.35vw;
+    }
+    .about_us__container_button
+    {
+        width: 100%;
+        margin-top: 2vw;
+        margin-left: auto;
     }
 
     .blog_header h2 {
-        font-size: 5.21vw;
+        font-size: 6.5vw;
     }
 
     .blog_post h4 {
@@ -1408,7 +1455,7 @@ img {
     }
 
     .contact_section h2 {
-        font-size: 5.21vw;
+        font-size: 6.5vw;
     }
 
     .contact_left p {
@@ -1417,8 +1464,9 @@ img {
 
     .contact_btn {
         width: 30.34vw;
-        height: 7.42vw;
+        height: 100%;
         font-size: 3.13vw;
+        border-radius: 1.4vw;
     }
 
     .form_title {
@@ -1428,11 +1476,14 @@ img {
     .form_group input,
     .form_group textarea {
         font-size: 2.08vw;
+        padding: 1.3vw 0;
     }
 
     .form_btn {
         height: 5.73vw;
         font-size: 2.08vw;
+        margin-top: 3vw;
+        border-radius: 1.3vw;
     }
 
     .footer_bottom
@@ -1463,11 +1514,9 @@ img {
     }
 
     section {
-        padding-left: var(--edge);
-        padding-right: var(--edge);
-        max-width: 100%;
-        padding-top: 4vw;
-        padding-bottom: 4vw;
+        width: 90%;
+        padding-top: 8.4vw;
+        padding-bottom: 8.4vw;
     }
 
     .main_navigation__list,
@@ -1576,10 +1625,10 @@ img {
     }
 
     .promo_section {
-        margin: 6.67vw auto;
         flex-direction: column;
         gap: 4.44vw;
         align-items: center;
+        margin: 5.21vw auto 0;
     }
 
     .promo_section__content h1 {
@@ -1591,9 +1640,6 @@ img {
         height: 76.67vw;
     }
 
-    .catalog_section {
-        margin: 6.67vw auto;
-    }
 
     .catalog_header {
         display: flex;
@@ -1615,37 +1661,31 @@ img {
 
     .catalog_item {
         height: auto;
-        padding: 2.22vw;
-        border-radius: 2.22vw;
+        padding: 2.8vw;
+        border-radius: 2.8vw;
+        height: 47vw;
     }
 
-    .catalog_item:nth-child(1) img {
-        width: 40vw;
+    .catalog_item img {
+        width: auto;
         height: 32.5vw;
+        margin-top: auto;
     }
 
-    .catalog_item:nth-child(2) img {
-        width: 35vw;
-        height: 32.5vw;
-    }
-
-    .catalog_item:nth-child(3) img {
-        width: 32.78vw;
-        height: 32.78vw;
-    }
-
-    .catalog_item:nth-child(4) img {
-        width: 30.83vw;
-        height: 33.06vw;
+    .catalog_item__top
+    {
+        height: 100%;
     }
 
     .catalog_tags {
         display: none;
     }
 
-    .producers_section {
-        margin: 6.67vw auto;
+    .producers_list
+    {
+        gap: 3vw;
     }
+
 
     .producers_header {
         display: flex;
@@ -1663,12 +1703,12 @@ img {
     }
 
     .producers_list li {
-        padding: 3.33vw 0;
+        padding: 0 0 3vw 0;
     }
 
     .producer_btn {
         font-weight: 600;
-        padding: 3.33vw;
+        padding: 3vw;
         background: #f0f0f0;
         border-radius: 1.67vw;
         color: black;
@@ -1685,12 +1725,9 @@ img {
         display: none;
     }
 
-    .industries_section {
-        margin: 6.67vw auto;
-    }
 
     .industries_section h2 {
-        margin-bottom: 5.56vw;
+        margin-bottom: 2.8vw;
     }
 
     .industries_grid {
@@ -1706,6 +1743,8 @@ img {
         padding: 4.44vw 3.33vw;
         border-radius: 2.22vw;
         box-shadow: 0 0.14vw 0.42vw rgba(0, 0, 0, 0.08);
+        height: 110vw;
+        justify-content: space-around;
     }
 
     .industries_item img {
@@ -1715,6 +1754,8 @@ img {
     .industries_text {
         text-align: center;
         gap: 3.33vw;
+        height: 100%;
+        justify-content: space-around;
     }
 
     .industries_text h3 {
@@ -1730,19 +1771,16 @@ img {
         font-weight: 800;
     }
 
-    .about_us {
-        margin: 6.67vw auto;
-    }
 
     .about_us h2 {
-        margin-bottom: 4.44vw;
+        margin-bottom: 2.8vw;
     }
 
     .about_us__image {
-        width: 88.89vw !important;
-        height: 73.89vw !important;
+        width: 100%;
+        height: 73.9vw;
         float: none;
-        margin: 0 0 3.33vw 0;
+        margin: 0 0 5.6vw 0;
         border-radius: 2.22vw;
     }
 
@@ -1750,15 +1788,11 @@ img {
         display: none;
     }
 
-    .about_us__main_text {
-        margin-bottom: 3.33vw;
-    }
-
     .about_us__columns {
-        width: 100% !important;
+        width: 100%;
         flex-direction: column;
         gap: 3.33vw;
-        margin-bottom: 4.44vw;
+        margin-bottom: 8.2vw;
         clear: none;
     }
 
@@ -1767,7 +1801,8 @@ img {
     }
 
     .about_us__container_button {
-        width: 100% !important;
+        width: 100%;
+        margin-left: auto;
     }
 
     .about_us__btn {
@@ -1777,7 +1812,6 @@ img {
     }
 
     .about_text_section {
-        margin: 6.67vw auto;
         flex-direction: column;
         gap: 3.33vw;
     }
@@ -1786,6 +1820,7 @@ img {
         width: 100%;
         max-width: 100%;
         border-radius: 2.22vw;
+        height: 73.9vw;
     }
 
     .about_text_section__text {
@@ -1796,9 +1831,6 @@ img {
         text-indent: 0;
     }
 
-    .blog_section {
-        margin: 6.67vw auto;
-    }
 
     .blog_header {
         gap: 3.33vw;
@@ -1813,6 +1845,7 @@ img {
 
     .blog_flex {
         flex-direction: column;
+        gap: 2.8vw;
     }
 
     .blog_main_card {
@@ -1841,23 +1874,19 @@ img {
     }
 
     .contact_section {
-        margin: 6.67vw auto;
-        padding: 4.44vw 2.22vw;
         border-radius: 2.22vw;
     }
 
     .contact_section h2 {
-        margin-bottom: 4.44vw;
+        margin-bottom: 4.2vw;
     }
 
     .contact_wrapper {
         display: flex;
         flex-direction: column;
-        gap: 3.33vw;
-    }
-
-    .contact_left p {
-        margin-bottom: 3.33vw;
+        gap: 0;
+        padding: 5.6vw;
+        border-radius: 4.5vw;
     }
 
     .contact_buttons {
@@ -1880,8 +1909,14 @@ img {
     }
 
     .form_btn {
+        margin-top: 5vw;
         height: 11.11vw;
         padding: 3.33vw;
+    }
+
+    .form_agree
+    {
+        font-size: 3.4vw;
     }
 
     .main_footer {
@@ -1932,7 +1967,7 @@ img {
     }
 
     .catalog_header h2 {
-        font-size: 6vw;
+        font-size: 6.7vw;
     }
 
     .catalog_item__link {
@@ -1944,11 +1979,12 @@ img {
     }
 
     .producers_description {
-        font-size: 4.72vw;
+        font-size: 4.5vw;
+        letter-spacing: -0.03em;
     }
 
     .producer_btn {
-        font-size: 5.56vw;
+        font-size: 5vw;
     }
 
     .industries_section h2 {
@@ -1972,7 +2008,9 @@ img {
     }
 
     .about_us__main_text {
-        font-size: 5.56vw;
+        font-size: 5vw;
+        text-align: justify;
+        margin-bottom: 5.6vw;
     }
 
     .about_us__column p {
@@ -1980,7 +2018,7 @@ img {
     }
 
     .about_us__column strong {
-        font-size: 4.44vw;
+        font-size: 3.9vw;
     }
 
     .about_us__btn {
@@ -1988,7 +2026,7 @@ img {
     }
 
     .about_text_section__text {
-        font-size: 5.56vw;
+        font-size: 5vw;
     }
 
     .blog_header h2 {
@@ -2013,6 +2051,7 @@ img {
 
     .contact_left p {
         font-size: 4.44vw;
+        margin-bottom: 6.2vw;
     }
 
     .contact_btn {
@@ -2021,6 +2060,7 @@ img {
 
     .form_title {
         font-size: 5vw;
+        margin-top: 14vw;
     }
 
     .form_group input,

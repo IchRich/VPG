@@ -534,7 +534,6 @@ img {
 .about_text_section img {
     width: 100%;
     max-width: 50%;
-    height: 52vw;
     border-radius: 0.63vw;
     object-fit: cover;
     object-position: bottom;
@@ -1352,6 +1351,7 @@ img {
     .about_text_section img {
         width: 100%;
         max-width: 100%;
+        height: 52vw;
     }
 
     .about_text_section__text {

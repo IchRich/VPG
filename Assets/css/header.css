@@ -276,6 +276,11 @@
         align-items: center;
         gap: 5.56vw;
     }
+    img.catalog_search__image
+    {
+        width: 6.7vw;
+        height: auto;
+    }
 
     .logo {
         height: 9.44vw;

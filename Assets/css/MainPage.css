@@ -42,7 +42,7 @@ img {
 
 /* ===== HEADER ===== */
 .main_header {
-    background: #fff;
+    background: rgba(245, 245, 245, 1);
     padding: 1.04vw 0;
     box-shadow: 0 0.05vw 0.21vw rgba(0, 0, 0, 0.05);
 }
@@ -169,11 +169,12 @@ img {
     align-items: center;
     gap: 0.78vw;
     width: 100%;
+    padding-bottom: 0.5vw;
+    border-bottom: 0.1vw solid #ddd;
 }
 
 .catalog_search input {
     border: none;
-    border-bottom: 0.1vw solid #ddd;
     padding: 0.52vw 0;
     width: 100%;
     background: transparent;
@@ -770,7 +771,7 @@ img {
 
 .contact_buttons {
     display: flex;
-    gap: 1.88vw;
+    gap: 1vw;
 }
 
 .contact_btn {
@@ -778,7 +779,6 @@ img {
     align-items: center;
     justify-content: center;
     width: 14.74vw;
-    height: 3.33vw;
     background: linear-gradient(90deg, #9AB6DF 0%, #0E468C 100%);
     color: white;
     text-decoration: none;
@@ -824,11 +824,6 @@ img {
     border-bottom-color: var(--accent-color);
 }
 
-.form_group textarea {
-    resize: none;
-    min-height: 5.21vw;
-}
-
 .form_agree {
     color: black;
     margin: 0;
@@ -855,7 +850,7 @@ img {
 
 /* ===== FOOTER ===== */
 .main_footer {
-    background: #f0f3f9;
+    background: rgba(245, 245, 245, 1);
     padding: 3.13vw 0 1.56vw;
 }
 
@@ -1022,7 +1017,7 @@ img {
     }
 
     .catalog_tags {
-        font-size: 0.68vw;
+        font-size: 0.83vw;
     }
 
     .producers_header h2 {

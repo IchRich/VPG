@@ -44,7 +44,6 @@ img {
 .main_header {
     background: rgba(245, 245, 245, 1);
     padding: 1.04vw 0;
-    box-shadow: 0 0.05vw 0.21vw rgba(0, 0, 0, 0.05);
 }
 
 .main_navigation {
@@ -249,8 +248,7 @@ img {
 
 .catalog_tags {
     display: flex;
-    flex-direction: row;
-    gap: 0.83vw;
+    flex-direction: column;
     list-style: disc;
     margin: 0;
     padding: 0;

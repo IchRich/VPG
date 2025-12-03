@@ -137,6 +137,12 @@
 .mobile_menu__btn:hover {
     background: #001f66;
 }
+
+.main_navigation__list li a img
+{
+    width: 1.15vw;
+}
+
 @media (min-width: 1025px) {
     .burger,
     .mobile_menu,

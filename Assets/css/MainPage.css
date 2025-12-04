@@ -709,7 +709,6 @@ img {
 .contact_section h2 {
     font-weight: 400;
     margin: 0;
-    margin-bottom: 1.6vw;
     width: 80%;
     color: #000;
 }
@@ -727,6 +726,7 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 1.04vw;
 }
 
 .contact_left p {

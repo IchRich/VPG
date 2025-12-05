@@ -6,6 +6,7 @@
     <title>Kemppi - Финский производитель сварочного оборудования</title>
     <link rel="stylesheet" href="Assets\css\BrandPage.css">
     <link rel="stylesheet" href="Assets\css\fotter.css">
+    <link rel="stylesheet" href="Assets\css\header.css">
     <link rel="stylesheet" href="Assets\css\whiteheader.css">
     <script src="Assets\js\main.js"></script>
 </head>
@@ -20,33 +21,28 @@
         <header class="main_header">
             <nav class="main_navigation" aria-label="Главная навигация">
                 <img src="Assets\Image\WhiteLogo.svg" alt="Логотип компании" class="logo" />
-
                 <ul class="main_navigation__list">
                     <li><a href="CatalogPage.html">Каталог
-                        <img src="Assets\Image\WhiteGalochka.svg" alt="Иконка">
+                        <img src="Assets\Image\WhiteGalochka.svg" alt="<UNK> <UNK>">
                     </a></li>
                     <li><a href="AboutCompanyPage.html">О компании</a></li>
-                    <li><a href="#" class="active">Бренды</a></li>
+                    <li><a href="BrandPage.html">Бренды</a></li>
                     <li><a href="#">Блог</a></li>
                     <li><a href="IndustryPage.html">Индустрии</a></li>
                 </ul>
-
                 <div class="mobile_navigation__buttons">
-                    <img src="Assets\Image\SearchIconWhite.svg" alt="Поиск" class="catalog_search__image">
-                    <a href="tel:88005553535" class="main_navigation__phone">8 (800) 555-35-35</a>
+                    <img src="Assets\Image\SearchIconWhite.svg" alt="<UNK> <UNK>" class="catalog_search__image">
+                    <a href="tel:88462004242" class="main_navigation__phone">8 (846) 200-42-42</a>
                     <button class="burger" id="burger-open" aria-label="Открыть меню">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+
+                        <span></span><span></span><span></span>
                     </button>
                 </div>
-
                 <div class="main_navigation__right">
                     <a href="#" class="main_navigation__search">
-                        <img src="Assets\Image\SearchIconWhite.svg" alt="Поиск" class="catalog_search__image">
+                        <img src="Assets\Image\SearchIconWhite.svg" alt="<UNK> <UNK>" class="catalog_search__image">
                     </a>
                     <a href="tel:88005553535" class="main_navigation__phone">8 (800) 555-35-35</a>
-                    <button class="main_navigation__btn">Оставить заявку</button>
                 </div>
             </nav>
         </header>
@@ -115,7 +111,7 @@
             <!-- Контент: фото слева, текст справа -->
             <div class="our-mission__content">
                 <div class="our-mission__image">
-                    <img src="Assets\Image\OurMission.svg" alt="Наша миссия">
+                    <img src="Assets\Image\OurMission.png" alt="Наша миссия">
                 </div>
                 <div class="our-mission__text">
                     <p>Наша миссия — обеспечивать промышленные компании надёжными решениями, которые упрощают процессы, ускоряют производство и повышают эффективность на всех этапах. Мы верим, что технологичность, продуманный подход и внимание к деталям создают реальные преимущества для бизнеса.</p>
@@ -128,7 +124,7 @@
         <div class="our-mission__mobile">
             <h2 class="our-mission__title">Наша миссия</h2>
             <div class="our-mission__image">
-                <img src="Assets\Image\OurMission.svg" alt="Наша миссия">
+                <img src="Assets\Image\OurMission.png" alt="Наша миссия">
             </div>
             <p class="our-mission__lead">Мы развиваем промышленность, предлагая технологичные и инженерно выверенные решения, которые делают производство стабильнее, эффективнее и современнее</p>
 
@@ -248,7 +244,7 @@
     <div class="catalog__container">
         <div class="catalog__header">
             <h2 class="catalog__title">Каталог</h2>
-            <a href="#" class="catalog__link">Посмотреть весь каталог</a>
+            <a href="#" class="catalog__link">Весь каталог</a>
         </div>
 
         <div class="catalog__grid">
@@ -292,16 +288,7 @@
 <footer class="main_footer">
     <div class="footer_content">
         <div class="footer_logo">
-            <img src="Assets\Image\Logo.webp" alt="VPG-S Logo" />
-        </div>
-
-        <div class="footer_col">
-            <h4>О НАС</h4>
-            <ul>
-                <li><a href="AboutCompanyPage.html">О компании</a></li>
-                <li><a href="#">Блог</a></li>
-                <li><a href="BrandPage.html">Бренды</a></li>
-            </ul>
+            <img src="Assets\Image\Logo.webp" alt="VPG-S Logo" class="logo"/>
         </div>
 
         <div class="footer_col">
@@ -315,28 +302,26 @@
         </div>
 
         <div class="footer_col">
-            <h4>СОЦСЕТИ</h4>
+            <h4>ИНФОРМАЦИЯ</h4>
             <ul>
-                <li><a href="#">Telegram</a></li>
-                <li><a href="#">WhatsApp</a></li>
-                <li><a href="mailto:vpg-s@mail.ru">vpg-s@mail.ru</a></li>
+                <li><a href="AboutCompanyPage.html">О компании</a></li>
+                <li><a href="#">Блог</a></li>
+                <li><a href="BrandPage.html">Бренды</a></li>
             </ul>
         </div>
 
         <div class="footer_col">
             <h4>КОНТАКТЫ</h4>
             <ul>
-                <li><a href="tel:88005553535">8 (800) 555-35-35</a></li>
-                <li>Наш адрес: г. Москва,<br>ул. Пушкина, 60</li>
+                <li class="adress"><a href="tel:88462004242">Телефон: Многоканальный <br> 8 (846) 200-42-42</a></li>
+                <li class="adress">Наш адрес: Г.САМАРА,<br>УЛ. БАЛАКОВСКАЯ, Д. 6А</li>
             </ul>
         </div>
     </div>
 
-    <div class="footer_bottom">
-        <a href="#">Политика конфиденциальности</a>
-        <span>Предложения на сайте не являются<br/> публичной офертой</span>
-        <a href="#">Пользовательское соглашение</a>
-        <span>Разработка сайта: <strong>KANT.studio</strong></span>
+    <div class="footer_bottom site_footer__dev_container">
+        <a href="#">Политика ОПД</a>
+        <span class="site_footer__dev_container">Сайт разработан: <img src="Assets/image/LogoKant.svg" width="138" height="14" alt="Логотип Kant"></span>
     </div>
 </footer>
 

@@ -31,15 +31,15 @@ img {
 
 .hero {
     position: relative;
-    width: 100%;
-    min-height: 50.26vw;
+    height: 100vh;
     color: var(--white);
+    background: url('../Image/BrandBack.svg') center/cover no-repeat;
+    width: 100%;
+    padding-inline: 5%;
 }
 
 .hero__bg {
-    position: absolute;
-    inset: 0;
-    background: url('../Image/BrandBack.svg') center/cover no-repeat;
+
 }
 
 .hero__overlay {
@@ -51,12 +51,10 @@ img {
 .hero__container {
     position: relative;
     z-index: 1;
-    max-width: 90%;
-    margin: 0 auto;
     padding: 1.04vw 0 5.21vw;
     display: flex;
     flex-direction: column;
-    min-height: 50.26vw;
+    min-height: 100vh;
 }
 
 /* HEADER */
@@ -358,14 +356,10 @@ img {
 }
 
 .our-mission {
-    padding: 5.21vw 0;
-    background: #fff;
+    padding-top: 8vw;
+    padding: 5.2vw 0;
 }
 
-.our-mission__container {
-    max-width: 90%;
-    margin: 0 auto;
-}
 
 /* Заголовок и лид на одном уровне через flex */
 
@@ -373,7 +367,7 @@ img {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1vw;
-    margin-bottom: 3.13vw;
+    margin-bottom: 1.55vw;
 }
 
 .our-mission__title {
@@ -434,14 +428,8 @@ img {
 
 /* NUMBERS */
 .numbers {
-    padding: 6.25vw 0;
-    background: #fff;
+    padding: 5.2vw 0;
     overflow: visible;
-}
-
-.numbers__container {
-    max-width: 90%;
-    margin: 0 auto;
 }
 
 /* Показать десктоп, скрыть мобильную */
@@ -473,7 +461,7 @@ img {
 
 .numbers__item--2 {
     right: 0;
-    top: 12.5vw;
+    top: 20.5vw;
     z-index: 3;
 }
 
@@ -541,6 +529,7 @@ img {
     letter-spacing: -0.04em;
     line-height: 120%;
     max-width: 20.31vw;
+    text-align: left;
 }
 
 
@@ -548,12 +537,6 @@ img {
 
 .catalog {
     padding: 6.25vw 0;
-    background: #fff;
-}
-
-.catalog__container {
-    max-width: 90%;
-    margin: 0 auto;
 }
 
 .catalog__header {
@@ -652,6 +635,8 @@ img {
 /* TABLET */
 
 @media (min-width: 768px) and (max-width: 1024px) {
+
+    
     /* HEADER */
     .main_navigation__list,
     .main_navigation__right {
@@ -702,16 +687,16 @@ img {
 
     /* HERO */
     .hero {
-        min-height: 83.33vw;
+        height: 100vh;
     }
 
     .hero__content {
-        flex-direction: column;
+        grid-template-columns: 1fr;
     }
 
     .hero__container {
         padding: 2.6vw 0 6.25vw;
-        min-height: 118.9vw;
+        height: 100vh;
     }
 
     .hero__title {
@@ -722,14 +707,14 @@ img {
     .hero__text {
         font-size: 2.86vw;
         max-width: 100%;
-        margin-bottom: 3.91vw;
+        margin-bottom: 1.3vw;
     }
     .hero_description {
         gap: 2.6vw;
     }
 
     .hero__btn {
-        width: 49%;
+        width: calc(50% - (1.3vw / 2));
         padding: 1.82vw 2.08vw;
         border-radius: 1.04vw;
         font-size: 2.08vw;
@@ -776,7 +761,7 @@ img {
     }
 
     .numbers {
-        padding: 6.25vw 0;
+        padding: 5.2vw 0;
     }
 
     /* Скрыть десктоп, показать мобильную */
@@ -790,7 +775,7 @@ img {
 
     .numbers__grid-mobile {
         position: relative;
-        height: 140vw; /* Увеличил высоту */
+        height: 120vw; /* Увеличил высоту */
         width: 100%;
     }
 
@@ -817,10 +802,20 @@ img {
         z-index: 2;
     }
 
+    .numbers__item-mobile:nth-child(3) .numbers__text
+    {
+        width: 85%;
+    }
+
     .numbers__item-mobile:nth-child(4) {
-        right: 0;
-        top: 66vw; /* Увеличил отступ */
+        right: 12vw;
+        top: 70vw;
         z-index: 4;
+    }
+
+    .numbers__item-mobile:nth-child(4) .numbers__text
+    {
+        width: 80%;
     }
 
     .numbers__circle-mobile {
@@ -835,23 +830,23 @@ img {
 
     /* Размеры: 10 (359), 500+ (418), 15 лет (382), 50+ (380) */
     .numbers__item-mobile:nth-child(1) .numbers__circle-mobile {
-        width: 49.31vw;
-        height: 49.31vw;
+        width: 47vw;
+        height: 47vw;
     }
 
     .numbers__item-mobile:nth-child(2) .numbers__circle-mobile {
-        width: 57.42vw;
-        height: 57.42vw;
+        width: 54vw;
+        height: 54vw;
     }
 
     .numbers__item-mobile:nth-child(3) .numbers__circle-mobile {
-        width: 52.47vw;
-        height: 52.47vw;
+        width: 50vw;
+        height: 50vw;
     }
 
     .numbers__item-mobile:nth-child(4) .numbers__circle-mobile {
-        width: 52.20vw;
-        height: 52.20vw;
+        width: 50vw;
+        height: 50vw;
     }
 
     .numbers__value {
@@ -859,8 +854,10 @@ img {
     }
 
     .numbers__text {
-        font-size: 2.75vw;
+        font-size: 2.6vw;
         max-width: 100%;
+        width: 70%;
+        text-align: left;
     }
 
     /* CATALOG */
@@ -885,7 +882,7 @@ img {
 
     .catalog__grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 2.6vw;
+        gap: 1.3vw;
     }
 
     .catalog__card-image {
@@ -959,16 +956,16 @@ img {
 
     /* HERO */
     .hero {
-        min-height: 177.78vw;
+        height: 100vh;
     }
 
     .hero__content {
-        flex-direction: column;
+        grid-template-columns: 1fr;
     }
 
     .hero__container {
-        padding: 5.56vw 0 8.89vw;
-        min-height: 177.78vw;
+        padding: 5.56vw 0 11vw;
+        min-height: 100vh;
     }
 
     .hero__title {
@@ -977,9 +974,8 @@ img {
     }
 
     .hero__text {
-        font-size: 4.72vw;
+        font-size: 4.5vw;
         max-width: 100%;
-        margin-bottom: 5.56vw;
     }
 
     .breadcrumbs {
@@ -987,7 +983,7 @@ img {
         margin-bottom: 5.56vw;
     }
     .hero_description {
-        gap: 4.44vw;
+        gap: 5.6vw;
     }
 
     .hero__btn {
@@ -1029,8 +1025,8 @@ img {
     }
 
     .our-mission__mobile .our-mission__image img {
-        height: auto;
-        aspect-ratio: 320/240;
+        height: 120vw;
+        border-radius: 4.25vw;
     }
 
     .our-mission__mobile .our-mission__text {
@@ -1069,21 +1065,21 @@ img {
     .numbers__item-mobile:nth-child(1) {
         position: relative;
         align-self: flex-start;
-        margin-bottom: -5.56vw;
+        margin-bottom: -13.56vw;
         z-index: 1;
     }
 
     .numbers__item-mobile:nth-child(2) {
         position: relative;
         align-self: flex-end;
-        margin-bottom: -5.56vw;
+        margin-bottom: -10.56vw;
         z-index: 2;
     }
 
     .numbers__item-mobile:nth-child(3) {
         position: relative;
         align-self: flex-start;
-        margin-bottom: -5.56vw;
+        margin-bottom: -15.56vw;
         z-index: 3;
     }
 
@@ -1091,6 +1087,11 @@ img {
         position: relative;
         align-self: flex-end;
         z-index: 4;
+    }
+    
+    .numbers__item-mobile:nth-child(4) .numbers__text
+    {
+        width: 50%;
     }
 
     .numbers__circle-mobile {
@@ -1112,6 +1113,7 @@ img {
     .numbers__text {
         font-size: 4.38vw;
         max-width: 100%;
+        width: 80%;
     }
 
     /* CATALOG */
@@ -1129,7 +1131,6 @@ img {
         flex-direction: row;
         align-items: flex-end;
         gap: 4.44vw;
-        padding: 0 6.25vw;
     }
 
     .catalog__title {
@@ -1160,7 +1161,7 @@ img {
     }
 
     .catalog__card {
-        flex: 0 0 83.33vw;
+        flex: 0 0 91vw;
         scroll-snap-align: start;
     }
 

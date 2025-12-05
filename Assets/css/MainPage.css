@@ -733,6 +733,8 @@ img {
     line-height: 120%;
     color: black;
     margin: 0 0 1.56vw 0;
+    font-size: 1.25vw;
+    width: 80%;
 }
 
 .contact_buttons {
@@ -769,6 +771,7 @@ img {
 }
 
 .form_title {
+    font-size: 2.1vw;
     font-weight: 400;
     margin: 0;
     color: #000;
@@ -781,6 +784,7 @@ img {
 
 .form_group input,
 .form_group textarea {
+    font-size: 0.83vw;
     border: none;
     border-bottom: 0.05vw solid #ccc;
     padding: 0.63vw 0;
@@ -1078,48 +1082,6 @@ img {
 
     .blog_post h4 {
         font-size: 1.56vw;
-    }
-
-    .contact_section h2 {
-        font-size: 2.1vw;
-    }
-
-    .contact_left p {
-        font-size: 1.25vw;
-        width: 80%;
-    }
-
-    .contact_btn {
-        font-size: 1.56vw;
-    }
-
-    .form_title {
-        font-size: 2.1vw;
-    }
-
-    .form_group input,
-    .form_group textarea {
-        font-size: 0.83vw;
-    }
-
-    .form_agree {
-        font-size: 0.73vw;
-    }
-
-    .form_btn {
-        font-size: 0.83vw;
-    }
-
-    .footer_col h4 {
-        font-size: 1.56vw;
-    }
-
-    .footer_col ul li {
-        font-size: 1.15vw;
-    }
-
-    .footer_bottom {
-        font-size: 0.83vw;
     }
 }
 

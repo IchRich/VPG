@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Moderustic:wght@500;600&family=Inter:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Moderustic:wght@300..800&display=swap');
 
 :root {
     --main-font: 'Moderustic', Arial, sans-serif;
@@ -277,19 +278,14 @@ body {
 /* PRODUCT CARD */
 
 .product {
-    padding: 3.13vw 0 5.21vw;
+    padding: 3.13vw 0 6.21vw;
     background: var(--grey);
-}
-
-.product__container {
-    max-width: 89.58vw;
-    margin: 0 auto;
 }
 
 .product__layout {
     display: grid;
-    grid-template-columns: 44.27vw 44.27vw;
-    gap: 2.08vw;
+    grid-template-columns: 1fr 1fr;
+    gap: 1vw;
 }
 
 .product__left-wrapper {
@@ -300,7 +296,7 @@ body {
 
 /* Карточка с фоном - 410px = 21.35vw */
 .product__card {
-    background-image: url('/Assets/Image/backgroundCard.svg');
+    background-image: url('../Image/backgroundCard.svg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -310,7 +306,6 @@ body {
     flex-direction: column;
     gap: 1.56vw;
     height: 21.35vw;
-    justify-content: space-between;
 }
 
 .product__title {
@@ -332,6 +327,7 @@ body {
 }
 
 .product__btn {
+    margin-top: auto;
     width: 8.91vw;
     padding: 0.73vw 0.25vw;
     background: var(--blue);
@@ -430,7 +426,6 @@ body {
 
 .product__image {
     width: 100%;
-    background: #fff;
     border-radius: 0.78vw;
     overflow: hidden;
 }
@@ -490,16 +485,6 @@ body {
 }
 
 /* RELEVANT PRODUCTS */
-
-.relevant {
-    padding: 5.21vw 0;
-    background: #fff;
-}
-
-.relevant__container {
-    max-width: 89.58vw;
-    margin: 0 auto;
-}
 
 .relevant__title {
     font-family: var(--main-font);
@@ -597,169 +582,7 @@ body {
 .pagination__dots span:nth-child(7) { height: 1.15vw; }
 .pagination__dots span:nth-child(8) { height: 1.25vw; }
 
-/* CONTACT SECTION */
 
-.contact_section {
-    max-width: 93%;
-    margin: 6.25vw auto;
-    padding: 1.13vw;
-    background: #f0f3f9;
-    border-radius: 0.78vw;
-}
-
-.contact_section h2 {
-    font-size: 4.17vw;
-    font-weight: 600;
-    margin: 0 0 3.13vw 0;
-    color: #124295;
-}
-
-.contact_wrapper {
-    padding: 3.3vw;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4.17vw;
-}
-
-.contact_left p {
-    font-size: 1.56vw;
-    line-height: 120%;
-    color: black;
-    margin: 0 0 1.56vw 0;
-}
-
-.contact_left {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.contact_buttons {
-    display: flex;
-    gap: 1.04vw;
-}
-
-.contact_btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: auto;
-    padding: 0.73vw 1.25vw;
-    background: linear-gradient(90deg, #9AB6DF 0%, #0E468C 100%);
-    color: white;
-    text-decoration: none;
-    border-radius: 0.52vw;
-    font-weight: 500;
-    font-size: 1.04vw;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.contact_btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 51, 153, 0.3);
-}
-
-.contact_btn_whatsapp,
-.contact_btn_telegram {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 3.33vw;
-    height: 3.33vw;
-
-    border-radius: 0.52vw;
-    transition: transform 0.3s ease;
-}
-
-.contact_btn_whatsapp:hover,
-.contact_btn_telegram:hover {
-    transform: scale(1.05);
-}
-
-.contact_btn_whatsapp img,
-.contact_btn_telegram img {
-    width: 100%;
-    height: 100%;
-}
-
-.contact_form {
-    display: flex;
-    flex-direction: column;
-    gap: 1.04vw;
-}
-
-.form_title {
-    font-size: 1.56vw;
-    font-weight: 400;
-    margin: 0;
-    color: #000;
-}
-
-.form_group {
-    display: flex;
-    flex-direction: column;
-}
-
-.form_group input,
-.form_group textarea {
-    border: none;
-    border-bottom: 1px solid #ccc;
-    padding: 0.63vw 0;
-    font-family: var(--text-font);
-    font-size: 0.83vw;
-    background: transparent;
-    outline: none;
-    transition: border-color 0.3s ease;
-}
-
-.form_group input:focus,
-.form_group textarea:focus {
-    border-bottom-color: var(--blue);
-}
-
-.form_group input::placeholder,
-.form_group textarea::placeholder {
-    color: #999;
-}
-
-.form_group textarea {
-    resize: none;
-    min-height: 5.21vw;
-    border: none;
-    border-bottom: 1px solid #ccc;
-    padding: 0.63vw 0;
-}
-
-.form_agree {
-    font-size: 0.73vw;
-    color: black;
-    margin: 0;
-    line-height: 120%;
-}
-
-.form_btn {
-    width: 100%;
-    background: rgba(18, 66, 149, 1);
-    color: #fff;
-    border: none;
-    padding: 0.83vw 2.6vw;
-    border-radius: 0.52vw;
-    font-weight: 700;
-    font-size: 0.83vw;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    font-family: var(--text-font);
-}
-
-.form_btn:hover {
-    background: #001f66;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(18, 66, 149, 0.3);
-}
-
-.form_btn:active {
-    transform: translateY(0);
-}
 
 /* TABLET и MOBILE - скрыть десктоп, показать мобильную */
 @media (max-width: 1024px) {
@@ -900,27 +723,6 @@ body {
         height: 3.13vw;
     }
 
-    /* Product */
-    .product__card {
-        height: auto;
-        min-height: 40vw;
-    }
-
-    .product__title {
-        font-size: 5.21vw;
-    }
-
-    .product__description {
-        font-size: 2.6vw;
-    }
-
-    .product__btn {
-        border-radius: 10px;
-        width: 49%;
-        font-size: 2.08vw;
-        padding: 1.82vw 2.08vw;
-    }
-
     .accordion__title {
         font-size: 2.6vw;
     }
@@ -935,14 +737,60 @@ body {
     }
 
     /* Slider dots */
+    .product__slider-dots
+    {
+        gap: 0.7vw;
+        padding: 1.3vw 0;
+    }
+
     .slider-dot {
-        width: 3vw;
-        height: 3vw;
+        width: 1.6vw;
+        height: 1.6vw;
     }
 
     .slider-dot.active {
-        width: 3.5vw;
-        height: 3.5vw;
+        width: 1.8vw;
+        height: 1.8vw;
+    }
+
+    .product__slider-wrapper
+    {
+        margin-bottom: 5.2vw;
+    }
+
+    .product__description
+    {
+        font-size: 2.6vw;
+    }
+
+    .product__card
+    {
+        height: 36.5vw;
+        padding: 2.5vw;
+    }
+
+    .product__btn
+    {
+        width: 30%;
+        font-size: 2.1vw;
+        padding: 1.8vw 3.1vw;
+        border-radius: 2.1vw;
+    }
+
+    .product__accordion
+    {
+        margin-top: 2.5vw;
+        gap: 2.5vw;
+    }
+    
+    .product
+    {
+        padding-bottom: 5.2vw;
+    }
+    
+    .accordion__header
+    {
+        padding: 2.5vw;
     }
 
     /* Relevant */
@@ -960,64 +808,7 @@ body {
         height: 40vw;
     }
 
-    /* Contact */
-    .contact_section {
-
-    }
-
-    .contact_section h2 {
-        font-size: 6.51vw;
-        margin-bottom: 2.6vw;
-    }
-
-    .contact_wrapper {
-        grid-template-columns: 1fr;
-        row-gap: 3.91vw;
-    }
-
-    .contact_left p {
-        font-size: 3.12vw;
-        margin-bottom: 2.6vw;
-    }
-
-    .contact_buttons {
-        flex-direction: row;
-        gap: 2.6vw;
-    }
-
-    .contact_btn {
-        font-size: 2.6vw;
-        padding: 1.82vw 2.08vw;
-    }
-
-    .contact_btn_whatsapp,
-    .contact_btn_telegram {
-        width: 7.42vw;
-        height: 7.42vw;
-    }
-
-    .form_title {
-        font-size: 3.12vw;
-    }
-
-    .form_group input,
-    .form_group textarea {
-        font-size: 2.08vw;
-        padding: 1.56vw 0;
-    }
-
-    .form_group textarea {
-        min-height: 10vw;
-    }
-
-    .form_agree {
-        font-size: 1.82vw;
-    }
-
-    .form_btn {
-        font-size: 2.08vw;
-        padding: 1.82vw 3.12vw;
-    }
+ 
 }
 
 /* MOBILE */
@@ -1133,62 +924,5 @@ body {
         height: 50vw;
     }
 
-    /* Contact */
-    .contact_section {
-
-    }
-
-    .contact_section h2 {
-        font-size: 6.7vw;
-        margin-bottom: 5.56vw;
-    }
-
-    .contact_wrapper {
-        grid-template-columns: 1fr;
-        row-gap: 5.56vw;
-    }
-
-    .contact_left p {
-        font-size: 4.44vw;
-        margin-bottom: 5.56vw;
-    }
-
-    .contact_buttons {
-        flex-direction: row;
-        gap: 4.44vw;
-    }
-
-    .contact_btn {
-        font-size: 4.5vw;
-        padding: 1.33vw 1.56vw;
-    }
-
-    .contact_btn_whatsapp,
-    .contact_btn_telegram {
-        width: 11.11vw;
-        height: 11.11vw;
-    }
-
-    .form_title {
-        font-size: 4.44vw;
-    }
-
-    .form_group input,
-    .form_group textarea {
-        font-size: 3.89vw;
-        padding: 3.33vw 0;
-    }
-
-    .form_group textarea {
-        min-height: 22.22vw;
-    }
-
-    .form_agree {
-        font-size: 3.33vw;
-    }
-
-    .form_btn {
-        font-size: 3.89vw;
-        padding: 3.33vw 6.67vw;
-    }
+  
 }

@@ -36,6 +36,7 @@ img {
     background: url('../Image/BrandBack.svg') center/cover no-repeat;
     width: 100%;
     padding-inline: 5%;
+    padding-block: 0;
 }
 
 .hero__bg {
@@ -51,7 +52,7 @@ img {
 .hero__container {
     position: relative;
     z-index: 1;
-    padding: 1.04vw 0 5.21vw;
+    padding: 0 0 5.21vw;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -166,6 +167,11 @@ img {
 
 .burger {
     display: none;
+}
+
+section.hero div.hero__container .main_navigation
+{
+    max-width: 100%;
 }
 
 /* MOBILE MENU */

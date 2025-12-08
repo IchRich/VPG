@@ -152,6 +152,78 @@ section
     background: #001f66;
 }
 
+/* ===== HEADER ===== */
+.main_header {
+    padding: 1.04vw 0;
+}
+
+.main_navigation {
+    max-width: var(--container);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 4.5vw;
+}
+
+.logo {
+    height: 2.6vw;
+    margin-right: auto;
+}
+
+.main_navigation__list {
+    display: flex;
+    gap: 1.56vw;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main_navigation__list a {
+    text-decoration: none;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+.main_navigation__list a:hover {
+    color: var(--accent-color);
+}
+
+.main_navigation__right {
+    display: flex;
+    align-items: center;
+    gap: 1.56vw;
+}
+
+.main_navigation__search img {
+    cursor: pointer;
+}
+
+.main_navigation__phone {
+    text-decoration: none;
+    text-underline-offset: 0.42vw;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.main_navigation__phone:hover {
+    color: #001f66;
+}
+
+.main_navigation__btn {
+    border: none;
+    padding: 0.63vw 1.25vw;
+    border-radius: 0.31vw;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.main_navigation__btn:hover {
+    transform: translateY(-0.1vw);
+}
+
 .main_navigation__list li a img
 {
     width: 1.15vw;

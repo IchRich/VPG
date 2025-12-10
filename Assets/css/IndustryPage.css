@@ -1105,7 +1105,7 @@ html, body {
         line-height: 100%;
         letter-spacing: -0.04em;
         text-align: justify;
-        text-indent: 24.38vw;
+        text-indent: 13.38vw;
 
     }
 
@@ -1125,12 +1125,14 @@ html, body {
         align-items: flex-start;
     }
 
+    .content_text__bottom {
+        margin-top: auto;
+    }
+
     .content_column {
         display: flex;
         flex-direction: column;
-        gap: 35.56vw;
         max-width: 30.21vw;
-        justify-content: space-between;
         height: 100%;
     }
 
@@ -1183,8 +1185,6 @@ html, body {
     .contact_section {
         max-width:89.58vw;
         margin: 6.25vw auto;
-
-        background: #f0f3f9;
         border-radius: 0.63vw;
     }
 
@@ -1242,6 +1242,7 @@ html, body {
     .contact_form {
         display: flex;
         flex-direction: column;
+        background: rgba(255, 255, 255, 1);
         gap: 1.04vw;
     }
 

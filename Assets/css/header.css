@@ -1,15 +1,15 @@
+
 img {
     display: block;
     max-width: 100%;
     height: auto;
+    color: white;
 }
 
 section
 {
     width: 90%;
     margin: 0 auto;
-    padding-top: 3.1vw;
-    padding-bottom: 3.1vw;
 }
 
 .burger {
@@ -158,7 +158,6 @@ section
 }
 
 .main_navigation {
-    max-width: var(--container);
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -172,9 +171,10 @@ section
 
 .main_navigation__list {
     display: flex;
-    gap: 1.56vw;
+    gap: 2.20vw;
     list-style: none;
     margin: 0;
+    font-size: 22px;
     padding: 0;
 }
 
@@ -201,7 +201,6 @@ section
 }
 
 .main_navigation__phone {
-    text-decoration: none;
     text-underline-offset: 0.42vw;
     font-weight: 600;
     transition: color 0.3s ease;
@@ -213,9 +212,9 @@ section
 
 .main_navigation__btn {
     border: none;
+    font-weight: 600;
     padding: 0.63vw 1.25vw;
-    border-radius: 0.31vw;
-    font-weight: 500;
+    border-radius: 0.5vw;
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -243,10 +242,10 @@ section
 }
 
 .contact_section h2 {
-    font-weight: 400;
+    font-weight: bold;
     margin: 0;
+    font-size: 50px;
     width: 80%;
-    color: #000;
 }
 
 .contact_wrapper {
@@ -269,18 +268,16 @@ section
     line-height: 120%;
     color: black;
     margin: 0 0 1.56vw 0;
-    font-size: 1.25vw;
-    width: 80%;
 }
 
 .contact_buttons {
     display: flex;
-    gap: 1vw;
     margin-top: auto;   
 }
 .contact_btn_whatsapp img, .contact_btn_telegram img
 {
-    width: 2.6vw;
+    width: 40px;
+    height: 64px;
 }
 
 .contact_btn {
@@ -304,10 +301,6 @@ section
     display: flex; 
     flex-direction: column;
     gap: 1.04vw;
-}
-
-.contact_section h2 {
-    font-size: 2.1vw;
 }
 
 .contact_btn {
@@ -488,7 +481,7 @@ section
         gap: 3.91vw;
     }
 
-    .mobile_nav ul li a {
+.mobile_nav ul li a {
         font-size: 5.21vw;
         gap: 0.65vw;
     }
@@ -731,7 +724,7 @@ section
         font-size: 3.61vw;
     }
 
-    .form_btn {
+.form_btn {
         margin-top: 5vw;
         height: 11.11vw;
         padding: 3.33vw;

@@ -83,7 +83,6 @@ html, body {
     display: flex;
     align-items: center;
     gap: 1.56vw;
-    margin-left: auto;
 }
 
 .main_navigation__search img {

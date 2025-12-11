@@ -160,7 +160,6 @@ html, body {
         color: black;
         text-decoration: none;
         font-weight: 400;
-        display: block;
     }
 
     .mobile_nav {
@@ -1018,7 +1017,7 @@ html, body {
     .hero_section {
         position: relative;
         width: 100%;
-        height: 50.26vw;
+        height: 100vh;
         background-image: url('../Image/Background.svg');
         background-size: cover;
         background-position: center;

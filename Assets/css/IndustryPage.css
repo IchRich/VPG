@@ -962,8 +962,8 @@ html, body {
 
     .main_navigation__list a img {
         margin-left: 0.31vw;
-        width: 0.73vw;
-        height: 0.73vw;
+        width: 1.00vw;
+        height: 1.00vw;
     }
 
     .main_navigation__right {
@@ -1024,11 +1024,12 @@ html, body {
         background-position: center;
         display: flex;
         flex-direction: column;
-        padding: 2.6vw;
+        padding: 5.5vw;
+        padding-top: 0.5vw;
     }
 
     .hero_content {
-        gap: 5.82vw;
+        gap: 5.00vw;
         display: flex;
         flex-direction: row;
         max-width: 89.58vw;
@@ -1044,13 +1045,10 @@ html, body {
         letter-spacing: -0.04em;
         color: var(--white);
         text-transform: uppercase;
-        margin-bottom: 1.56vw;
         max-width: 41.15vw;
     }
 
     .hero_description {
-        font-size: 1.25vw;
-        font-weight: 500;
         line-height: 120%;
         letter-spacing: -0.04em;
         color: var(--white);
@@ -1059,9 +1057,7 @@ html, body {
     }
 
     .content_section {
-        max-width: 89.58vw;
         margin: 6.25vw auto;
-
     }
 
 
@@ -1099,7 +1095,7 @@ html, body {
         line-height: 100%;
         letter-spacing: -0.04em;
         text-align: justify;
-        text-indent: 24.38vw;
+        text-indent: 46.38vw;
         margin-bottom: 120px;
     }
     .content_text--large {
@@ -1109,7 +1105,7 @@ html, body {
         line-height: 100%;
         letter-spacing: -0.04em;
         text-align: justify;
-        text-indent: 24.38vw;
+        text-indent: 13.38vw;
 
     }
 
@@ -1129,11 +1125,15 @@ html, body {
         align-items: flex-start;
     }
 
+    .content_text__bottom {
+        margin-top: auto;
+    }
+
     .content_column {
         display: flex;
         flex-direction: column;
-        gap: 35.56vw;
         max-width: 30.21vw;
+        height: 100%;
     }
 
     .content_text--medium {
@@ -1146,7 +1146,7 @@ html, body {
     .content_images {
         display: flex;
         flex-direction: column;
-        gap: 3.04vw;
+        gap: 1.40vw;
         align-items: flex-end;
     }
 
@@ -1185,8 +1185,6 @@ html, body {
     .contact_section {
         max-width:89.58vw;
         margin: 6.25vw auto;
-
-        background: #f0f3f9;
         border-radius: 0.63vw;
     }
 
@@ -1244,6 +1242,7 @@ html, body {
     .contact_form {
         display: flex;
         flex-direction: column;
+        background: rgba(255, 255, 255, 1);
         gap: 1.04vw;
     }
 
@@ -1283,7 +1282,6 @@ html, body {
 
     .form_group textarea {
         resize: none;
-        min-height: 5.21vw;
         border: none;
         border-bottom: 1px solid #ccc;
         padding: 0.63vw 0;

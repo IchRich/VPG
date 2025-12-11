@@ -11,7 +11,7 @@
 </head>
 <body>
 
-<!-- HERO / COVER -->
+<!-- HERO / HEADER -->
 <section class="hero">
     <div class="hero__bg"></div>
     <div class="hero__overlay"></div>
@@ -19,7 +19,7 @@
     <div class="hero__container">
         <header class="main_header">
             <nav class="main_navigation" aria-label="Главная навигация">
-                <img src="Assets\Image\WhiteLogo.svg" alt="Логотип компании" class="logo" />
+                <a href="index.html"><img src="Assets\Image\WhiteLogo.svg" alt="Логотип компании" class="logo"/></a>
 
                 <ul class="main_navigation__list">
                     <li><a href="CatalogPage.html">Каталог
@@ -170,42 +170,35 @@
 
 <!-- CONTACT -->
 <section class="contact_section">
-    <h2>ОСТАЛИСЬ ВОПРОСЫ? <br/>СВЯЖИТЕСЬ С НАМИ</h2>
     <div class="contact_wrapper">
         <div class="contact_left">
-            <p>Мы поможем разобраться в технических деталях, подберём решение под ваши задачи и проконсультируем по любым вопросам. Просто оставьте заявку — мы ответим в ближайшее время.</p>
+            <h2>Связаться с&nbsp;нами</h2>
+            <p>Мы поможем разобраться в технических деталях, подберём решение под ваши задачи и проконсультируем по любым вопросам. 
+            Оставьте заявку — мы ответим в ближайшее время.</p>
             <div class="contact_buttons">
                 <a href="tel:88005553535" class="contact_btn">8 (800) 555-35-35</a>
                 <a href="#" class="contact_btn_whatsapp">
-                    <img src="Assets\Image\TgIcon.svg" alt="WhatsApp" />
+                    <img src="Assets\Image\WhatsappIcon.svg" alt="WhatsApp" />
                 </a>
                 <a href="#" class="contact_btn_telegram">
-                    <img src="Assets\Image\WhatsappIcon.svg" alt="Telegram" />
+                    <img src="Assets\Image\TgIcon.svg" alt="Telegram" />
                 </a>
             </div>
         </div>
         <form class="contact_form">
             <h3 class="form_title">Ваши данные</h3>
-
             <div class="form_group">
                 <input type="text" placeholder="Имя" required />
             </div>
-
             <div class="form_group">
                 <input type="tel" placeholder="Телефон" required />
             </div>
-
-            <h3 class="form_title">Сообщение</h3>
-
             <div class="form_group">
                 <textarea placeholder="Сообщение" required></textarea>
             </div>
-
             <p class="form_agree">Отправляя форму, я соглашаюсь с политикой конфиденциальности</p>
-
             <button type="submit" class="form_btn">Оставить заявку</button>
         </form>
-
     </div>
 </section>
 
@@ -249,6 +242,5 @@
         <span class="site_footer__dev_container">Сайт разработан: <img src="Assets/Image/LogoKant.svg" width="138" height="14" alt="Логотип Kant"></span>
     </div>
 </footer>
-
 </body>
 </html>

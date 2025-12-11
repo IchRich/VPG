@@ -17,14 +17,13 @@ img {
     display: block;
     max-width: 100%;
     height: auto;
+    color: white;
 }
 
 section
 {
     width: 90%;
     margin: 0 auto;
-    padding-top: 3.1vw;
-    padding-bottom: 3.1vw;
 }
 
 .burger {
@@ -44,10 +43,6 @@ section
     background: rgba(255, 255, 255, 1);
     border-radius: 0.1vw;
     transition: all 0.3s ease;
-}
-.burger-blue span
-{
-    background: var(--blue);
 }
 
 .mobile_navigation__buttons {
@@ -182,7 +177,6 @@ section
     display: flex;
     align-items: center;
     gap: 4.5vw;
-    justify-content: space-between;
 }
 
 .logo {
@@ -192,9 +186,10 @@ section
 
 .main_navigation__list {
     display: flex;
-    gap: 1.56vw;
+    gap: 2.20vw;
     list-style: none;
     margin: 0;
+    font-size: 22px;
     padding: 0;
 }
 
@@ -221,7 +216,6 @@ section
 }
 
 .main_navigation__phone {
-    text-decoration: none;
     text-underline-offset: 0.42vw;
     font-weight: 600;
     transition: color 0.3s ease;
@@ -233,9 +227,9 @@ section
 
 .main_navigation__btn {
     border: none;
+    font-weight: 600;
     padding: 0.63vw 1.25vw;
-    border-radius: 0.31vw;
-    font-weight: 500;
+    border-radius: 0.5vw;
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -263,18 +257,22 @@ section
 }
 
 .contact_section h2 {
-    font-weight: 400;
+    font-weight: bold;
+    line-height:5.00vw;
     margin: 0;
+    font-size: 80px;
     width: 80%;
-    color: #000;
+}
+
+.footer_span {
+    color: black;
 }
 
 .contact_wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1.04vw;
-    padding: 1.6vw;
-    background: rgba(255, 255, 255, 1);
+    margin-top: 40px;
     border-radius: 0.85vw;
 }
 
@@ -282,38 +280,26 @@ section
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 20px;
     gap: 1.04vw;
+    padding: 50px;
 }
 
 .contact_left p {
     line-height: 120%;
     color: black;
     margin: 0 0 1.56vw 0;
-    font-size: 1.25vw;
-    width: 80%;
 }
 
 .contact_buttons {
     display: flex;
-    gap: 1vw;
     margin-top: auto;   
 }
+
 .contact_btn_whatsapp img, .contact_btn_telegram img
 {
-    width: 2.6vw;
-}
-
-.contact_btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 14.74vw;
-    background: linear-gradient(90deg, #9AB6DF 0%, #0E468C 100%);
-    color: white;
-    text-decoration: none;
-    border-radius: 0.31vw;
-    font-weight: 400;
-    transition: transform 0.3s ease;
+    height: 64px;
 }
 
 .contact_btn:hover {
@@ -322,12 +308,10 @@ section
 
 .contact_form {
     display: flex; 
+    padding: 50px;
     flex-direction: column;
+    border-radius: 20px;
     gap: 1.04vw;
-}
-
-.contact_section h2 {
-    font-size: 2.1vw;
 }
 
 .contact_btn {
@@ -508,7 +492,7 @@ section
         gap: 3.91vw;
     }
 
-    .mobile_nav ul li a {
+.mobile_nav ul li a {
         font-size: 5.21vw;
         gap: 0.65vw;
     }
@@ -751,7 +735,7 @@ section
         font-size: 3.61vw;
     }
 
-    .form_btn {
+.form_btn {
         margin-top: 5vw;
         height: 11.11vw;
         padding: 3.33vw;

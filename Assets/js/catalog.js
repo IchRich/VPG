@@ -7,12 +7,20 @@ document.addEventListener('DOMContentLoaded', function() {
     const filterSections = document.querySelectorAll('.filter_section');
 
     // Open mobile/tablet filter modal
-    if (filterBtn) {
-        filterBtn.addEventListener('click', function() {
+    filterBtn.addEventListener('click', function() {
+        const isActive = filterModal.classList.contains('active');
+
+        if (isActive) {
+            // закрыть
+            filterModal.classList.remove('active');
+            document.body.style.overflow = '';
+        } else {
+            // открыть
             filterModal.classList.add('active');
             document.body.style.overflow = 'hidden';
-        });
-    }
+        }
+    });
+
 
     // Close filter modal
     if (filterClose) {

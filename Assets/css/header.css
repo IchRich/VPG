@@ -24,6 +24,8 @@ section
 {
     width: 90%;
     margin: 0 auto;
+    padding-top: 3.1vw;
+    padding-bottom: 3.1vw;
 }
 
 .burger {
@@ -43,6 +45,10 @@ section
     background: rgba(255, 255, 255, 1);
     border-radius: 0.1vw;
     transition: all 0.3s ease;
+}
+.burger-blue span
+{
+    background: var(--accent-color);
 }
 
 .mobile_navigation__buttons {
@@ -177,6 +183,7 @@ section
     display: flex;
     align-items: center;
     gap: 4.5vw;
+    justify-content: space-between;
 }
 
 .logo {
@@ -219,6 +226,7 @@ section
     text-underline-offset: 0.42vw;
     font-weight: 600;
     transition: color 0.3s ease;
+    text-decoration: none;
 }
 
 .main_navigation__phone:hover {
@@ -423,6 +431,11 @@ section
         padding-top: 5.2vw;
         padding-bottom: 5.2vw;
     }
+    .main_navigation
+    {
+        width: calc(100% - 40px);
+        max-width: 100%;
+    }
     .main_navigation__list,
     .main_navigation__right {
         display: none !important;
@@ -492,7 +505,7 @@ section
         gap: 3.91vw;
     }
 
-.mobile_nav ul li a {
+    .mobile_nav ul li a {
         font-size: 5.21vw;
         gap: 0.65vw;
     }

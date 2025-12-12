@@ -113,6 +113,10 @@
 /* TABLET */
 
 @media (min-width: 768px) and (max-width: 1024px) {
+    .main_footer
+    {
+        padding: 5.2vw 0 1.56vw;
+    }
     .footer_content {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -142,7 +146,7 @@
 
 @media (max-width: 767px) {
    .main_footer {
-        padding: 4.44vw 0;
+        padding: 8.4vw 0 5.5vw
     }
 
     .footer_content {

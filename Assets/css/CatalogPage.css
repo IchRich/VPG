@@ -21,11 +21,6 @@ body {
     background: var(--bg-color);
     color: var(--main-color);
 }
-.main_header {
-    background: #fff;
-    padding: 1.04vw 0;
-    box-shadow: 0 0.05vw 0.21vw rgba(0, 0, 0, 0.05);
-}
 
 .main_navigation {
     max-width: var(--container);
@@ -72,7 +67,6 @@ body {
 }
 
 .main_navigation__phone {
-    text-decoration: underline;
     color: var(--accent-color);
     text-underline-offset: 0.42vw;
     font-weight: 600;
@@ -101,10 +95,6 @@ body {
 
 /* МОБИЛЬНЫЙ АДАПТИВ: 360px - 767px */
 @media (min-width: 360px) and (max-width: 767px) {
-    .catalog_page {
-        margin: 0 auto;
-        padding: 5.56vw;
-    }
 
     /* Breadcrumbs */
     .breadcrumbs {
@@ -134,7 +124,7 @@ body {
         line-height: 110%;
         text-transform: uppercase;
         color: var(--accent-color);
-        margin-bottom: 4.44vw;
+        margin-bottom: 5.6vw;
     }
 
     /* Controls */
@@ -142,7 +132,7 @@ body {
         flex-direction: row-reverse;
         display: flex;
         gap: 4.44vw;
-        margin-bottom: 6.67vw;
+        margin-bottom: 11.1vw;
     }
 
     .search_wrapper {
@@ -216,6 +206,7 @@ body {
         background: var(--white);
         border-radius: 3.33vw;
         overflow: hidden;
+        padding: 5.6vw;
     }
 
     .product_image {
@@ -223,15 +214,13 @@ body {
         justify-content: center;
         width: 100%;
         height: 44.44vw;
-        background: #e0e0e0;
     }
     .boehler_image{
         width: 29.55vw;
     }
     .product_info {
-        width: 71%;
+        width: 80%;
         color: var(--accent-color);
-        padding: 4.44vw;
     }
 
     .product_info h3 {
@@ -276,7 +265,7 @@ body {
     .show_more_btn {
         width: 100%;
         height: 12.22vw;
-        margin-top: 6.67vw;
+        margin-top: 5.6vw;
         background: transparent;
         color: var(--accent-color);
         border: 1px solid var(--accent-color);
@@ -294,15 +283,14 @@ body {
         left: 0;
         width: 100vw;
         height: 100vh;
-        background: rgba(18, 66, 149, 0.1);
         z-index: 1000;
         padding: 5.56vw;
     }
 
     .filter_modal.active {
-        margin-top: 25px;
+        margin-top: 38vw;
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: flex-start;
     }
 
@@ -315,6 +303,7 @@ body {
         padding: 5.56vw;
         overflow-y: auto;
         position: relative;
+        box-shadow: 5px 5px 5px rgba(18, 66, 149, 0.1);
     }
 
     .filter_close {
@@ -345,17 +334,13 @@ body {
         outline: none;
     }
 
-    .filter_section {
-        margin-bottom: 5.56vw;
-    }
-
     .filter_section_header {
         width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 5.56vw 0;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        border-bottom: 0;
         background: none;
         border-left: none;
         border-right: none;
@@ -375,6 +360,15 @@ body {
         width: 6.67vw;
         height: 6.67vw;
         transition: transform 0.3s;
+    }
+
+    .filter_section {
+        border-top: 1px solid rgba(0, 0, 0, 0.2);
+    }
+    
+    .filter_section:last-of-type
+    {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     }
 
     .filter_section.collapsed .arrow_icon {
@@ -415,13 +409,10 @@ body {
 
 /* ПЛАНШЕТНЫЙ АДАПТИВ: 768px - 1024px */
 @media (min-width: 768px) and (max-width: 1024px) {
-    .main_navigation{
-        max-width: 94%;
-    }
 
     .catalog_page {
         margin: 0 auto;
-        padding: 2.6vw;
+        padding: 5.2vw 0;
     }
 
     .breadcrumbs {
@@ -462,8 +453,7 @@ body {
     }
 
     .search_wrapper {
-        flex: 1;
-        max-width: 46.74vw;
+        width: calc(50% - 1.3vw);
         display: flex;
         align-items: center;
         border-bottom: 1px solid var(--main-color);
@@ -524,28 +514,30 @@ body {
     .products_grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 2.08vw;
+        gap: 1.3vw;
     }
 
     .product_card {
         background: var(--white);
         border-radius: 1.56vw;
         overflow: hidden;
+        padding: 2.5vw;
+        gap: 2.5vw;
+        display: flex;
+        flex-direction: column;
     }
 
     .product_image {
         display: flex;
         justify-content: center;
         width: 100%;
-        height: 22.79vw;
-        background: #e0e0e0;
+        height: 14.7vw;
     }
 
 
     .product_info {
         width: 71%;
         color: var(--accent-color);
-        padding: 2.08vw;
     }
 
     .product_info h3 {
@@ -588,15 +580,15 @@ body {
     }
 
     .show_more_btn {
-        width: 20.57vw;
-        height: 5.73vw;
+        width: 25%;
+        height: 5.7vw;
         margin: 3.91vw auto 0;
         display: block;
         background: transparent;
         color: var(--accent-color);
         border: 1px solid var(--accent-color);
         border-radius: 1.3vw;
-        font-size: 1.82vw;
+        font-size: 2.1vw;
         font-weight: 600;
         cursor: pointer;
     }
@@ -609,15 +601,14 @@ body {
         left: 0;
         width: 100vw;
         height: 100vh;
-        background: rgba(18, 66, 149, 0.1);
         z-index: 1000;
         padding: 2.6vw;
     }
 
     .filter_modal.active {
-        margin-top: 100px;
+        margin-top: 26vw;
         display: flex;
-        align-items: center;
+        align-items: flex-start;
     }
 
     .filter_modal_content {
@@ -658,9 +649,10 @@ body {
         font-size: 2.08vw;
         outline: none;
     }
-
-    .filter_section {
-        margin-bottom: 2.6vw;
+    
+    .filter_section:nth-of-type(1)
+    {
+        border-top: 1px solid rgba(0, 0, 0, 0.2);
     }
 
     .filter_section_header {
@@ -711,6 +703,7 @@ body {
         align-items: center;
         gap: 1.3vw;
         cursor: pointer;
+        color: black;
     }
 
     .filter_checkbox input {
@@ -730,7 +723,7 @@ body {
 @media (min-width: 1025px) {
 
     .catalog_page {
-        max-width: 89.58vw;
+        max-width: 90%;
         margin: 0 auto;
     }
 
@@ -760,7 +753,7 @@ body {
         line-height: 110%;
         text-transform: uppercase;
         color: var(--accent-color);
-        margin-bottom: 3.13vw;
+        margin-bottom: 1.55vw;
     }
 
     .catalog_controls {
@@ -771,7 +764,7 @@ body {
     .catalog_layout {
         display: grid;
         grid-template-columns: 29.17vw 1fr;
-        gap: 3.13vw;
+        gap: 1.04vw;
     }
 
     /* Desktop Filter Sidebar */
@@ -813,8 +806,8 @@ body {
         border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     }
 
-    .filter_section:last-of-type {
-        border-bottom: none;
+    .filter_section:nth-of-type(2) {
+        border-top: 1px solid rgba(0, 0, 0, 0.2);
     }
 
     .filter_section_header {
@@ -843,18 +836,22 @@ body {
     }
 
     .filter_section.collapsed .arrow_icon {
-        transform: rotate(-90deg);
+        transform: rotate(-180deg);
     }
 
     .filter_section_content {
         display: flex;
         flex-direction: column;
         gap: 0.52vw;
-        padding: 1.04vw 0;
+        overflow: hidden;
+        max-height: 0px;
+        padding: 0;
+        transition: max-height 0.35s ease, padding 0.3s ease;
     }
 
     .filter_section.collapsed .filter_section_content {
-        display: none;
+        padding-bottom: 1.04vw;
+        max-height: 100%;
     }
 
     .filter_checkbox {
@@ -893,6 +890,10 @@ body {
         border-radius: 0.78vw;
         overflow: hidden;
         transition: transform 0.3s;
+        display: flex;
+        flex-direction: column;
+        gap: 1.04vw;
+        padding: 1.04vw;
     }
 
     .product_card:hover {
@@ -905,13 +906,11 @@ body {
         align-items: center;
         width: 100%;
         height: 11.15vw;
-        background: #e0e0e0;
     }
 
     .product_info {
         width: 60%;
         color: var(--accent-color);
-        padding: 1.04vw;
     }
 
     .product_info h3 {
@@ -962,7 +961,7 @@ body {
     .show_more_btn {
         width: 8.23vw;
         height: 2.29vw;
-        margin: 2.08vw auto 0;
+        margin: 2.58vw auto 0;
         display: block;
         background: transparent;
         color: var(--accent-color);

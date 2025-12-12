@@ -198,7 +198,7 @@ img {
 
 .catalog_item {
     width: 100%;
-    background: #f8f9fb;
+    background: rgba(255, 255, 255, 1);
     border-radius: 0.63vw;
     padding: 1.56vw;
     display: flex;

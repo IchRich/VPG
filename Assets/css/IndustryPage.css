@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&family=Inter:wght@400;500;600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 :root {
-    --main-font: 'Moderustic', Arial, sans-serif;
-    --heading-font: 'Moderustic', Arial, sans-serif;
+    --main-font: ;
+    --heading-font: ;
     --main-color: #1d3151;
     --accent-color: #124295;
     --bg-color: #f5f5f5;
@@ -20,7 +20,6 @@ html, body {
     font-family: var(--main-font);
     color: black;
     background: var(--bg-color);
-    line-height: 1.6;
 }
 
 /* МОБИЛЬНЫЙ АДАПТИВ: 360px - 767px */
@@ -160,6 +159,7 @@ html, body {
         color: black;
         text-decoration: none;
         font-weight: 400;
+        display: block;
     }
 
     .mobile_nav {
@@ -236,18 +236,16 @@ html, body {
     }
 
     .content_text--large {
-        font-size: 4.2vw;
+        padding-top: 20px;
         font-weight: 500;
         line-height: 100%;
-        letter-spacing: -0.04em;
         text-align: justify;
         margin-bottom: 5.56vw;
     }
     .content_text__large{
-        font-size: 4.2vw;
         font-weight: 500;
         line-height: 100%;
-        letter-spacing: -0.04em;
+        letter-spacing: -0.2em;
         text-align: justify;
         margin-bottom: 5.56vw;
     }
@@ -269,7 +267,6 @@ html, body {
         font-size:  3.3vw;
         font-weight: 400;
         line-height: 120%;
-        letter-spacing: -0.04em;
     }
 
     .content_images {
@@ -320,6 +317,7 @@ html, body {
     }
 
     .content_text--small {
+        padding-top: 20px;
         font-size: 3.3vw;
         line-height: 120%;
         letter-spacing: -0.04em;
@@ -328,7 +326,6 @@ html, body {
     .contact_section {
         margin: 13.89vw auto;
         padding: 5.56vw 1.44vw;
-        background: #f0f3f9;
         border-radius: 3.33vw;
     }
 
@@ -336,7 +333,6 @@ html, body {
         font-size: 6.7vw;
         font-weight: 600;
         line-height: 110%;
-        text-transform: uppercase;
         color: var(--accent-color);
         margin: 0 0 5.56vw 0;
     }
@@ -377,9 +373,7 @@ html, body {
         color: white;
         text-decoration: none;
         border: none;
-        border-radius: 2.22vw;
         font-weight: 400;
-        font-size: 4.44vw;
         cursor: pointer;
     }
 
@@ -666,47 +660,68 @@ html, body {
         margin-bottom: 3.13vw;
     }
 
+    .content_text {
+        line-height: 1.0em;
+    }
+
     .hero_description {
-        font-size: 2.6vw;
+        font-size: 2.9vw;
         font-weight: 500;
         line-height: 120%;
-        letter-spacing: -0.04em;
+        letter-spacing: -0.07em;
         color: var(--white);
         max-width: 58.33vw;
         margin-top: auto;
+        font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+    }
+
+    .content_text__col {
+        padding-top: 40px;
+        width: 100%;
+        line-height: 1.5;
+        display: flex;
+        justify-content: end;
+        gap: 6.0vw;
     }
 
     .content_section {
+        font-size: 4.0vw;
+        text-align: justify;
+        letter-spacing: 0.01em;
+        font-weight: 500;
         margin: 9.11vw auto;
         padding: 0 2.6vw;
     }
 
     .content_text--large {
-        font-size: 3.91vw;
+        padding-top: 20px;
+        font-size: 3.90vw;
         font-weight: 500;
         line-height: 100%;
-        letter-spacing: -0.04em;
         text-align: justify;
-        margin-bottom: 4.69vw;
     }
 
     .content_grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 4.69vw;
+        padding-top: 40px;
+        gap: 4.00vw;
     }
 
     .content_column {
         display: flex;
+        justify-content: space-between;
         flex-direction: column;
         gap: 38.6vw;
     }
 
     .content_text--medium {
-        font-size: 2.86vw;
+        letter-spacing: -0.02em;
+        font-size: 2.40vw;
         font-weight: 500;
-        line-height: 120%;
-        letter-spacing: -0.04em;
+        line-height: 100%;
     }
 
     .content_images {
@@ -759,15 +774,15 @@ html, body {
     }
 
     .content_text--small {
-        font-size: 2.6vw;
-        line-height: 120%;
-        letter-spacing: -0.04em;
+        font-weight: 500;
+        line-height: 1.2;
+        font-size: 2.35vw;
+
     }
 
     .contact_section {
         margin: 10.94vw auto;
         padding: 5.21vw 2.6vw;
-        background: #f0f3f9;
         border-radius: 1.95vw;
     }
 
@@ -775,7 +790,6 @@ html, body {
         font-size: 6.51vw;
         font-weight: 600;
         line-height: 110%;
-        text-transform: uppercase;
         color: var(--accent-color);
         margin: 0 0 3.91vw 0;
     }
@@ -795,7 +809,7 @@ html, body {
     .contact_left p {
         font-size: 3.13vw;
         line-height: 120%;
-        letter-spacing: -0.04em;
+        letter-spacing: -0.02em;
         color: black;
         margin: 0;
     }
@@ -886,7 +900,6 @@ html, body {
 
     .form_group textarea {
         resize: vertical;
-        min-height: 13.02vw;
     }
 
     .form_agree {
@@ -918,7 +931,7 @@ html, body {
 }
 
 /* ДЕСКТОПНЫЙ АДАПТИВ: 1025px+ */
-@media (min-width: 1025px) {
+@media (min-width: 1025px) {zzz
     .main_header {
         padding: 1.04vw 0;
     }
@@ -1017,7 +1030,7 @@ html, body {
     .hero_section {
         position: relative;
         width: 100%;
-        height: 100vh;
+        height: 50.26vw;
         background-image: url('../Image/Background.svg');
         background-size: cover;
         background-position: center;
@@ -1041,7 +1054,7 @@ html, body {
         font-size: 5.21vw;
         font-weight: 600;
         line-height: 100%;
-        letter-spacing: -0.04em;
+        letter-spacing: -0.03em;
         color: var(--white);
         text-transform: uppercase;
         max-width: 41.15vw;
@@ -1049,10 +1062,11 @@ html, body {
 
     .hero_description {
         line-height: 120%;
-        letter-spacing: -0.04em;
+        letter-spacing: -0.03em;
         color: var(--white);
         max-width: 29.17vw;
         margin-top: auto;
+        font-size: 1.25vw;
     }
 
     .content_section {
@@ -1069,7 +1083,7 @@ html, body {
     .content_split_full {
         display: grid;
         grid-template-columns: 29.17vw 1fr;
-        gap: 4.17vw;
+        gap: 1.70vw;
         align-items: flex-start;
     }
 
@@ -1086,7 +1100,7 @@ html, body {
         align-items: center;
         display: flex;
         flex-direction: column;
-        gap: 2.6vw;
+        gap: 2.0vw;
     }
     .content_text__large{
         font-size: 2.08vw;
@@ -1098,7 +1112,8 @@ html, body {
         margin-bottom: 120px;
     }
     .content_text--large {
-
+        padding: 0.20vw;
+        padding-left: 0.20vw;
         font-size: 2.08vw;
         font-weight: 500;
         line-height: 100%;
@@ -1109,7 +1124,6 @@ html, body {
     }
 
     .content_text__col {
-        text-indent: 20px;
         line-height: 120%;
         gap: 20px;
         width: 50%;
@@ -1136,10 +1150,9 @@ html, body {
     }
 
     .content_text--medium {
-        font-size: 1.25vw;
+        font-size: 1.35vw;
         font-weight: 500;
         line-height: 120%;
-        letter-spacing: -0.04em;
     }
 
     .content_images {
@@ -1168,16 +1181,14 @@ html, body {
 
     .content_image--main {
         width: 100%;
-        height: 35.19vw;
         border-radius: 0.78vw;
         background: #ddd;
     }
 
     .content_text--small {
         font-size: 1.04vw;
+        margin-top: -40px;
         line-height: 120%;
-        letter-spacing: -0.04em;
-        text-align: justify;
         margin: 0;
     }
 
@@ -1188,7 +1199,7 @@ html, body {
     }
 
     .contact_section h2 {
-        font-size: 4.17vw;
+        font-size: 4.50vw;
         font-weight: 600;
         margin: 0 0 3.13vw 0;
         color: var(--accent-color);
@@ -1197,12 +1208,11 @@ html, body {
     .contact_wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 4.17vw;
     }
 
     .contact_left p {
         font-size: 1.56vw;
-        line-height: 120%;
+        line-height: 100%;
         color: black;
         margin: 0 0 1.56vw 0;
     }
@@ -1223,7 +1233,6 @@ html, body {
         align-items: center;
         justify-content: center;
         width: 14.74vw;
-        height: 3.33vw;
         background: linear-gradient(90deg, #9AB6DF 0%, #0E468C 100%);
         color: white;
         text-decoration: none;
@@ -1241,12 +1250,10 @@ html, body {
     .contact_form {
         display: flex;
         flex-direction: column;
-        background: rgba(255, 255, 255, 1);
         gap: 1.04vw;
     }
 
     .form_title {
-        font-size: 1.56vw;
         font-weight: 400;
         margin: 0;
         color: #000;

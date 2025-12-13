@@ -1,22 +1,7 @@
-/* ===== ROOT ===== */
-:root {
-    --main-font: 'Moderustic', Arial, sans-serif;
-    --main-color: #1d3151;
-    --accent-color: rgba(18, 66, 149, 1);
-    --container: 90%;
-    --gap: 2.3vw;
-    --edge: 0.57vw;
-    --blog-bg: #154caa;
-    --blue: #124295;
-    --black: #000;
-    --white: #fff;
-    --grey: #f5f5f5;
-}
 
 img {
     display: block;
     max-width: 100%;
-    height: auto;
     color: white;
 }
 
@@ -24,8 +9,6 @@ section
 {
     width: 90%;
     margin: 0 auto;
-    padding-top: 3.1vw;
-    padding-bottom: 3.1vw;
 }
 
 .burger {
@@ -45,10 +28,6 @@ section
     background: rgba(255, 255, 255, 1);
     border-radius: 0.1vw;
     transition: all 0.3s ease;
-}
-.burger-blue span
-{
-    background: var(--accent-color);
 }
 
 .mobile_navigation__buttons {
@@ -151,7 +130,6 @@ section
     display: flex;
     align-items: center;
     letter-spacing: -0.04em;
-    display: inline-flex;
 }
 
 .mobile_nav ul li a img {
@@ -183,7 +161,6 @@ section
     display: flex;
     align-items: center;
     gap: 4.5vw;
-    justify-content: space-between;
 }
 
 .logo {
@@ -266,8 +243,8 @@ section
 
 .contact_section h2 {
     font-weight: bold;
-    line-height:5.00vw;
     margin: 0;
+    color: black;
     font-size: 80px;
     width: 80%;
 }
@@ -279,18 +256,31 @@ section
 .contact_wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    background-color: #fff;
     gap: 1.04vw;
     margin-top: 40px;
     border-radius: 0.85vw;
 }
 
-.contact_left {
+.contact_section {
+    max-width: var(--container);
+    border-radius: 0.63vw;
+}
+
+.contact_form {
     display: flex;
+    padding: 50px;
     flex-direction: column;
-    justify-content: space-between;
-    background: rgba(255, 255, 255, 1);
     border-radius: 20px;
     gap: 1.04vw;
+}
+
+.contact_left {
+    display: flex;
+    border-radius: 20px;
+    flex-direction: column;
+    gap: 1.04vw;
+    justify-content: space-between;
     padding: 50px;
 }
 
@@ -308,10 +298,28 @@ section
 .contact_btn_whatsapp img, .contact_btn_telegram img
 {
     height: 64px;
+    width: 2.6vw;
 }
 
 .contact_btn:hover {
     transform: translateY(-0.1vw);
+}
+
+.content_text--medium {
+    gap: 2.5vw;
+}
+
+.content_text {
+    letter-spacing: -0.045em;
+    font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.content_text--small {
+    margin-top: -10px;
+    line-height: 100%;
+    margin: 0;
 }
 
 .contact_form {
@@ -326,12 +334,7 @@ section
     font-size: 1.56vw;
 }
 
-.form_title {
-    font-size: 2.1vw;
-    font-weight: 400;
-    margin: 0;
-    color: #000;
-}
+
 
 .form_group input,
 .form_group textarea {
@@ -354,11 +357,11 @@ section
     font-size: 0.83vw;
 }
 
-
 .form_title {
     font-weight: 400;
     margin: 0;
     color: #000;
+    font-size: 2.1vw;
 }
 
 .form_group {
@@ -421,7 +424,7 @@ section
 }
 @media (min-width: 768px) and (max-width: 1024px) {
     :root {
-        --container: calc(100% - 40px);
+        /* --container: calc(100% - 40px); */
         --gap: 2.5vw;
         --edge: 2.5vw;
     }
@@ -430,11 +433,6 @@ section
         width: calc(100% - 40px);
         padding-top: 5.2vw;
         padding-bottom: 5.2vw;
-    }
-    .main_navigation
-    {
-        width: calc(100% - 40px);
-        max-width: 100%;
     }
     .main_navigation__list,
     .main_navigation__right {
@@ -505,7 +503,7 @@ section
         gap: 3.91vw;
     }
 
-    .mobile_nav ul li a {
+.mobile_nav ul li a {
         font-size: 5.21vw;
         gap: 0.65vw;
     }
@@ -724,7 +722,6 @@ section
         display: flex;
         flex-direction: column;
         gap: 0;
-        padding: 5.6vw;
         border-radius: 4.5vw;
     }
 

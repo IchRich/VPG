@@ -26,7 +26,16 @@ a {
     text-decoration: none;
 }
 
+section {
+    padding-top: 3.1vw;
+    padding-bottom: 3.1vw;
+}
+
 /* HEADER */
+.main_navigation {
+    justify-content: space-between;
+}
+
 .main_navigation__phone {
     color: var(--blue);
 }
@@ -172,7 +181,7 @@ a {
 }
 
 .rubricator__btn:hover,
-.rubricator__btn.active {
+.rubricator__btn.activeBtn {
     color: var(--white);
     background-color: var(--black);
 }
@@ -313,6 +322,10 @@ a {
         padding: 5.2vw 0 3.9vw;
     }
 
+    .breadcrumbs__container {
+        gap: 0.65vw;
+    }
+
     .breadcrumbs :is(a, p) {
         font-size: 2.1vw;
     }
@@ -437,6 +450,10 @@ a {
     /* BREADCRUMBS */
     .breadcrumbs {
         padding: 8.3vw 0 0;
+    }
+
+    .breadcrumbs__container {
+        gap: 1.39vw;
     }
 
     .breadcrumbs :is(a, p) {

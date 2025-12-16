@@ -3,6 +3,7 @@
 :root {
     --main-font: 'Moderustic', Arial, sans-serif;
     --text-font: "Inter", Arial, sans-serif;
+    --main-color: #1d3151;
     --blue: #124295;
     --black: #000;
     --white: #fff;
@@ -46,7 +47,13 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 0.52vw;
+    gap: 0.26vw;
+}
+
+.breadcrumbs__container svg {
+    width: 1.04vw;
+    height: 1.04vw;
+    transform: rotate(-90deg);
 }
 
 .breadcrumbs__container :is(a, p) {
@@ -180,11 +187,6 @@ section {
     z-index: 1000;
 }
 
-.filter_modal.active {
-    display: flex;
-    height: fit-content;
-}
-
 .filter_modal_content {
     max-height: 90vh;
     background: var(--white);
@@ -265,8 +267,8 @@ section {
     transition: transform 0.3s ease;
 }
 
-.filter_section.collapsed .arrow_icon {
-    transform: rotate(-180deg);
+.filter_section:not(.collapsed) .arrow_icon {
+    transform: rotate(180deg);
 }
 
 .filter_section_content {
@@ -292,15 +294,34 @@ section {
 }
 
 .filter_checkbox input {
-    width: 0.8vw;
-    height: 0.8vw;
+    width: 0.83vw;
+    height: 0.83vw;
+    position: relative;
+    appearance: none;
+}
+
+.filter_checkbox input::after {
+    cursor: pointer;
+    box-sizing: border-box;
+    content: "";
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    position: absolute;
+    transition: all 0.3s ease;
+    border-radius: 0.21vw;
+    border: 0.1vw solid var(--black);
+}
+
+.filter_checkbox input:checked::after {
+    background-color: var(--blue);
+    border-color: var(--blue);
 }
 
 .filter_checkbox span {
     font-size: 0.83vw;
-    font-weight: 500;
-    letter-spacing: -0.04vw;
-    line-height: 100%;
+    font-weight: 400;
+    letter-spacing: -0.02vw;
     user-select: none;
 }
 
@@ -431,7 +452,12 @@ section {
     }
 
     .breadcrumbs__container {
-        gap: 1.3vw;
+        gap: 0.65vw;
+    }
+
+    .breadcrumbs__container svg {
+        width: 2.6vw;
+        height: 2.6vw;
     }
 
     .breadcrumbs :is(a, p) {
@@ -547,7 +573,9 @@ section {
     }
 
     .filter_modal.active {
-        margin-top: 25vw;
+        display: flex;
+        height: fit-content;
+        margin-top: 23vw;
     }
 
     .filter_modal_content {
@@ -561,7 +589,7 @@ section {
     }
 
     .filter_section_header h3 {
-        font-size: 2.9vw;
+        font-size: 2.34vw;
     }
 
     .arrow_icon {
@@ -571,7 +599,7 @@ section {
 
     .filter_section_content {
         gap: 1.3vw;
-        padding-bottom: 2.6vw
+        padding-bottom: 2.6vw;
     }
 
     .filter_checkbox {
@@ -581,6 +609,10 @@ section {
     .filter_checkbox input {
         width: 2.1vw;
         height: 2.1vw;
+    }
+
+    .filter_checkbox input::after {
+        border-radius: 0.52vw;
     }
 
     .filter_checkbox span {
@@ -619,7 +651,12 @@ section {
     }
 
     .breadcrumbs__container {
-        gap: 2.72vw;
+        gap: 1.39vw;
+    }
+
+    .breadcrumbs__container svg {
+        width: 5.2vw;
+        height: 5.2vw;
     }
 
     .breadcrumbs :is(a, p) {
@@ -736,13 +773,15 @@ section {
     }
 
     .filter_modal.active {
+        display: flex;
+        height: fit-content;
         margin-top: 38vw;
     }
 
     .filter_modal_content {
         width: 89vw;
         border-radius: 4.2vw;
-        padding: 5.56vw;
+        padding: 2.78vw;
     }
 
     .filter_search_input {
@@ -774,6 +813,10 @@ section {
     .filter_checkbox input {
         width: 4.4vw;
         height: 4.4vw;
+    }
+
+    .filter_checkbox input::after {
+        border-radius: 1.11vw;
     }
 
     .filter_checkbox span {

@@ -41,11 +41,6 @@ section {
     gap: 0.42vw;
 }
 
-.main_navigation__list a img {
-    width: 0.83vw;
-    height: 0.83vw;
-}
-
 .main_navigation__search {
     cursor: pointer;
     transition: opacity 0.3s ease;
@@ -455,12 +450,6 @@ section {
 }
 
 /* CONTACT */
-.contact_wrapper {
-    padding: 1.6vw;
-    background: var(--white);
-    margin-top: 0;
-}
-
 .contact_left p {
     font-size: 1.25vw;
     width: 80%;
@@ -470,25 +459,17 @@ section {
     gap: 1vw; 
 }
 
-.contact_btn_whatsapp img, .contact_btn_telegram img {
-    width: 2.6vw;
-}
-
 .contact_btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     width: 14.74vw;
     background: linear-gradient(90deg, #9AB6DF 0%, #0E468C 100%);
-    color: white;
+    color: var(--white);
     text-decoration: none;
     border-radius: 0.31vw;
     font-weight: 400;
     transition: transform 0.3s ease;
-}
-
-.form_title {
-    font-size: 2.1vw;
 }
 
 /* DESKTOP */
@@ -498,7 +479,7 @@ section {
 @media (min-width: 768px) and (max-width: 1024px) {
     /* HERO */
     .hero {
-        padding: 2.6vw 0 6.5vw; 
+        padding: 1.56vw 0 6.5vw; 
     }
 
     .hero__container {
@@ -701,7 +682,7 @@ section {
 @media (max-width: 767px) {
     /* HERO */
     .hero {
-        padding: 5.6vw 0 11.1vw;
+        padding: 4.5vw 0 11.1vw;
     }
 
     .hero__container {

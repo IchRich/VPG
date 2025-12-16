@@ -32,6 +32,11 @@ section {
 }
 
 /* HEADER */
+.main_header {
+    width: 90%;
+    margin: 0 auto;
+}
+
 .main_navigation {
     justify-content: space-between;
 }
@@ -59,7 +64,7 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 0.26vw;
+    gap: 0.52vw;
 }
 
 .breadcrumbs__container :is(a, p) {
@@ -302,18 +307,13 @@ section {
 }
 
 /* DESKTOP */
-@media (min-width: 1025px) {
-    /* HEADER */
-    .main_header {
-        width: 90%;
-        margin: 0 auto;
-    }
-}
+@media (min-width: 1025px) {}
 
 /* TABLET */
 @media (min-width: 768px) and (max-width: 1024px) {
     /* HEADER */
     .main_header {
+        width: calc(100% - 40px);
         padding: 2.6vw 0 0 !important;
     }
 
@@ -323,7 +323,7 @@ section {
     }
 
     .breadcrumbs__container {
-        gap: 0.65vw;
+        gap: 1.3vw;
     }
 
     .breadcrumbs :is(a, p) {
@@ -443,7 +443,6 @@ section {
     /* HEADER */
     .main_header {
         width: calc(100% - 40px);
-        margin: 0 auto;
         padding: 5.6vw 0 0 !important;
     }
 
@@ -453,7 +452,7 @@ section {
     }
 
     .breadcrumbs__container {
-        gap: 1.39vw;
+        gap: 2.72vw;
     }
 
     .breadcrumbs :is(a, p) {

@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог - Сварочные оборудования</title>
+    <link rel="stylesheet" href="Assets\css\Catalog.css">
+    <link rel="stylesheet" href="Assets\css\fotter.css">
+    <link rel="stylesheet" href="Assets\css\header.css">
+    <script src="Assets\js\main.js"></script>
+    <script src="Assets\js\catalog.js"></script>
+</head>
+<body>
+<!-- HEADER | MOBILE MENU | BREADCRUMBS | HERO -->
+<section class="hero">
+    <div class="hero__bg"></div>
+    <div class="hero__overlay"></div>
+    <div class="hero__container">
+        <!-- HEADER -->
+        <header class="main_header">
+            <nav class="main_navigation" aria-label="Главная навигация">
+                <a href="index.html"><img src="Assets/Image/WhiteLogo.svg" alt="Логотип компании" class="logo"/></a>
+                <ul class="main_navigation__list">
+                    <li>
+                        <a href="CatalogPage.html">Каталог
+                            <img src="Assets/Image/WhiteGalochka.svg" alt="<UNK> <UNK>">
+                        </a>
+                    </li>
+                    <li><a href="AboutCompanyPage.html">О компании</a></li>
+                    <li><a href="BrandPage.html">Бренды</a></li>
+                    <li><a href="Blog.html">Блог</a></li>
+                    <li><a href="IndustryPage.html">Индустрии</a></li>
+                </ul>
+                <div class="mobile_navigation__buttons">
+                <img src="Assets\Image\SearchIconWhite.svg" alt="<UNK> <UNK>" class="catalog_search__image">
+                <a href="tel:88462004242" class="main_navigation__phone">8 (846) 200-42-42</a>
+                    <button class="burger" id="burger-open" aria-label="Открыть меню">
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
+                <div class="main_navigation__right">
+                    <a href="#" class="main_navigation__search">
+                        <img src="Assets\Image\SearchIconWhite.svg" alt="<UNK> <UNK>" class="catalog_search__image">
+                    </a>
+                    <a href="tel:88462004242" class="main_navigation__phone">8 (846) 200-42-42</a>
+                </div>
+            </nav>
+        </header>
+
+        <!-- MOBILE MENU -->
+        <div class="mobile_menu" id="mobile-menu">
+            <header>
+                <a href="index.html" class="logo">
+                    <img src="Assets\Image\Logo.webp" alt="Логотип">
+                </a>
+                <div class="mobile_menu__buttons">
+                    <img src="Assets\Image\SearchIconBlue.svg" alt="Поиск" class="catalog_search__image">
+                    <button class="close" id="burger-close">&times;</button>
+                </div>
+            </header>
+            <nav class="mobile_nav">
+                <ul>
+                    <li>
+                        <a href="CatalogPage.html">Каталог
+                            <img src="Assets\Image\GalochkaIcon.svg" alt="<UNK> <UNK>">
+                        </a>
+                    </li>
+                    <li><a href="AboutCompanyPage.html">О компании</a></li>
+                    <li><a href="BrandPage.html">Бренды</a></li>
+                    <li><a href="Blog.html">Блог</a></li>
+                    <li><a href="IndustryPage.html">Индустрии</a></li>
+                </ul>
+            </nav>
+            <button class="mobile_menu__btn">Оставить заявку</button>
+            <div class="mobile_menu__overlay" id="menu-overlay"></div>  
+        </div>
+
+        <!-- BREADCRUMBS -->
+        <div class="breadcrumbs">
+            <div class="breadcrumbs__container">
+                <a href="index.html">Главная</a>
+                <p>></p>
+                <a href="CatalogPage.html">Каталог</a>
+                <p>></p>
+                <p>Сварочные оборудования</a>
+            </div>
+        </div>
+
+        <!-- HERO -->
+        <div class="hero__content">
+            <h1 class="hero__title">ОБОРУДОВАНИЕ ДЛЯ СВАРКИ</h1>
+            <p class="hero__text">В нашем каталоге представлены аппараты для ручной, полуавтоматической, автоматической и аргонодуговой сварки, а также источники питания, горелки, кабели и комплектующие.</p>
+        </div>
+    </div>
+</section>
+
+<!-- CATALOG -->
+<section class="catalog_page">
+    <h1 class="catalog_title">КАТАЛОГ</h1>
+
+    <!-- MOBILE/TABLET FILTER -->
+    <div class="catalog_controls">
+        <button class="filter_btn" id="filter-btn">
+            <img src="Assets\Image\FilterIcon.svg" alt="Иконка">
+        </button>
+        <div class="search_wrapper">
+            <input type="text" placeholder="Найти" class="search_input">
+            <button class="search_btn" aria-label="Поиск">
+                <svg width="30" height="30" viewBox="0 0 30 30">
+                    <circle cx="13" cy="13" r="7" stroke="currentColor" stroke-width="2" fill="none"/>
+                    <line x1="18" y1="18" x2="23" y2="23" stroke="currentColor" stroke-width="2"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <div class="catalog_layout">
+        <!-- DESKTOP FILTER -->
+        <aside class="filter_sidebar">
+            <div class="filter_search">
+                <input type="text" placeholder="Найти" class="filter_search_input">
+                <svg width="30" height="30" viewBox="0 0 30 30">
+                    <circle cx="13" cy="13" r="7" stroke="currentColor" stroke-width="2" fill="none"/>
+                    <line x1="18" y1="18" x2="23" y2="23" stroke="currentColor" stroke-width="2"/>
+                </svg>
+            </div>
+            <div class="filter_section collapsed">
+                <button class="filter_section_header">
+                    <h3>Сварочные материалы</h3>
+                    <img src="Assets\Image\GalochkaIcon.svg" alt="Иконка" class="arrow_icon">
+                </button>
+                <div class="filter_section_content">
+                    <label class="filter_checkbox">
+                        <input type="checkbox" name="mat1">
+                        <span>Механизированная сварка MIG/MAG</span>
+                    </label>
+                    <label class="filter_checkbox">
+                        <input type="checkbox" name="mat2">
+                        <span>Аргонодуговая сварка TIG</span>
+                    </label>
+                    <label class="filter_checkbox">
+                        <input type="checkbox" name="mat3">
+                        <span>Дуговая сварка MMA (РДС)</span>
+                    </label>
+                    <label class="filter_checkbox">
+                        <input type="checkbox" name="mat4">
+                        <span>Сварочные агрегаты</span>
+                    </label>
+                    <label class="filter_checkbox">
+                        <input type="checkbox" name="mat5">
+                        <span>Плазморезы</span>
+                    </label>
+                </div>
+            </div>
+            <div class="filter_section collapsed">
+                <button class="filter_section_header">
+                    <h3>Сварочное оборудование</h3>
+                    <img src="Assets\Image\GalochkaIcon.svg" alt="Иконка" class="arrow_icon">
+                </button>
+                <div class="filter_section_content"></div>
+            </div>
+            <div class="filter_section collapsed">
+                <button class="filter_section_header">
+                    <h3>Электростанции</h3>
+                    <img src="Assets\Image\GalochkaIcon.svg" alt="Иконка" class="arrow_icon">
+                </button>
+                <div class="filter_section_content"></div>
+            </div>
+            <div class="filter_section collapsed">
+                <button class="filter_section_header">
+                    <h3>Насосное оборудование</h3>
+                    <img src="Assets\Image\GalochkaIcon.svg" alt="Иконка" class="arrow_icon">
+                </button>
+                <div class="filter_section_content"></div>
+            </div>
+        </aside>
+
+        <!-- PRODUCTS -->
+        <div class="products_wrapper">
+            <div class="products_grid">
+                <div class="product_card">
+                    <div class="product_image">
+                        <img class="boehler_image" src="Assets\Image\Boehler.svg"/>
+                    </div>
+                    <div class="product_info">
+                        <h3>СВАРОЧНЫЙ ЭЛЕКТРОД BOEHLER FOX DMO KB</h3>
+                    </div>
+                </div>
+                <div class="product_card">
+                    <div class="product_image">
+                        <img class="boehler_image" src="Assets\Image\Boehler.svg"/>
+                    </div>
+                    <div class="product_info">
+                        <h3>СВАРОЧНЫЙ ЭЛЕКТРОД BOEHLER FOX DMO KB</h3>
+                    </div>
+                </div>
+                <div class="product_card">
+                    <div class="product_image">
+                        <img class="boehler_image" src="Assets\Image\Boehler.svg"/>
+                    </div>
+                    <div class="product_info">
+                        <h3>СВАРОЧНЫЙ ЭЛЕКТРОД BOEHLER FOX DMO KB</h3>
+                    </div>
+                </div>
+                <div class="product_card">
+                    <div class="product_image">
+                        <img class="boehler_image" src="Assets\Image\Boehler.svg"/>
+                    </div>
+                    <div class="product_info">
+                        <h3>СВАРОЧНЫЙ ЭЛЕКТРОД BOEHLER FOX DMO KB</h3>
+                    </div>
+                </div>
+                <div class="product_card">
+                    <div class="product_image">
+                        <img class="boehler_image" src="Assets\Image\Boehler.svg"/>
+                    </div>
+                    <div class="product_info">
+                        <h3>СВАРОЧНЫЙ ЭЛЕКТРОД BOEHLER FOX DMO KB</h3>
+                    </div>
+                </div>
+                <div class="product_card">
+                    <div class="product_image">
+                        <img class="boehler_image" src="Assets\Image\Boehler.svg"/>
+                    </div>
+                    <div class="product_info">
+                        <h3>СВАРОЧНЫЙ ЭЛЕКТРОД BOEHLER FOX DMO KB</h3>
+                    </div>
+                </div>
+                <div class="product_card">
+                    <div class="product_image">
+                        <img class="boehler_image" src="Assets\Image\Boehler.svg"/>
+                    </div>
+                    <div class="product_info">
+                        <h3>СВАРОЧНЫЙ ЭЛЕКТРОД BOEHLER FOX DMO KB</h3>
+                    </div>
+                </div>
+                <div class="product_card">
+                    <div class="product_image">
+                        <img class="boehler_image" src="Assets\Image\Boehler.svg"/>
+                    </div>
+                    <div class="product_info">
+                        <h3>СВАРОЧНЫЙ ЭЛЕКТРОД BOEHLER FOX DMO KB</h3>
+                    </div>
+                </div>
+            </div>
+            <button class="show_more_btn">Загрузить еще</button>
+        </div>
+    </div>
+</section>
+
+<!-- MOBILE/TABLET FILTER MODAL -->
+<div class="filter_modal" id="filter-modal">
+    <div class="filter_modal_content">
+        <div class="filter_sections_wrapper">
+            <div class="filter_section collapsed">
+                <button class="filter_section_header">
+                    <h3>Сварочное оборудование</h3>
+                    <img src="Assets\Image\GalochkaIcon.svg" alt="Иконка" class="arrow_icon">
+                </button>
+                <div class="filter_section_content">
+                    <label class="filter_checkbox">
+                        <input type="checkbox" name="mat1-mobile">
+                        <span>Механизированная сварка MIG/MAG</span>
+                    </label>
+                    <label class="filter_checkbox">
+                        <input type="checkbox" name="mat2-mobile">
+                        <span>Аргонодуговая сварка TIG</span>
+                    </label>
+                    <label class="filter_checkbox">
+                        <input type="checkbox" name="mat3-mobile">
+                        <span>Дуговая сварка MMA (РДС)</span>
+                    </label>
+                    <label class="filter_checkbox">
+                        <input type="checkbox" name="mat4-mobile">
+                        <span>Сварочные агрегаты</span>
+                    </label>
+                    <label class="filter_checkbox">
+                        <input type="checkbox" name="mat5-mobile">
+                        <span>Плазморезы</span>
+                    </label>
+                </div>
+            </div>
+            <div class="filter_section collapsed">
+                <button class="filter_section_header">
+                    <h3>Сварочное оборудование</h3>
+                    <img src="Assets\Image\GalochkaIcon.svg" alt="Иконка" class="arrow_icon">
+                </button>
+                <div class="filter_section_content"></div>
+            </div>
+            <div class="filter_section collapsed">
+                <button class="filter_section_header">
+                    <h3>Электростанции</h3>
+                    <img src="Assets\Image\GalochkaIcon.svg" alt="Иконка" class="arrow_icon">
+                </button>
+                <div class="filter_section_content"></div>
+            </div>
+            <div class="filter_section collapsed">
+                <button class="filter_section_header">
+                    <h3>Насосное оборудование</h3>
+                    <img src="Assets\Image\GalochkaIcon.svg" alt="Иконка" class="arrow_icon">
+                </button>
+                <div class="filter_section_content"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- ABOUT -->
+<section class="about">
+    <div class="about__container">
+        <img src="Assets/Image/blog1.webp" alt="Сварочное оборудование" class="about__image">
+        <p class="about__lead">Сварочное оборудование позволяет быстро и надежно соединить металлические детали, в зависимости от технологии (ММА, MIG/MAG или TIG), формируется прочный сварной шов или сварная точка. Поэтому оборудование для сварки различных видов широко используется во многих отраслях: на производствах, в строительстве, возведении металлических конструкций, автомобилестроении и автосервисах.</p>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact_section">
+    <div class="contact_wrapper">
+        <div class="contact_left">
+            <h2>Связаться с&nbsp;нами</h2>
+            <p>Мы поможем разобраться в технических деталях, подберём решение под ваши задачи и проконсультируем по любым вопросам. 
+            Оставьте заявку — мы ответим в ближайшее время.</p>
+            <div class="contact_buttons">
+                <a href="tel:88005553535" class="contact_btn">8 (800) 555-35-35</a>
+                <a href="#" class="contact_btn_whatsapp">
+                    <img src="Assets\Image\WhatsappIcon.svg" alt="WhatsApp" />
+                </a>
+                <a href="#" class="contact_btn_telegram">
+                    <img src="Assets\Image\TgIcon.svg" alt="Telegram" />
+                </a>
+            </div>
+        </div>
+        <form class="contact_form">
+            <h3 class="form_title">Ваши данные</h3>
+            <div class="form_group">
+                <input type="text" placeholder="Имя" required />
+            </div>
+            <div class="form_group">
+                <input type="tel" placeholder="Телефон" required />
+            </div>
+            <div class="form_group">
+                <textarea placeholder="Сообщение" required></textarea>
+            </div>
+            <p class="form_agree">Отправляя форму, я соглашаюсь с политикой конфиденциальности</p>
+            <button type="submit" class="form_btn">Оставить заявку</button>
+        </form>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="main_footer">
+    <div class="footer_content">
+        <div class="footer_logo">
+            <img src="Assets\Image\Logo.webp" alt="VPG-S Logo" class="logo"/>
+        </div>
+
+        <div class="footer_col">
+            <h4>КАТАЛОГ</h4>
+            <ul>
+                <li><a href="#">Сварочное оборудование</a></li>
+                <li><a href="#">Сварочные принадлежности</a></li>
+                <li><a href="#">Электростанции</a></li>
+                <li><a href="#">Насосное оборудование</a></li>
+            </ul>
+        </div>
+
+        <div class="footer_col">
+            <h4>ИНФОРМАЦИЯ</h4>
+            <ul>
+                <li><a href="AboutCompanyPage.html">О компании</a></li>
+                <li><a href="#">Блог</a></li>
+                <li><a href="BrandPage.html">Бренды</a></li>
+            </ul>
+        </div>
+
+        <div class="footer_col">
+            <h4>КОНТАКТЫ</h4>
+            <ul>
+                <li class="adress"><a href="tel:88462004242">Телефон: Многоканальный <br> 8 (846) 200-42-42</a></li>
+                <li class="adress">Наш адрес: Г.САМАРА,<br>УЛ. БАЛАКОВСКАЯ, Д. 6А</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer_bottom site_footer__dev_container">
+        <a href="#">Политика ОПД</a>
+        <span class="site_footer__dev_container">Сайт разработан: <img src="Assets/Image/LogoKant.svg" width="138" height="14" alt="Логотип Kant"></span>
+    </div>
+</footer>
+</body>
+</html>

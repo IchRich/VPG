@@ -378,7 +378,7 @@ section.hero div.hero__container .main_navigation
 
 .our-mission__title {
     font-family: var(--main-font);
-    font-size: 4.17vw;
+    font-size: 3.2vw;
     font-weight: 600;
     color: var(--blue);
     text-transform: uppercase;
@@ -554,7 +554,7 @@ section.hero div.hero__container .main_navigation
 
 .catalog__title {
     font-family: var(--main-font);
-    font-size: 4.17vw;
+    font-size: 3.2vw;
     font-weight: 600;
     color: var(--blue);
     text-transform: uppercase;

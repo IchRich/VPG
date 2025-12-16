@@ -157,9 +157,9 @@ img {
 }
 
 .catalog_header h2 {
-    font-weight: 600;
+    font-weight: 500;
     margin: 0;
-    color: var(--accent-color);
+    color: black;
 }
 
 .catalog_search {
@@ -188,7 +188,7 @@ img {
     color: #999;
     cursor: pointer;
     flex-shrink: 0;
-}
+}   
 
 .catalog_grid {
     display: grid;
@@ -222,7 +222,7 @@ img {
 }
 
 .catalog_item__link {
-    color: var(--accent-color);
+    color: black;
     font-weight: 600;
     margin: 0;
     line-height: 110%;
@@ -270,9 +270,9 @@ img {
 }
 
 .producers_header h2 {
-    font-weight: 600;
+    font-weight: 500;
     margin: 0;
-    color: var(--accent-color);
+    color: black;
     line-height: 1;
 }
 
@@ -380,9 +380,9 @@ img {
 }
 
 .industries_section h2 {
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 2.2vw;
-    color: var(--accent-color);
+    color: black;
 }
 
 .industries_grid {
@@ -409,7 +409,7 @@ img {
 }
 
 .industries_text h3 {
-    font-weight: 600;
+    font-weight: 500;
     margin: 0 0 1.04vw 0;
     color: black;
 }
@@ -444,7 +444,7 @@ img {
 .about_us h2 {
     font-weight: 600;
     margin-bottom: 2.2vw;
-    color: var(--accent-color);
+    color: black;
 }
 
 .about_us__image {
@@ -563,9 +563,9 @@ img {
 }
 
 .blog_header h2 {
-    font-weight: 600;
+    font-weight: 500;
     margin: 0;
-    color: var(--accent-color);
+    color: black;
 }
 
 .blog_section__all_link {
@@ -615,7 +615,7 @@ img {
 
 
 .blog_main_title {
-    font-weight: 600;
+    font-weight:500;
     line-height: 1;
 }
 
@@ -706,7 +706,7 @@ img {
 }
 
 .contact_section h2 {
-    font-weight: 400;
+    font-weight: 500;
     margin: 0;
     width: 80%;
     color: #000;
@@ -741,18 +741,13 @@ img {
     gap: 1vw;
     margin-top: auto;   
 }
-.contact_btn_whatsapp img, .contact_btn_telegram img
-{
-    width: 2.6vw;
-}
 
 .contact_btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     width: 14.74vw;
-    background: linear-gradient(90deg, #9AB6DF 0%, #0E468C 100%);
-    color: white;
+    color: black;
     text-decoration: none;
     border-radius: 0.31vw;
     font-weight: 400;
@@ -972,7 +967,7 @@ img {
     }
 
     .catalog_header h2 {
-        font-size: 4.17vw;
+        font-size: 3.2vw;
     }
 
     .catalog_search input {
@@ -992,7 +987,7 @@ img {
     }
 
     .producers_header h2 {
-        font-size: 4.17vw;
+        font-size: 3.2vw;
     }
 
     .producers_description {
@@ -1000,15 +995,15 @@ img {
     }
 
     .producer_btn {
-        font-size: 1.25vw;
+        font-size: 2.08vw;
     }
 
     .producer_btn.active::after {
-        font-size: 1.33vw;
+        font-size: 2.1vw;
     }
 
     .industries_section h2 {
-        font-size: 4.17vw;
+        font-size: 3.2vw;
     }
 
     .industries_text h3 {
@@ -1024,7 +1019,7 @@ img {
     }
 
     .about_us h2 {
-        font-size: 4.17vw;
+        font-size: 3.2vw;
     }
 
     .about_us__main_text {
@@ -1048,11 +1043,11 @@ img {
     }
 
     .blog_header h2 {
-        font-size: 4.17vw;
+        font-size: 3.2vw;
     }
 
     .blog_section__all_link {
-        font-size: 0.83vw;
+        font-size: 1.3vw;
     }
 
     .blog_main_arrow {
@@ -1132,6 +1127,7 @@ img {
         margin: 7.81vw auto;
         flex-direction: column;
         gap: 7.81vw;
+        align-items: center;
     }
 
     .promo_section__content h1 {
@@ -1183,10 +1179,6 @@ img {
     .producers_wrapper {
         grid-template-columns: 1fr 1fr;
         gap: 2.6vw;
-    }
-
-    .producer_btn {
-        padding: 2.65vw;
     }
 
     .producer_btn.active
@@ -1268,14 +1260,14 @@ img {
 
     .about_text_section {
         margin: 7.8vw auto;
-        flex-direction: column;
-        gap: 3.91vw;
+        flex-direction: row;
+        gap: 2.6vw;
     }
 
     .about_text_section img {
         width: 100%;
         max-width: 100%;
-        height: 52vw;
+        height: 32.55vw;
     }
 
     .about_text_section__text {
@@ -1311,11 +1303,11 @@ img {
 
     /* Tablet font sizes */
     .promo_section__content h1 {
-        font-size: 9.2vw;
+        font-size: 8.6vw;
     }
 
     .catalog_header h2 {
-        font-size: 6.5vw;
+        font-size: 5.85vw;
     }
 
     .catalog_item__link {
@@ -1327,7 +1319,7 @@ img {
     }
 
     .producer_btn {
-        font-size: 3.91vw;
+        font-size: 4vw;
         padding: 0 2.65vw;
     }
 
@@ -1344,7 +1336,7 @@ img {
     }
 
     .industries_number {
-        font-size: 10.42vw;
+        font-size: 9.15vw;
     }
 
     .about_us h2 {
@@ -1369,6 +1361,11 @@ img {
 
     .blog_header h2 {
         font-size: 6.5vw;
+    }
+
+    .blog_section__all_link
+    {
+        font-size: 2.45vw;
     }
 
     .blog_post h4 {
@@ -1423,7 +1420,7 @@ img {
 
     .form_btn {
         height: 5.73vw;
-        font-size: 2.3vw;
+        font-size: 1.6vw;
         margin-top: 3vw;
         border-radius: 1.3vw;
     }
@@ -1584,15 +1581,19 @@ img {
 
 
     .catalog_header {
-        display: flex;
-        flex-direction: column;
         gap: 4.44vw;
         margin-bottom: 5.56vw;
         align-items: flex-start;
     }
 
-    .catalog_search {
+    .catalog_search input{
         display: none;
+    }
+
+    .catalog_search
+    {
+        justify-content: flex-end;
+        border: none;
     }
 
     .catalog_grid {
@@ -1649,7 +1650,7 @@ img {
     }
 
     .producer_btn {
-        font-weight: 600;
+        font-weight: 500;
         padding: 3vw;
         background: #f0f0f0;
         border-radius: 1.67vw;
@@ -1711,11 +1712,7 @@ img {
 
     .industries_number {
         font-weight: 800;
-    }
-
-
-    .about_us h2 {
-        margin-bottom: 2.8vw;
+        font-size: 14vw;
     }
 
     .about_us__image {
@@ -1777,7 +1774,7 @@ img {
 
     .blog_header {
         gap: 3.33vw;
-        margin-bottom: 2.78vw;
+        margin-bottom: 5.6vw;
     }
 
     .blog_wrapper {
@@ -1789,6 +1786,10 @@ img {
     .blog_flex {
         flex-direction: column;
         gap: 2.8vw;
+    }
+    .blog_flex:nth-of-type(2)
+    {
+        display: none;
     }
 
     .blog_main_card {
@@ -1912,11 +1913,11 @@ img {
     }
 
     .catalog_header h2 {
-        font-size: 6.7vw;
+        font-size: 8.3vw;
     }
 
     .catalog_item__link {
-        font-size: 5vw;
+        font-size: 5.5vw;
     }
 
     .producers_header h2 {
@@ -1929,7 +1930,7 @@ img {
     }
 
     .producer_btn {
-        font-size: 5vw;
+        font-size: 5.5vw;
     }
 
     .industries_section h2 {
@@ -1942,10 +1943,6 @@ img {
 
     .industries_text p {
         font-size: 5vw;
-    }
-
-    .industries_number {
-        font-size: 16.67vw;
     }
 
     .about_us h2 {
@@ -1979,7 +1976,7 @@ img {
     }
 
     .blog_section__all_link {
-        font-size: 4.44vw;
+        font-size: 3.45vw;
     }
 
     .blog_post h4 {

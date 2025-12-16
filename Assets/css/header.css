@@ -30,6 +30,10 @@ section
     transition: all 0.3s ease;
 }
 
+.burger-blue span {
+    background: rgba(18, 66, 149, 1);
+}
+
 .mobile_navigation__buttons {
     display: none;
 }
@@ -246,8 +250,8 @@ section
     font-weight: 400;
     margin: 0;
     color: black;
-    font-size: 2.1vw;
-    width: 80%;
+    font-size: 1.6vw;
+    width: 100%;
 }
 
 .footer_span {
@@ -295,7 +299,7 @@ section
 
 .contact_btn_whatsapp img, .contact_btn_telegram img
 {
-    height: 64px;
+    height: auto;
     width: 2.6vw;
 }
 
@@ -323,6 +327,9 @@ section
 
 .contact_btn {
     font-size: 1.56vw;
+    justify-content: flex-start;
+    font-weight: 400;
+    transition: transform 0.3s ease;
 }
 
 
@@ -377,7 +384,7 @@ section
     color: #fff;
     border: none;
     padding: 0.83vw 2.6vw;
-    border-radius: 0.55vw;
+    border-radius: 10px;
     font-weight: 500;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -438,6 +445,7 @@ section
     }
     .main_navigation__phone{
         font-size: 2.3vw;
+        display: none;
     }
     .logo {
         height: 5.73vw;
@@ -445,7 +453,7 @@ section
 
     img.catalog_search__image
     {
-        width: 2.5vw;
+        width: 4.8vw;
         height: auto;
     }
 
@@ -519,8 +527,9 @@ section
     }
 
     .contact_section h2 {
-        font-size: 3vw;
+        font-size: 2.9vw;
         margin-bottom: 0;
+        width: 100%;
     }
 
     .contact_left
@@ -540,7 +549,7 @@ section
     .contact_btn {
         width: 100%;
         height: 100%;
-        font-size: 2.3vw;
+        font-size: 2.9vw;
         border-radius: 1.4vw;
     }
 
@@ -550,14 +559,15 @@ section
 
     .form_group input,
     .form_group textarea {
-        font-size: 2.08vw;
+        font-size: 1.58vw;
         padding: 1.3vw 0;
         height: 5.3vw;
     }
 
-    .contact_btn_whatsapp img, .contact_btn_telegram img
+    .contact_buttons .contact_btn_whatsapp img, .contact_btn_telegram img
     {
-        width: 8.3vw;
+        width: 6.8vw;
+        height: auto;
     }
 
     .form_title {
@@ -565,14 +575,13 @@ section
     }
 
     .form_agree {
-        font-size: 1.82vw;
+        font-size: 1.35vw;
     }
 
     .form_btn {
-        height: 5.73vw;
-        font-size: 2.3vw;
-        margin-top: 3vw;
-        border-radius: 1.3vw;
+        height: 4.9vw;
+        font-size: 1.6vw;
+        margin-top: 1vw;
     }
 }
 @media (max-width: 767px) {
@@ -688,8 +697,9 @@ section
     }
 
     .contact_section h2 {
-        font-size: 6vw;
-        margin-bottom: 3.3vw;
+        font-size: 6.3vw;
+        margin-bottom: 4.5vw;
+        width: 100%;
     }
 
      .contact_left p {
@@ -699,9 +709,9 @@ section
     }
 
     .contact_btn {
-        width: 100%;
+        width: auto;
         border-radius: 1.67vw;
-        font-size: 4.45vw;
+        font-size: 5.3vw;
     }
 
     .form_title {
@@ -712,12 +722,14 @@ section
     .contact_wrapper {
         display: flex;
         flex-direction: column;
-        gap: 0;
+        gap: 4.2vw;
         border-radius: 4.5vw;
+        padding: 4.2vw;
     }
 
     .contact_buttons {
         gap: 2.22vw;
+        align-items: center;
     }
 
     .contact_form {
@@ -726,7 +738,7 @@ section
 
     .contact_btn_whatsapp img, .contact_btn_telegram img
     {
-        width: 18.8vw;
+        width: 6.9vw;
     }
 
     .form_group input,
@@ -736,12 +748,11 @@ section
         font-size: 3.61vw;
     }
 
-.form_btn {
+    .form_btn {
         margin-top: 5vw;
-        height: 11.11vw;
-        padding: 3.33vw;
-        font-size: 4.45vw;
-        border-radius: 1.67vw;
+        height: 6.7vw;
+        padding: 0;
+        font-size: 3.35vw;
     }
 
     .form_agree

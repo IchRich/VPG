@@ -157,15 +157,6 @@ section {
     row-gap: 1.56vw;
 }
 
-.blog__label {
-    color: var(--black);
-    font-family: var(--main-font);
-    font-size: 3.2vw;
-    font-weight: 600;
-    line-height: 110%;
-    text-transform: uppercase;
-}
-
 .blog__rubricators {
     display: flex;
     column-gap: 1.04vw;
@@ -392,10 +383,6 @@ section {
         row-gap: 2.6vw;
     }
 
-    .blog__label {
-        font-size: 6.5vw;
-    }
-
     .blog__rubricators {
         max-width: 74.1vw;
         gap: 2.6vw;
@@ -526,10 +513,6 @@ section {
         row-gap: 2.8vw;
     }
 
-    .blog__label {
-        font-size: 6.7vw;
-    }
-    
     .blog__rubricators {
         gap: 5.56vw;
         flex-wrap: wrap;

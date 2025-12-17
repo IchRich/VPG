@@ -398,7 +398,7 @@ section
     color: var(--black);
     display: inline-flex;
     align-items: center;
-
+    line-height: 110%;
 }
 
 .contact_btn:hover {
@@ -473,7 +473,6 @@ section
     font-family: var(--main-font);
     font-size: 3.2vw;
     font-weight: 500;
-    margin: 0;
     color: black;
     text-transform: uppercase;
     line-height: 110%;

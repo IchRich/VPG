@@ -132,12 +132,6 @@ section {
     padding-top: 5.21vw;
 }
 .catalog_title {
-    font-family: var(--main-font);
-    font-size: 3.2vw;
-    font-weight: 600;
-    line-height: 110%;
-    text-transform: uppercase;
-    color: black;
     margin-bottom: 1.6vw;
 }
 
@@ -500,7 +494,6 @@ section {
     }
 
     .catalog_title {
-        font-size: 5.85vw;
         margin-bottom: 2.6vw;
     }
 
@@ -699,7 +692,6 @@ section {
     }
 
     .catalog_title {
-        font-size: 8.3vw;
         margin-bottom: 5.6vw;
     }
     

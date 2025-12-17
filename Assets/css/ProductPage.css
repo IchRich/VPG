@@ -485,12 +485,6 @@ body {
 /* RELEVANT PRODUCTS */
 
 .relevant__title {
-    font-family: var(--main-font);
-    font-size: 3.2vw;
-    font-weight: 600;
-    color: var(--blue);
-    text-transform: uppercase;
-    line-height: 110%;
     margin-bottom: 3.13vw;
 }
 
@@ -974,11 +968,6 @@ body {
 
     .relevant__card-title {
         font-size: 4.44vw;
-    }
-
-    .relevant__title
-    {
-        font-size: 7vw;
     }
 
     .relevant__card-image {

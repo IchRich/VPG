@@ -198,12 +198,6 @@ section {
 }
 
 .about__label {
-    font-family: var(--main-font);
-    font-size: 4.2vw;
-    font-weight: 600;
-    color: var(--black);
-    text-transform: uppercase;
-    line-height: 110%;
     grid-column: span 2;
 }
 
@@ -323,12 +317,6 @@ section {
 }
 
 .warehouse__label {
-    font-family: var(--main-font);
-    font-size: 3.2vw;
-    font-weight: 600;
-    color: var(--black);
-    text-transform: uppercase;
-    line-height: 110%;
     grid-column: span 1;
 }
 
@@ -505,7 +493,6 @@ section {
     .about__label {
         grid-column: 1 / -1;
         order: 0;
-        font-size: 5.85vw;
     }
 
     .about__lead {
@@ -573,10 +560,6 @@ section {
         grid-template-columns: 1fr;
         margin-bottom: 3.4vw;
         gap: 2.6vw;
-    }
-
-    .warehouse__label {
-        font-size: 5.85vw;
     }
 
     .warehouse__lead {
@@ -706,7 +689,6 @@ section {
     }
 
     .about__label {
-        font-size: 8.3vw;
         grid-column: 1 / -1;
         order: 0;
         margin-bottom: 2.8vw;
@@ -772,7 +754,6 @@ section {
     }
 
     .warehouse__label {
-        font-size: 8.3vw;
         margin-bottom: 2.8vw;
     }
 

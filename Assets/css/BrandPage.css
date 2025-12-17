@@ -377,12 +377,6 @@ section.hero div.hero__container .main_navigation
 }
 
 .our-mission__title {
-    font-family: var(--main-font);
-    font-size: 3.2vw;
-    font-weight: 600;
-    color: var(--black);
-    text-transform: uppercase;
-    line-height: 110%;
     margin: 0;
     flex-shrink: 0;
     width: 42vw;
@@ -553,12 +547,6 @@ section.hero div.hero__container .main_navigation
 }
 
 .catalog__title {
-    font-family: var(--main-font);
-    font-size: 3.2vw;
-    font-weight: 600;
-    color: var(--black);
-    text-transform: uppercase;
-    line-height: 110%;
     margin: 0;
 }
 
@@ -743,7 +731,6 @@ section.hero div.hero__container .main_navigation
     }
 
     .our-mission__mobile .our-mission__title {
-        font-size: 6.51vw;
         width: auto;
     }
 
@@ -877,10 +864,6 @@ section.hero div.hero__container .main_navigation
         flex-direction: row;
         align-items: flex-end;
         gap: 2.6vw;
-    }
-
-    .catalog__title {
-        font-size: 6.51vw;
     }
 
     .catalog__link {
@@ -1022,7 +1005,6 @@ section.hero div.hero__container .main_navigation
     }
 
     .our-mission__mobile .our-mission__title {
-        font-size: 7.5vw;
         width: auto;
     }
 
@@ -1138,10 +1120,6 @@ section.hero div.hero__container .main_navigation
         flex-direction: row;
         align-items: flex-end;
         gap: 4.44vw;
-    }
-
-    .catalog__title {
-        font-size: 7.5vw;
     }
 
     .catalog__link {

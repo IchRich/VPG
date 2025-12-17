@@ -244,15 +244,7 @@ html, body {
 .articles_related{
     margin-top: 6.2vw;
 }
-.title_articles_related{
-    color: var(--black);
-    margin: 0;
-    font-weight: 600;
-    font-family: 'Geologica', serif;
-    font-size: 3.2vw;
-    margin-left: -0.26vw;
-    line-height: 1;
-}
+
 .articles_related_grid{
     margin: 1.6vw 0;
     display: grid;

@@ -69,6 +69,11 @@ section
     align-items: center;
     overflow-y: auto;
 }
+
+.main_navigation__list a.a_black {
+    color: var(--black);
+}
+
 .main_navigation__list a {
     color: var(--white);
     gap: 0.42vw;

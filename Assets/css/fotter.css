@@ -11,7 +11,7 @@
 /* ===== FOOTER ===== */
 .main_footer {
     background: rgba(245, 245, 245, 1);
-    padding: 3.13vw 0 1.56vw;
+
 }
 
 .footer_content {
@@ -55,13 +55,16 @@
 
 .footer_col ul li a {
     color: black;
+    font-size: 1.25vw;
     text-decoration: none;
     transition: color 0.3s ease;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .footer_col ul li.adress
 {
     line-height: 1.35;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .footer_col ul li a:hover {
@@ -85,6 +88,7 @@
 
 .footer_bottom a {
     color: #999;
+    gap: 20px;
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -103,13 +107,21 @@
 }
 
 .footer_col ul li {
-    font-size: 1.15vw;
+    margin-bottom: 0.63vw;
+    line-height: 100%;
+    color: black;
+    letter-spacing: -0.04em;
 }
 
 .footer_bottom {
     font-size: 0.83vw;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+    .main_footer {
+        padding: 5.2vw 0 1.56vw;
+    }
+}
 /* TABLET */
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -157,11 +169,6 @@
     .footer_logo
     {
         grid-column: 1/3;
-    }
-
-    .footer_col:nth-of-type(4)
-    {
-        display: none;
     }
 
     .footer_bottom {

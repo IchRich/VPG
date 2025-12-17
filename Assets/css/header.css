@@ -239,6 +239,39 @@ section
     height: auto;
 }
 
+/* BREADCRUMBS */
+.breadcrumbs {
+    padding: 0;
+}
+
+.breadcrumbs__container {
+    width: max-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.26vw;
+}
+
+.breadcrumbs__container svg {
+    width: 1.04vw;
+    height: 1.04vw;
+    transform: rotate(-90deg);
+}
+
+.breadcrumbs__container :is(a, p) {
+    font-size: 0.83vw;
+    color: var(--white);
+    transition: all 0.3s ease;
+}
+
+.breadcrumbs__container :is(a, p:not(p:last-of-type)):hover {
+    color: var(--blue);
+}
+
+.breadcrumbs__container p:last-of-type {
+    color: rgba(255, 255, 255, 0.5);
+}
+
 
 /* ===== CONTACT ===== */
 .contact_section {
@@ -432,6 +465,11 @@ section
         padding-top: 5.2vw;
         padding-bottom: 5.2vw;
     }
+    .main_navigation
+    {
+        max-width: 100%;
+        width: calc(100% - 40px);
+    }
     .main_navigation__list,
     .main_navigation__right {
         display: none !important;
@@ -448,19 +486,20 @@ section
         display: none;
     }
     .logo {
-        height: 5.73vw;
+        height: 4.2vw;
     }
 
     img.catalog_search__image
     {
         width: 4.8vw;
         height: auto;
+        display: none;
     }
 
     /* Burger размеры для планшета */
     .burger {
         width: 5.21vw;
-        height: 5.21vw;
+        height: auto;
         gap: 0.78vw;
     }
 
@@ -502,10 +541,10 @@ section
         gap: 3.91vw;
     }
 
-.mobile_nav ul li a {
-        font-size: 5.21vw;
-        gap: 0.65vw;
-    }
+    .mobile_nav ul li a {
+            font-size: 5.21vw;
+            gap: 0.65vw;
+        }
 
     .mobile_nav ul li a img {
         width: 5.21vw;
@@ -518,8 +557,26 @@ section
         border-radius: 1.3vw;
     }
 
+    /* BREADCRUMBS */
+    .breadcrumbs {
+        padding: 2.6vw 0 3.9vw;
+    }
 
-        /* CONTACT */
+    .breadcrumbs__container {
+        gap: 0.65vw;
+    }
+
+    .breadcrumbs__container svg {
+        width: 2.6vw;
+        height: 2.6vw;
+    }
+
+    .breadcrumbs :is(a, p) {
+        font-size: 2.1vw;
+    }
+
+
+    /* CONTACT */
     .contact_wrapper {
         grid-template-columns: 1fr 1fr;
         gap: 2.6vw;
@@ -530,6 +587,12 @@ section
         font-size: 2.9vw;
         margin-bottom: 0;
         width: 100%;
+    }
+
+    .contact_section
+    {
+        max-width: 100%;
+        width: calc(100% - 40px);
     }
 
     .contact_left
@@ -617,23 +680,24 @@ section
     {
         width: 6.7vw;
         height: auto;
+        display: none;
     }
 
     .logo {
-        height: 9.44vw;
+        height: 7.8vw;
     }
 
     /* Burger размеры для мобилки */
     .burger {
         display: flex !important;
         width: 8.33vw;
-        height: 8.33vw;
+        height: auto;
         gap: 1.39vw;
     }
 
     .burger span {
         width: 8.33vw;
-        height: 1.11vw;
+        height: 0.8vw;
     }
 
     /* Mobile menu для мобилки */
@@ -689,7 +753,23 @@ section
         display: none;
     }
 
+    /* BREADCRUMBS */
+    .breadcrumbs {
+        padding: 4.15vw 0 0;
+    }
 
+    .breadcrumbs__container {
+        gap: 1.39vw;
+    }
+
+    .breadcrumbs__container svg {
+        width: 5.2vw;
+        height: 5.2vw;
+    }
+
+    .breadcrumbs :is(a, p) {
+        font-size: 3.3vw;
+    }
 
         /* CONTACT */
     .contact_section {

@@ -39,7 +39,7 @@ section {
 
 /* BREADCRUMBS */
 .breadcrumbs {
-    padding: 1.6vw 0;
+    padding: 0;
 }
 
 .breadcrumbs__container {
@@ -448,7 +448,7 @@ section {
 
     /* BREADCRUMBS */
     .breadcrumbs {
-        padding: 5.2vw 0 3.9vw;
+        padding: 2.6vw 0 3.9vw;
     }
 
     .breadcrumbs__container {
@@ -647,7 +647,7 @@ section {
 
     /* BREADCRUMBS */
     .breadcrumbs {
-        padding: 8.3vw 0 0;
+        padding: 4.15vw 0 0;
     }
 
     .breadcrumbs__container {

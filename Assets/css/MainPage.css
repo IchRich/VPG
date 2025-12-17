@@ -131,7 +131,6 @@ img {
     line-height: 1;
     color: black;
     margin: 0;
-    text-transform: uppercase;
 }
 
 .promo_section__image {
@@ -216,7 +215,7 @@ img {
 
 .catalog_item__link {
     color: black;
-    font-weight: 600;
+    font-weight: 500;
     margin: 0;
     line-height: 110%;
     text-decoration: none;
@@ -1253,7 +1252,7 @@ img {
 
     /* Tablet font sizes */
     .promo_section__content h1 {
-        font-size: 8.6vw;
+        font-size: 9.7vw;
     }
     
     .catalog_header 
@@ -1275,7 +1274,7 @@ img {
     }
 
     .catalog_item__link {
-        font-size: 4vw;
+        font-size: 4.6vw;
     }
 
     .producer_btn {

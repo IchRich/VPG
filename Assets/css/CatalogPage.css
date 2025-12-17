@@ -752,7 +752,7 @@ body {
         font-weight: 600;
         line-height: 110%;
         text-transform: uppercase;
-        color: var(--accent-color);
+        color: var(--black);
         margin-bottom: 1.55vw;
     }
 

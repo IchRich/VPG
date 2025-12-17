@@ -330,7 +330,7 @@ img {
     font-weight: 600;
     letter-spacing: 0;
     line-height: 110%;
-    color: var(--blue);
+    color: var(--black);
     text-transform: uppercase;
     margin: 0 0 1.55vw 0;
 }

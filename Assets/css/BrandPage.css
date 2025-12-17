@@ -380,7 +380,7 @@ section.hero div.hero__container .main_navigation
     font-family: var(--main-font);
     font-size: 3.2vw;
     font-weight: 600;
-    color: var(--blue);
+    color: var(--black);
     text-transform: uppercase;
     line-height: 110%;
     margin: 0;
@@ -556,7 +556,7 @@ section.hero div.hero__container .main_navigation
     font-family: var(--main-font);
     font-size: 3.2vw;
     font-weight: 600;
-    color: var(--blue);
+    color: var(--black);
     text-transform: uppercase;
     line-height: 110%;
     margin: 0;
@@ -694,6 +694,7 @@ section.hero div.hero__container .main_navigation
     /* HERO */
     .hero {
         height: 100vh;
+        padding-inline: 40px;
     }
 
     .hero__content {

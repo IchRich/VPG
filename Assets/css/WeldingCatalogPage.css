@@ -72,6 +72,7 @@ section {
     margin: 0 auto;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 2.08vw;
 }
 
@@ -82,9 +83,10 @@ section {
 
 .main_navigation__list {
     display: flex;
-    gap: 1.56vw;
+    gap: 2.20vw;
     list-style: none;
     margin: 0;
+    font-size: 22px;
     padding: 0;
 }
 
@@ -138,7 +140,7 @@ section {
 }
 
 .main_navigation__phone {
-    text-decoration: underline;
+    text-decoration: none;
     color: #fff;
     text-underline-offset: 0.42vw;
     font-weight: 600;

@@ -69,7 +69,10 @@ section
     align-items: center;
     overflow-y: auto;
 }
-
+.main_navigation__list a {
+    color: var(--white);
+    gap: 0.42vw;
+}
 .mobile_menu.active {
     display: flex;
 }

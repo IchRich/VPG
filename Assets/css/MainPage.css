@@ -143,10 +143,6 @@ img {
 }
 
 /* ===== CATALOG ===== */
-.catalog_section {
-
-    
-}
 
 .catalog_header {
     display: grid;
@@ -714,19 +710,8 @@ img {
 }
 
 .contact_wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.04vw;
     padding: 1.6vw;
     background: rgba(255, 255, 255, 1);
-    border-radius: 0.85vw;
-}
-
-.contact_left {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 1.04vw;
 }
 
 .contact_left p {

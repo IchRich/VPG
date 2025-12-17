@@ -155,12 +155,6 @@ img {
     margin-bottom: 1.56vw;
 }
 
-.catalog_header h2 {
-    font-weight: 500;
-    margin: 0;
-    color: black;
-}
-
 .catalog_search {
     display: flex;
     align-items: center;
@@ -943,10 +937,6 @@ img {
         font-size: 5.21vw;
     }
 
-    .catalog_header h2 {
-        font-size: 3.2vw;
-    }
-
     .catalog_search input {
         font-size: 0.83vw;
     }
@@ -1288,10 +1278,6 @@ img {
     .catalog_header 
     {
         align-items: center;
-    }
-
-    .catalog_header h2 {
-        font-size: 5.85vw;
     }
     
     .catalog_search input
@@ -1880,10 +1866,6 @@ img {
 
     .promo_section__content h1 {
         font-size: 8vw;
-    }
-
-    .catalog_header h2 {
-        font-size: 8.3vw;
     }
 
     .catalog_item__link {

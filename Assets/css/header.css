@@ -1,3 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Moderustic:wght@500;600&family=Inter:wght@400;500;700&display=swap');
+
+:root {
+    --main-font: 'Moderustic', Arial, sans-serif;
+    --text-font: "Inter", Arial, sans-serif;
+    --blue: #124295;
+    --black: #000;
+    --white: #fff;
+    --grey: #f5f5f5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--text-font);
+    background: var(--grey);
+    color: var(--black);
+}
+
+section {
+    padding-top: 3.1vw;
+    padding-bottom: 3.1vw;
+}
 
 img {
     display: block;
@@ -344,10 +371,6 @@ section
     width: 2.6vw;
 }
 
-.contact_btn:hover {
-    transform: translateY(-0.1vw);
-}
-
 .content_text--medium {
     gap: 2.5vw;
 }
@@ -371,9 +394,16 @@ section
     justify-content: flex-start;
     font-weight: 400;
     transition: transform 0.3s ease;
+    text-decoration: none;
+    color: var(--black);
+    display: inline-flex;
+    align-items: center;
+
 }
 
-
+.contact_btn:hover {
+    transform: translateY(-0.1vw);
+}
 
 .form_group input,
 .form_group textarea {
@@ -435,6 +465,18 @@ section
     background: #001f66;
     transform: translateY(-0.1vw);
     box-shadow: 0 0.21vw 0.63vw rgba(18, 66, 149, 0.3);
+}
+
+/* общие стили элементов */
+.headline2
+{
+    font-family: var(--main-font);
+    font-size: 3.2vw;
+    font-weight: 500;
+    margin: 0;
+    color: black;
+    text-transform: uppercase;
+    line-height: 110%;
 }
 
 @media (min-width: 1025px) {
@@ -659,6 +701,12 @@ section
         font-size: 1.6vw;
         margin-top: 1vw;
     }
+
+    /* общие стили элементов */
+    .headline2
+    {
+        font-size: 5.85vw;
+    }
 }
 @media (max-width: 767px) {
     :root {
@@ -857,5 +905,11 @@ section
     .form_agree
     {
         font-size: 3.4vw;
+    }
+
+    /* общие стили элементов */
+    .headline2
+    {
+        font-size: 8.3vw;
     }
 }

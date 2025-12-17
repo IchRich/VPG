@@ -53,7 +53,7 @@ img {
     z-index: 1;
     max-width: 90%;
     margin: 0 auto;
-    padding: 1.04vw 0 5.21vw;
+    padding: 0 0 5.21vw;
     display: flex;
     flex-direction: column;
     min-height: 50.26vw;

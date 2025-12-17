@@ -961,7 +961,7 @@ body {
     .show_more_btn {
         width: 8.23vw;
         height: 2.29vw;
-        margin: 2.58vw auto 0;
+        margin: 2.58vw auto 5.2vw;
         display: block;
         background: transparent;
         color: var(--accent-color);

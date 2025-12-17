@@ -258,10 +258,7 @@ img {
 }
 
 .producers_header h2 {
-    font-weight: 500;
     margin: 0;
-    color: black;
-    line-height: 1;
 }
 
 .producers_description {
@@ -364,9 +361,7 @@ img {
 
 /* ===== INDUSTRIES ===== */
 .industries_section h2 {
-    font-weight: 500;
     margin-bottom: 2.2vw;
-    color: black;
 }
 
 .industries_grid {
@@ -539,9 +534,7 @@ img {
 }
 
 .blog_header h2 {
-    font-weight: 500;
     margin: 0;
-    color: black;
 }
 
 .blog_section__all_link {
@@ -953,10 +946,6 @@ img {
         font-size: 0.83vw;
     }
 
-    .producers_header h2 {
-        font-size: 3.2vw;
-    }
-
     .producers_description {
         font-size: 1.25vw;
     }
@@ -967,10 +956,6 @@ img {
 
     .producer_btn.active::after {
         font-size: 2.1vw;
-    }
-
-    .industries_section h2 {
-        font-size: 3.2vw;
     }
 
     .industries_text h3 {
@@ -1007,10 +992,6 @@ img {
 
     .about_text_section__text {
         font-size: 2.08vw;
-    }
-
-    .blog_header h2 {
-        font-size: 3.2vw;
     }
 
     .blog_section__all_link {
@@ -1297,17 +1278,9 @@ img {
         font-size: 4vw;
     }
 
-    .producers_header h2 {
-        font-size: 6.5vw;
-    }
-
     .producer_btn {
         font-size: 4vw;
         padding: 0 2.65vw;
-    }
-
-    .industries_section h2 {
-        font-size: 6.5vw;
     }
 
     .industries_text h3 {
@@ -1340,10 +1313,6 @@ img {
         width: 100%;
         margin-top: 2vw;
         margin-left: auto;
-    }
-
-    .blog_header h2 {
-        font-size: 6.5vw;
     }
 
     .blog_section__all_link
@@ -1653,11 +1622,6 @@ img {
         display: none;
     }
 
-
-    .industries_section h2 {
-        margin-bottom: 2.8vw;
-    }
-
     .industries_grid {
         gap: 4.44vw;
     }
@@ -1872,10 +1836,6 @@ img {
         font-size: 5.5vw;
     }
 
-    .producers_header h2 {
-        font-size: 8.3vw;
-    }
-
     .producers_description {
         font-size: 4.5vw;
         letter-spacing: -0.03em;
@@ -1883,10 +1843,6 @@ img {
 
     .producer_btn {
         font-size: 5.5vw;
-    }
-
-    .industries_section h2 {
-        font-size: 8.3vw;
     }
 
     .industries_text h3 {
@@ -1921,10 +1877,6 @@ img {
 
     .about_text_section__text {
         font-size: 5vw;
-    }
-
-    .blog_header h2 {
-        font-size: 8.3vw;
     }
 
     .blog_section__all_link {

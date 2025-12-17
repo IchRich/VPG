@@ -407,29 +407,6 @@ section {
     text-align: justify;
 }
 
-/* CONTACT */
-.contact_left p {
-    font-size: 1.25vw;
-    width: 80%;
-}
-
-.contact_buttons {
-    gap: 1vw; 
-}
-
-.contact_btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 14.74vw;
-    background: linear-gradient(90deg, #9AB6DF 0%, #0E468C 100%);
-    color: var(--white);
-    text-decoration: none;
-    border-radius: 0.31vw;
-    font-weight: 400;
-    transition: transform 0.3s ease;
-}
-
 /* DESKTOP */
 @media (min-width: 1025px) {}
 

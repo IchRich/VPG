@@ -437,16 +437,6 @@ section {
     aspect-ratio: 415 / 411
 }
 
-/* CONTACT */
-.contact_left p {
-    font-size: 1.25vw;
-    width: 80%;
-}
-
-.contact_buttons {
-    gap: 1vw; 
-}
-
 /* DESKTOP */
 @media (min-width: 1025px) {}
 

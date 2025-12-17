@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&family=Inter:wght@400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 :root {
-    --main-font: ;
-    --heading-font: ;
     --main-font: ;
     --heading-font: ;
     --main-color: #1d3151;
@@ -37,10 +34,6 @@ html, body {
         display: flex;
         align-items: center;
         justify-content: space-between;
-    }
-
-    .content_text--large {
-        margin-top: 30px;
     }
 
     .logo {
@@ -219,14 +212,14 @@ html, body {
     }
 
     .hero_content h1 {
-    font-family: var(--main-font);
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: -0.04em;
-    line-height: 100%;
-    margin: 0;
-    margin-bottom: 3.5vw;
-    color: white;
+        font-family: var(--heading-font);
+        font-size: 10vw;
+        font-weight: 600;
+        line-height: 100%;
+        letter-spacing: -0.04em;
+        color: var(--white);
+        text-transform: uppercase;
+        margin-bottom: 4.44vw;
     }
 
     .hero_description {
@@ -673,10 +666,8 @@ html, body {
 
     .hero_description {
         font-size: 2.9vw;
-        font-size: 2.9vw;
         font-weight: 500;
         line-height: 120%;
-        letter-spacing: -0.07em;
         letter-spacing: -0.07em;
         color: var(--white);
         max-width: 58.33vw;
@@ -717,13 +708,10 @@ html, body {
         grid-template-columns: 1fr 1fr;
         padding-top: 40px;
         gap: 4.00vw;
-        padding-top: 40px;
-        gap: 4.00vw;
     }
 
     .content_column {
         display: flex;
-        justify-content: space-between;
         justify-content: space-between;
         flex-direction: column;
         gap: 38.6vw;
@@ -732,10 +720,7 @@ html, body {
     .content_text--medium {
         letter-spacing: -0.02em;
         font-size: 2.40vw;
-        letter-spacing: -0.02em;
-        font-size: 2.40vw;
         font-weight: 500;
-        line-height: 100%;
         line-height: 100%;
     }
 
@@ -824,7 +809,6 @@ html, body {
     .contact_left p {
         font-size: 3.13vw;
         line-height: 120%;
-        letter-spacing: -0.02em;
         letter-spacing: -0.02em;
         color: black;
         margin: 0;
@@ -948,14 +932,8 @@ html, body {
 
 /* ДЕСКТОПНЫЙ АДАПТИВ: 1025px+ */
 @media (min-width: 1025px) {zzz
-@media (min-width: 1025px) {zzz
     .main_header {
         padding: 1.04vw 0;
-    }
-
-    .content_text {
-        line-height: 1.0em;
-        padding-top: 20px;
     }
 
     .main_navigation {
@@ -996,8 +974,6 @@ html, body {
 
     .main_navigation__list a img {
         margin-left: 0.31vw;
-        width: 1.00vw;
-        height: 1.00vw;
         width: 1.00vw;
         height: 1.00vw;
     }
@@ -1062,8 +1038,6 @@ html, body {
         flex-direction: column;
         padding: 5.5vw;
         padding-top: 0.5vw;
-        padding: 5.5vw;
-        padding-top: 0.5vw;
     }
 
     .hero_content {
@@ -1072,8 +1046,7 @@ html, body {
         flex-direction: row;
         max-width: 89.58vw;
         margin-top: auto;
-        grid-template-columns: 1fr 1fr;
-        gap: 1vw;
+
     }
 
     .hero_content h1 {
@@ -1081,7 +1054,6 @@ html, body {
         font-size: 5.21vw;
         font-weight: 600;
         line-height: 100%;
-        letter-spacing: -0.03em;
         letter-spacing: -0.03em;
         color: var(--white);
         text-transform: uppercase;
@@ -1091,11 +1063,9 @@ html, body {
     .hero_description {
         line-height: 120%;
         letter-spacing: -0.03em;
-        letter-spacing: -0.03em;
         color: var(--white);
         max-width: 29.17vw;
         margin-top: auto;
-        font-size: 1.25vw;
         font-size: 1.25vw;
     }
 
@@ -1131,7 +1101,6 @@ html, body {
         display: flex;
         flex-direction: column;
         gap: 2.0vw;
-        gap: 2.0vw;
     }
     .content_text__large{
         font-size: 2.08vw;
@@ -1140,16 +1109,12 @@ html, body {
         letter-spacing: -0.04em;
         text-align: justify;
         text-indent: 46.38vw;
-        text-indent: 46.38vw;
         margin-bottom: 120px;
     }
     .content_text--large {
         padding: 0.20vw;
         padding-left: 0.20vw;
-        padding: 0.20vw;
-        padding-left: 0.20vw;
         font-size: 2.08vw;
-        gap: 0.5vw;
         font-weight: 500;
         line-height: 100%;
         letter-spacing: -0.04em;
@@ -1161,6 +1126,7 @@ html, body {
     .content_text__col {
         line-height: 120%;
         gap: 20px;
+        width: 50%;
         display: flex;
         flex-direction: column;
     }
@@ -1168,12 +1134,8 @@ html, body {
     .content_grid {
         display: grid;
         grid-template-columns: 1fr auto;
-        gap: 1vw;
+        gap: 3.13vw;
         align-items: flex-start;
-    }
-
-    .content_text__bottom {
-        margin-top: auto;
     }
 
     .content_text__bottom {
@@ -1185,11 +1147,9 @@ html, body {
         flex-direction: column;
         max-width: 30.21vw;
         height: 100%;
-        height: 100%;
     }
 
     .content_text--medium {
-        font-size: 1.35vw;
         font-size: 1.35vw;
         font-weight: 500;
         line-height: 120%;
@@ -1198,7 +1158,6 @@ html, body {
     .content_images {
         display: flex;
         flex-direction: column;
-        gap: 1.40vw;
         gap: 1.40vw;
         align-items: flex-end;
     }
@@ -1229,7 +1188,6 @@ html, body {
     .content_text--small {
         font-size: 1.04vw;
         margin-top: -40px;
-        margin-top: -40px;
         line-height: 120%;
         margin: 0;
     }
@@ -1241,7 +1199,6 @@ html, body {
     }
 
     .contact_section h2 {
-        font-size: 4.50vw;
         font-size: 4.50vw;
         font-weight: 600;
         margin: 0 0 3.13vw 0;
@@ -1255,7 +1212,6 @@ html, body {
 
     .contact_left p {
         font-size: 1.56vw;
-        line-height: 100%;
         line-height: 100%;
         color: black;
         margin: 0 0 1.56vw 0;
@@ -1296,20 +1252,6 @@ html, body {
         flex-direction: column;
         gap: 1.04vw;
     }
-
-    .content_text--large {
-        padding: 0.20vw;
-        padding-left: 0.20vw;
-        font-size: 2.08vw;
-        gap: 0.5vw;
-        font-weight: 500;
-        line-height: 100%;
-        letter-spacing: -0.04em;
-        text-align: justify;
-
-    }
-
-    
 
     .form_title {
         font-weight: 400;
@@ -1381,4 +1323,3 @@ html, body {
         transform: translateY(0);
     }
 }
-

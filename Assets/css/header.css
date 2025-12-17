@@ -462,6 +462,7 @@ section
     section
     {
         width: calc(100% - 40px);
+        max-width: 100%;
         padding-top: 5.2vw;
         padding-bottom: 5.2vw;
     }
@@ -489,11 +490,15 @@ section
         height: 4.2vw;
     }
 
+    .main_header img.catalog_search__image
+    {
+        display: none;
+    }
+
     img.catalog_search__image
     {
         width: 4.8vw;
         height: auto;
-        display: none;
     }
 
     /* Burger размеры для планшета */
@@ -610,10 +615,10 @@ section
     }
 
     .contact_btn {
-        width: 100%;
         height: 100%;
         font-size: 2.9vw;
         border-radius: 1.4vw;
+        width: auto;
     }
 
     .form_title {
@@ -629,7 +634,7 @@ section
 
     .contact_buttons .contact_btn_whatsapp img, .contact_btn_telegram img
     {
-        width: 6.8vw;
+        width: 3.6vw;
         height: auto;
     }
 
@@ -676,11 +681,17 @@ section
         align-items: center;
         gap: 5.56vw;
     }
+    
+    .main_header img.catalog_search__image
+    {
+        display: none;
+    }
+
     img.catalog_search__image
     {
-        width: 6.7vw;
+        width: 7.5vw;
+        filter: grayscale(1);
         height: auto;
-        display: none;
     }
 
     .logo {
@@ -830,7 +841,7 @@ section
 
     .form_btn {
         margin-top: 5vw;
-        height: 6.7vw;
+        height: 8.7vw;
         padding: 0;
         font-size: 3.35vw;
     }

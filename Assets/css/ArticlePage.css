@@ -145,7 +145,7 @@ html, body {
 }
 
 .title {
-    color: var(--accent-color);
+    color: var(--black);
     margin: 0;
     font-weight: 600;
     font-family: 'Geologica', serif;
@@ -245,11 +245,11 @@ html, body {
     margin-top: 6.2vw;
 }
 .title_articles_related{
-    color: var(--accent-color);
+    color: var(--black);
     margin: 0;
     font-weight: 600;
     font-family: 'Geologica', serif;
-    font-size: 4.2vw;
+    font-size: 3.2vw;
     margin-left: -0.26vw;
     line-height: 1;
 }

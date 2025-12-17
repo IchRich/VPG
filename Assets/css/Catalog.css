@@ -133,11 +133,11 @@ section {
 }
 .catalog_title {
     font-family: var(--main-font);
-    font-size: 4.2vw;
+    font-size: 3.2vw;
     font-weight: 600;
     line-height: 110%;
     text-transform: uppercase;
-    color: var(--accent-color);
+    color: black;
     margin-bottom: 1.6vw;
 }
 
@@ -473,6 +473,11 @@ section {
         padding: 0; 
         max-width: calc(100% - 40px);
     }
+    .hero__container .main_navigation
+    {
+        width: 100%;
+        max-width: 100%;
+    }
 
     .hero__content {
         flex-direction: column;
@@ -495,7 +500,7 @@ section {
     }
 
     .catalog_title {
-        font-size: 6.51vw;
+        font-size: 5.85vw;
         margin-bottom: 2.6vw;
     }
 
@@ -559,7 +564,7 @@ section {
     }
 
     .show_more_btn {
-        width: 20.6vw;
+        width: 25%;
         height: 5.7vw;
         margin-top: 3.9vw;
         font-size: 2.1vw;
@@ -694,7 +699,7 @@ section {
     }
 
     .catalog_title {
-        font-size: 6.7vw;
+        font-size: 8.3vw;
         margin-bottom: 5.6vw;
     }
     
@@ -759,7 +764,7 @@ section {
     }
 
     .show_more_btn {
-        width: 43.9vw;
+        width: 50%;
         height: 12.2vw;
         margin-top: 5.6vw;
         border-radius: 2.8vw;

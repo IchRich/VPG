@@ -120,7 +120,6 @@ img {
 
 /* ===== PROMO ===== */
 .promo_section {
-    max-width: var(--container);
     margin: 5.21vw auto;
     display: flex;
     align-items: flex-start;
@@ -256,11 +255,6 @@ img {
 }
 
 /* ===== PRODUCERS ===== */
-.producers_section {
-    max-width: var(--container);
-    
-}
-
 .producers_header {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -375,10 +369,6 @@ img {
 }
 
 /* ===== INDUSTRIES ===== */
-.industries_section {
-    max-width: var(--container);
-}
-
 .industries_section h2 {
     font-weight: 500;
     margin-bottom: 2.2vw;
@@ -438,10 +428,6 @@ img {
 }
 
 /* ===== ABOUT US ===== */
-.about_us {
-    max-width: var(--container);
-}
-
 .about_us h2 {
     font-weight: 600;
     margin-bottom: 2.2vw;
@@ -525,7 +511,6 @@ img {
 
 /* ===== ABOUT TEXT ===== */
 .about_text_section {
-    max-width: var(--container);
     display: flex;
     gap: 1.04vw;
 }
@@ -552,10 +537,6 @@ img {
 }
 
 /* ===== BLOG ===== */
-.blog_section {
-    max-width: var(--container);
-}
-
 .blog_header {
     display: flex;
     justify-content: space-between;
@@ -701,11 +682,6 @@ img {
 
 
 /* ===== CONTACT ===== */
-.contact_section {
-    max-width: var(--container);
-    border-radius: 0.63vw;
-}
-
 .contact_section h2 {
     font-weight: 500;
     margin: 0;
@@ -747,7 +723,7 @@ img {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 14.74vw;
+    width: auto;
     color: black;
     text-decoration: none;
     border-radius: 0.31vw;
@@ -1308,9 +1284,27 @@ img {
     .promo_section__content h1 {
         font-size: 8.6vw;
     }
+    
+    .catalog_header 
+    {
+        align-items: center;
+    }
 
     .catalog_header h2 {
         font-size: 5.85vw;
+    }
+    
+    .catalog_search input
+    {
+        display: none;
+        border: none;
+    }
+
+    .catalog_search
+    {
+        justify-content: flex-end;
+        border: none;
+        filter: grayscale(1);
     }
 
     .catalog_item__link {
@@ -1587,7 +1581,8 @@ img {
     .catalog_header {
         gap: 4.44vw;
         margin-bottom: 5.56vw;
-        align-items: flex-start;
+        align-items: center;
+        display: flex;
     }
 
     .catalog_search input{
@@ -1896,7 +1891,7 @@ img {
     }
 
     .producers_header h2 {
-        font-size: 6vw;
+        font-size: 8.3vw;
     }
 
     .producers_description {
@@ -1909,7 +1904,7 @@ img {
     }
 
     .industries_section h2 {
-        font-size: 6vw;
+        font-size: 8.3vw;
     }
 
     .industries_text h3 {
@@ -1921,7 +1916,7 @@ img {
     }
 
     .about_us h2 {
-        font-size: 6vw;
+        font-size: 8.3vw;
     }
 
     .about_us__main_text {
@@ -1947,7 +1942,7 @@ img {
     }
 
     .blog_header h2 {
-        font-size: 6vw;
+        font-size: 8.3vw;
     }
 
     .blog_section__all_link {
@@ -1963,7 +1958,7 @@ img {
     }
 
     .contact_section h2 {
-        font-size: 6vw;
+        font-size: 8.3vw;
     }
 
     .contact_left p {
@@ -1978,7 +1973,7 @@ img {
     }
 
     .form_title {
-        font-size: 6vw;
+        font-size: 8.3vw;
         margin-top: 14vw;
     }
 

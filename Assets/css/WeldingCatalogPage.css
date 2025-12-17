@@ -351,7 +351,7 @@ section {
 .catalog_title {
     font-family: var(--main-font);
     font-weight: 600;
-    color: var(--accent-color);
+    color: var(--black);
     text-transform: uppercase;
     line-height: 110%;
     margin: 0 0 2.08vw 0;

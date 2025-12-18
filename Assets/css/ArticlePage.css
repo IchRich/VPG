@@ -39,11 +39,6 @@ html, body {
     margin: 0;
     padding: 0;
 }
-.main_header {
-    background: #fff;
-    padding: 1.04vw 0;
-    box-shadow: 0 0.05vw 0.21vw rgba(0, 0, 0, 0.05);
-}
 
 .main_navigation {
     max-width: var(--container);

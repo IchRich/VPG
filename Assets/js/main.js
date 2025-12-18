@@ -19,3 +19,15 @@ document.addEventListener('DOMContentLoaded', function () {
         };
     }
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const dropdownLink = document.querySelector('.nav_item--dropdown > .nav_link');
+
+    dropdownLink.addEventListener('click', (e) => {
+        if (window.innerWidth <= 1024) {
+            e.preventDefault();
+            dropdownLink.parentElement.classList.toggle('active');
+        }
+    });
+});
+

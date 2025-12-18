@@ -183,7 +183,11 @@ section {
     letter-spacing: -0.04vw;
 }
 
-.rubricator__btn:hover,
+.rubricator__btn:hover {
+    color: var(--white);
+    background-color: grey;
+}
+
 .rubricator__btn.activeBtn {
     color: var(--white);
     background-color: var(--black);

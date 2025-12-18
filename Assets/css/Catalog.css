@@ -379,6 +379,7 @@ section {
     cursor: pointer;
     transition: all 0.3s;
     padding: 0.7vw 1.25vw;
+    grid-column: -2 / -1;
 }
 
 .show_more_btn:hover {

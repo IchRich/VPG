@@ -85,260 +85,232 @@
 <div class="mobile_menu__overlay" id="menu-overlay"></div>
 
 <main>
-
+<!-- CATALOG -->
 <section class="catalog_page">
+    <h2 class="headline2 catalog_title">КАТАЛОГ</h2>
 
-  <!-- Title -->
-  <h1 class="catalog_title">КАТАЛОГ</h1>
-
-  <!-- Search + Filter -->
-  <div class="catalog_controls">
-    <div class="search_wrapper">
-      <input type="text" placeholder="Найти" class="search_input">
-      <button class="search_btn" aria-label="Поиск">
-        <svg width="30" height="30" viewBox="0 0 30 30">
-          <circle cx="13" cy="13" r="7" stroke="currentColor" stroke-width="2" fill="none"/>
-          <line x1="18" y1="18" x2="23" y2="23" stroke="currentColor" stroke-width="2"/>
-        </svg>
-      </button>
+    <!-- MOBILE/TABLET FILTER -->
+    <div class="catalog_controls">
+        <button class="filter_btn" id="filter-btn">
+            <img src="Assets\Image\FilterIcon.svg" alt="Иконка">
+        </button>
+        <div class="search_wrapper">
+            <input type="text" placeholder="Найти" class="search_input">
+            <button class="search_btn" aria-label="Поиск">
+                <svg width="30" height="30" viewBox="0 0 30 30">
+                    <circle cx="13" cy="13" r="7" stroke="currentColor" stroke-width="2" fill="none"/>
+                    <line x1="18" y1="18" x2="23" y2="23" stroke="currentColor" stroke-width="2"/>
+                </svg>
+            </button>
+        </div>
     </div>
 
-    <!-- Filter Button (mobile/tablet only) -->
-    <button class="filter_btn" id="filter-btn">
-      <img src="Assets\Image\FilterIcon.svg" alt="<UNK> <UNK>">
-
-    </button>
-  </div>
-
-  <!-- Main Layout -->
-  <div class="catalog_layout">
-    <!-- Desktop Sidebar Filter -->
-    <aside class="filter_sidebar">
-      <div class="filter_search">
-        <input type="text" placeholder="Найти" class="filter_search_input">
-        <svg width="30" height="30" viewBox="0 0 30 30">
-          <circle cx="13" cy="13" r="7" stroke="currentColor" stroke-width="2" fill="none"/>
-          <line x1="18" y1="18" x2="23" y2="23" stroke="currentColor" stroke-width="2"/>
-        </svg>
-      </div>
-
-      <!-- Сварочные материалы -->
-      <div class="filter_section collapsed">
-        <button class="filter_section_header">
-          <h3>Сварочные материалы</h3>
-          <img src="Assets\Image\GalochkaIcon.svg" alt="<UNK> <UNK>" class="arrow_icon">
-        </button>
-        <div class="filter_section_content">
-          <label class="filter_checkbox">
-            <input type="checkbox" name="mat1">
-            <span>Электроды</span>
-          </label>
-          <label class="filter_checkbox">
-            <input type="checkbox" name="mat2">
-            <span>Проволоки</span>
-          </label>
-          <label class="filter_checkbox">
-            <input type="checkbox" name="mat3">
-            <span>Прутки</span>
-          </label>
-          <label class="filter_checkbox">
-            <input type="checkbox" name="mat4">
-            <span>Флюсы</span>
-          </label>
-          <label class="filter_checkbox">
-            <input type="checkbox" name="mat5">
-            <span>Прочее</span>
-          </label>
+    <!-- CATALOG -->
+    <div class="catalog_layout">
+        <!-- DESKTOP FILTER -->
+        <div>
+            <aside class="filter_sidebar">
+                <div class="filter_search">
+                    <input type="text" placeholder="Найти" class="filter_search_input">
+                    <svg width="30" height="30" viewBox="0 0 30 30">
+                        <circle cx="13" cy="13" r="7" stroke="currentColor" stroke-width="2" fill="none"/>
+                        <line x1="18" y1="18" x2="23" y2="23" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                </div>
+                <div class="filter_section">
+                    <button class="filter_section_header">
+                    <h3>Сварочные материалы</h3>
+                    <svg width="24" height="24" viewBox="0 0 24 24" class="arrow_icon">
+                            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" fill="none"/>
+                        </svg>
+                    </button>
+                    <div class="filter_section_content">
+                        <label class="filter_checkbox">
+                            <input type="checkbox" name="mat1">
+                            <span>Электроды</span>
+                        </label>
+                        <label class="filter_checkbox">
+                            <input type="checkbox" name="mat2">
+                            <span>Проволоки</span>
+                        </label>
+                        <label class="filter_checkbox">
+                            <input type="checkbox" name="mat3">
+                            <span>Прутки</span>
+                        </label>
+                        <label class="filter_checkbox">
+                            <input type="checkbox" name="mat4">
+                            <span>Флюсы</span>
+                        </label>
+                        <label class="filter_checkbox">
+                            <input type="checkbox" name="mat5">
+                            <span>Прочее</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="filter_section collapsed">
+                    <button class="filter_section_header">
+                        <h3>Сварочное оборудование</h3>
+                        <svg width="24" height="24" viewBox="0 0 24 24" class="arrow_icon">
+                            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" fill="none"/>
+                        </svg>
+                    </button>
+                    <div class="filter_section_content"></div>
+                </div>
+                <div class="filter_section collapsed">
+                    <button class="filter_section_header">
+                        <h3>Автоматизация сварки</h3>
+                        <svg width="24" height="24" viewBox="0 0 24 24" class="arrow_icon">
+                            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" fill="none"/>
+                        </svg>
+                    </button>
+                    <div class="filter_section_content"></div>
+                </div>
+                <div class="filter_section collapsed">
+                    <button class="filter_section_header">
+                        <h3>Средства индивидуальной защиты</h3>
+                        <svg width="24" height="24" viewBox="0 0 24 24" class="arrow_icon">
+                            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" fill="none"/>
+                        </svg>
+                    </button>
+                    <div class="filter_section_content"></div>
+                </div>
+            </aside>
         </div>
-      </div>
-
-      <!-- Сварочное оборудование -->
-      <div class="filter_section">
-        <button class="filter_section_header">
-          <h3>Сварочное оборудование</h3>
-          <img src="Assets\Image\GalochkaIcon.svg" alt="<UNK> <UNK>" class="arrow_icon">
-        </button>
-        <div class="filter_section_content"></div>
-      </div>
-
-      <!-- Автоматизация сварки -->
-      <div class="filter_section">
-        <button class="filter_section_header">
-          <h3>Автоматизация сварки</h3>
-          <img src="Assets\Image\GalochkaIcon.svg" alt="<UNK> <UNK>" class="arrow_icon">
-        </button>
-        <div class="filter_section_content"></div>
-      </div>
-
-      <!-- Средства индивидуальной защиты -->
-      <div class="filter_section">
-        <button class="filter_section_header">
-          <h3>Средства индивидуальной защиты</h3>
-          <img src="Assets\Image\GalochkaIcon.svg" alt="<UNK> <UNK>" class="arrow_icon">
-        </button>
-        <div class="filter_section_content"></div>
-      </div>
-    </aside>
-
-    <!-- Product Grid -->
-    <div class="products_wrapper">
-      <div class="products_grid">
-        <!-- Card 1-8 -->
-        <div class="product_card">
-          <div class="product_image">
-            <img class="boehler_image" src="Assets\Image\Boehler.svg"/>
-          </div>
-          <div class="product_info">
-            <h3>СВАРОЧНЫЙ ЭЛЕКТРОД BOEHLER FOX DMO KB</h3>
-          </div>
+        
+        <!-- PRODUCTS -->
+        <div class="products_grid">
+            <div class="product_card">
+                <div class="product_image">
+                    <img class="boehler_image" src="Assets\Image\Boehler.svg"/>
+                </div>
+                <div class="product_info">
+                    <h3>СВАРОЧНЫЙ ЭЛЕКТРОД BOEHLER FOX DMO KB</h3>
+                </div>
+            </div>
+            <div class="product_card">
+                <div class="product_image">
+                    <img class="boehler_image" src="Assets\Image\Boehler.svg"/>
+                </div>
+                <div class="product_info">
+                    <h3>СВАРОЧНЫЙ ЭЛЕКТРОД BOEHLER FOX DMO KB</h3>
+                </div>
+            </div>
+            <div class="product_card">
+                <div class="product_image">
+                    <img class="boehler_image" src="Assets\Image\Boehler.svg"/>
+                </div>
+                <div class="product_info">
+                    <h3>СВАРОЧНЫЙ ЭЛЕКТРОД BOEHLER FOX DMO KB</h3>
+                </div>
+            </div>
+            <div class="product_card">
+                <div class="product_image">
+                    <img class="boehler_image" src="Assets\Image\Boehler.svg"/>
+                </div>
+                <div class="product_info">
+                    <h3>СВАРОЧНЫЙ ЭЛЕКТРОД BOEHLER FOX DMO KB</h3>
+                </div>
+            </div>
+            <div class="product_card">
+                <div class="product_image">
+                    <img class="boehler_image" src="Assets\Image\Boehler.svg"/>
+                </div>
+                <div class="product_info">
+                    <h3>СВАРОЧНЫЙ ЭЛЕКТРОД BOEHLER FOX DMO KB</h3>
+                </div>
+            </div>
+            <div class="product_card">
+                <div class="product_image">
+                    <img class="boehler_image" src="Assets\Image\Boehler.svg"/>
+                </div>
+                <div class="product_info">
+                    <h3>СВАРОЧНЫЙ ЭЛЕКТРОД BOEHLER FOX DMO KB</h3>
+                </div>
+            </div>
+            <div class="product_card">
+                <div class="product_image">
+                    <img class="boehler_image" src="Assets\Image\Boehler.svg"/>
+                </div>
+                <div class="product_info">
+                    <h3>СВАРОЧНЫЙ ЭЛЕКТРОД BOEHLER FOX DMO KB</h3>
+                </div>
+            </div>
+            <div class="product_card">
+                <div class="product_image">
+                    <img class="boehler_image" src="Assets\Image\Boehler.svg"/>
+                </div>
+                <div class="product_info">
+                    <h3>СВАРОЧНЫЙ ЭЛЕКТРОД BOEHLER FOX DMO KB</h3>
+                </div>
+            </div>
         </div>
-
-        <div class="product_card">
-          <div class="product_image">
-            <img class="boehler_image" src="Assets\Image\Boehler.svg"/>
-          </div>
-          <div class="product_info">
-            <h3>СВАРОЧНЫЙ ЭЛЕКТРОД BOEHLER FOX DMO KB</h3>
-          </div>
-        </div>
-
-        <div class="product_card">
-          <div class="product_image">
-            <img  class="boehler_image" src="Assets\Image\Boehler.svg"/>
-          </div>
-          <div class="product_info">
-            <h3>СВАРОЧНЫЙ ЭЛЕКТРОД BOEHLER FOX DMO KB</h3>
-          </div>
-        </div>
-
-        <div class="product_card">
-          <div class="product_image">
-            <img class="boehler_image" src="Assets\Image\Boehler.svg"/>
-          </div>
-          <div class="product_info">
-            <h3>СВАРОЧНЫЙ ЭЛЕКТРОД BOEHLER FOX DMO KB</h3>
-          </div>
-        </div>
-
-        <div class="product_card">
-          <div class="product_image">
-            <img class="boehler_image" src="Assets\Image\Boehler.svg"/>
-          </div>
-          <div class="product_info">
-            <h3>СВАРОЧНЫЙ ЭЛЕКТРОД BOEHLER FOX DMO KB</h3>
-          </div>
-        </div>
-
-        <div class="product_card">
-          <div class="product_image">
-            <img class="boehler_image" src="Assets\Image\Boehler.svg"/>
-          </div>
-          <div class="product_info">
-            <h3>СВАРОЧНЫЙ ЭЛЕКТРОД BOEHLER FOX DMO KB</h3>
-          </div>
-        </div>
-
-        <div class="product_card">
-          <div class="product_image">
-            <img class="boehler_image" src="Assets\Image\Boehler.svg"/>
-          </div>
-          <div class="product_info">
-            <h3>СВАРОЧНЫЙ ЭЛЕКТРОД BOEHLER FOX DMO KB</h3>
-          </div>
-        </div>
-
-        <div class="product_card">
-          <div class="product_image">
-            <img class="boehler_image" src="Assets\Image\Boehler.svg"/>
-          </div>
-          <div class="product_info">
-            <h3>СВАРОЧНЫЙ ЭЛЕКТРОД BOEHLER FOX DMO KB</h3>
-          </div>
-        </div>
-      </div>
-
-      <!-- Show More Button -->
-      <button class="show_more_btn">Загрузить еще</button>
+        <button class="show_more_btn">Загрузить еще</button>
     </div>
-  </div>
-  </section>
-</main>
+</section>
 
-<!-- Mobile/Tablet Filter Modal -->
+<!-- MOBILE/TABLET FILTER MODAL -->
 <div class="filter_modal" id="filter-modal">
-  <div class="filter_modal_content">
-
-
-
-
-    <!-- Same filter sections as sidebar -->
-    <div class="filter_sections_wrapper">
-      <!-- Сварочные материалы -->
-      <div class="filter_section">
-        <button class="filter_section_header">
-          <h3>Сварочные материалы</h3>
-          <svg width="24" height="24" viewBox="0 0 24 24" class="arrow_icon">
-            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" fill="none"/>
-          </svg>
-        </button>
-        <div class="filter_section_content">
-          <label class="filter_checkbox">
-            <input type="checkbox" name="mat1-mobile">
-            <span>Электроды</span>
-          </label>
-          <label class="filter_checkbox">
-            <input type="checkbox" name="mat2-mobile">
-            <span>Проволоки</span>
-          </label>
-          <label class="filter_checkbox">
-            <input type="checkbox" name="mat3-mobile" checked>
-            <span>Прутки</span>
-          </label>
-          <label class="filter_checkbox">
-            <input type="checkbox" name="mat4-mobile">
-            <span>Флюсы</span>
-          </label>
-          <label class="filter_checkbox">
-            <input type="checkbox" name="mat5-mobile">
-            <span>Прочее</span>
-          </label>
+    <div class="filter_modal_content">
+        <div class="filter_sections_wrapper">
+            <div class="filter_section">
+                <button class="filter_section_header">
+                    <h3>Сварочные материалы</h3>
+                    <svg width="24" height="24" viewBox="0 0 24 24" class="arrow_icon">
+                        <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" fill="none"/>
+                    </svg>
+                </button>
+                <div class="filter_section_content">
+                    <label class="filter_checkbox">
+                        <input type="checkbox" name="mat1-mobile">
+                        <span>Электроды</span>
+                    </label>
+                    <label class="filter_checkbox">
+                        <input type="checkbox" name="mat2-mobile">
+                        <span>Проволоки</span>
+                    </label>
+                    <label class="filter_checkbox">
+                        <input type="checkbox" name="mat3-mobile">
+                        <span>Прутки</span>
+                    </label>
+                    <label class="filter_checkbox">
+                        <input type="checkbox" name="mat4-mobile">
+                        <span>Флюсы</span>
+                    </label>
+                    <label class="filter_checkbox">
+                        <input type="checkbox" name="mat5-mobile">
+                        <span>Прочее</span>
+                    </label>
+                </div>
+            </div>
+            <div class="filter_section collapsed">
+                <button class="filter_section_header">
+                    <h3>Сварочное оборудование</h3>
+                    <svg width="24" height="24" viewBox="0 0 24 24" class="arrow_icon">
+                        <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" fill="none"/>
+                    </svg>
+                </button>
+                <div class="filter_section_content"></div>
+            </div>
+            <div class="filter_section collapsed">
+                <button class="filter_section_header">
+                    <h3>Автоматизация сварки</h3>
+                    <svg width="24" height="24" viewBox="0 0 24 24" class="arrow_icon">
+                        <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" fill="none"/>
+                    </svg>
+                </button>
+                <div class="filter_section_content"></div>
+            </div>
+            <div class="filter_section collapsed">
+                <button class="filter_section_header">
+                    <h3>Средства индивидуальной защиты</h3>
+                    <svg width="24" height="24" viewBox="0 0 24 24" class="arrow_icon">
+                        <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" fill="none"/>
+                    </svg>
+                </button>
+                <div class="filter_section_content"></div>
+            </div>
         </div>
-      </div>
-
-      <!-- Сварочное оборудование -->
-      <div class="filter_section collapsed">
-        <button class="filter_section_header">
-          <h3>Сварочное оборудование</h3>
-          <svg width="24" height="24" viewBox="0 0 24 24" class="arrow_icon">
-            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" fill="none"/>
-          </svg>
-        </button>
-        <div class="filter_section_content"></div>
-      </div>
-
-      <!-- Автоматизация сварки -->
-      <div class="filter_section collapsed">
-        <button class="filter_section_header">
-          <h3>Автоматизация сварки</h3>
-          <svg width="24" height="24" viewBox="0 0 24 24" class="arrow_icon">
-            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" fill="none"/>
-          </svg>
-        </button>
-        <div class="filter_section_content"></div>
-      </div>
-
-      <!-- Средства индивидуальной защиты -->
-      <div class="filter_section collapsed">
-        <button class="filter_section_header">
-          <h3>Средства индивидуальной защиты</h3>
-          <svg width="24" height="24" viewBox="0 0 24 24" class="arrow_icon">
-            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" fill="none"/>
-          </svg>
-        </button>
-        <div class="filter_section_content"></div>
-      </div>
     </div>
-  </div>
 </div>
 
 <footer class="main_footer">

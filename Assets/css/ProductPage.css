@@ -25,12 +25,6 @@ body {
 }
 
 /* ===== HEADER ===== */
-.main_header {
-    background: #fff;
-    padding: 1.04vw 0;
-    box-shadow: 0 0.05vw 0.21vw rgba(0, 0, 0, 0.05);
-}
-
 .main_navigation {
     max-width: var(--container);
     margin: 0 auto;

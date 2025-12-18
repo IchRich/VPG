@@ -14,12 +14,27 @@
 
 <!-- HEADER -->
 <header class="main_header">
-    <nav class="main_navigation" aria-label="Главная навигация">
+    <nav class="main_navigation black" aria-label="Главная навигация">
         <a href="index.html"><img src="Assets\Image\Logo.webp" alt="Логотип компании" class="logo"/></a>
         <ul class="main_navigation__list">
-            <li><a href="CatalogPage.html">Каталог
-                <img src="Assets\Image\GalochkaIcon.svg" alt="<UNK> <UNK>">
-            </a></li>
+            <li class="nav_item nav_item--dropdown">
+                <a class="nav_link" href="CatalogPage.html">
+                    Каталог
+                    <img
+                        src="Assets/Image/GalochkaIcon.svg"
+                        alt=""
+                        class="dropdown_arrow"
+                    >
+                </a>
+
+                <div class="dropdown_menu">
+                    <a href="#" class="dropdown_item">Пункт 1</a>
+                    <a href="#" class="dropdown_item">Пункт 2</a>
+                    <a href="#" class="dropdown_item">Пункт 3</a>
+                    <a href="#" class="dropdown_item">Пункт 4</a>
+                </div>
+            </li>
+
             <li><a href="AboutCompanyPage.html">О компании</a></li>
             <li><a href="BrandmarkePage.html">Бренды</a></li>
             <li><a href="Blog.html">Блог</a></li>
@@ -41,6 +56,7 @@
         </div>
     </nav>
 </header>
+
 
 <!-- Mobile Menu -->
 <div class="mobile_menu" id="mobile-menu">

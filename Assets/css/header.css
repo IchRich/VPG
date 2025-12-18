@@ -105,6 +105,10 @@ section
 {
     color: var(--black);
 }
+.dropdown_menu.black a
+{
+    color: var(--black);
+}
 
 .main_navigation__list a {
     color: var(--white);
@@ -296,7 +300,7 @@ section
 
 .dropdown_menu {
     position: absolute;
-    top: 100%;
+    top: 130%;
     left: 0;
     width: 120%;
     padding: 0.65vw 0;

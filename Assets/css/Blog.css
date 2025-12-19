@@ -110,6 +110,11 @@ section {
     grid-column: 1 / -1;
 }
 
+.hero__label.mobile
+{
+    display: none;
+}
+
 .hero__lead {
     max-width: 44.3vw;
     font-weight: 500;
@@ -355,6 +360,13 @@ section {
     .hero__label {
         font-size: 3.9vw;
         margin-bottom: 2.6vw;
+        display: none;
+    }
+
+    .hero__label.mobile
+    {
+        display: block;
+        order: -2;
     }
 
     .hero__lead {
@@ -389,9 +401,10 @@ section {
     }
 
     .blog__rubricators {
-        max-width: 74.1vw;
+        max-width: 100%;
         gap: 2.6vw;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
     }
 
     .blog__rubricator {
@@ -485,6 +498,13 @@ section {
     .hero__label {
         font-size: 5vw;
         margin-bottom: 5.6vw;
+        display: none;
+    }
+
+    .hero__label.mobile
+    {
+        display: block;
+        order: -2;
     }
 
     .hero__lead {
@@ -520,7 +540,8 @@ section {
 
     .blog__rubricators {
         gap: 5.56vw;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
     }
 
     .blog__rubricator {

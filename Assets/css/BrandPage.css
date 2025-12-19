@@ -641,6 +641,11 @@ section.hero div.hero__container .main_navigation
         font-size: 3vw;
     }
 
+    .hero .main_navigation
+    {
+        width: 100%;
+    }
+
     .mobile_nav {
         display: flex;
         justify-content: center;

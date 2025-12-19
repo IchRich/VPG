@@ -219,7 +219,7 @@ section
 
 .main_navigation__list {
     display: flex;
-    gap: 2.20vw;
+    gap: 1.55vw;
     list-style: none;
     margin: 0;
     font-size: 22px;
@@ -302,7 +302,7 @@ section
     position: absolute;
     top: 130%;
     left: 0;
-    width: 120%;
+    width: auto;
     padding: 0.65vw 0;
     background: #ffffff;
     border-radius: 10px;
@@ -582,7 +582,7 @@ section
         display: none;
     }
     .logo {
-        height: 4.2vw;
+        height: 5vw;
     }
 
     .main_header img.catalog_search__image

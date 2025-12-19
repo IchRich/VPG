@@ -447,6 +447,12 @@ section {
         padding: 1.56vw 0 6.5vw; 
     }
 
+    .hero .main_navigation
+    {
+        max-width: 100%;
+        width: 100%;
+    }
+
     .hero__container {
         padding: 0; 
         max-width: calc(100% - 40px);

@@ -68,12 +68,6 @@ img {
     padding: 1.04vw 0;
 }
 
-.main_navigation {
-    display: flex;
-    align-items: center;
-    gap: 2.08vw;
-}
-
 .logo {
     height: 2.6vw;
     margin-right: auto;
@@ -403,6 +397,11 @@ img {
         display: none !important;
     }
 
+    .hero .main_navigation
+    {
+        width: 100%;
+    }
+
     .main_navigation__phone {
         font-size: 3vw;
     }
@@ -448,9 +447,10 @@ img {
     /* HERO */
     .hero {
         min-height: 83.33vw;
+        padding: 0  ;
     }
     .hero__content{
-        flex-direction: column;
+        grid-template-columns: 1fr;
     }
     .hero__container {
         padding: 2.6vw 0 6.25vw;
@@ -466,7 +466,7 @@ img {
     .hero__text {
         font-size: 2.86vw;
         max-width: 100%;
-        margin-bottom: 3.91vw;
+        margin-bottom: 0;
     }
 
     .breadcrumbs {
@@ -537,13 +537,14 @@ img {
     /* HERO */
     .hero {
         height: 100vh;
+        padding-bottom: 11vw;
     }
     .hero__content{
         grid-template-columns: 1fr;
         gap: 2.8vw;
     }
     .hero__container {
-        padding: 5.56vw 0 8.89vw;
+        padding: 5.56vw 0 0vw;
         min-height: 90vh;
     }
 
@@ -556,7 +557,7 @@ img {
     .hero__text {
         font-size: 4.5vw;
         max-width: 100%;
-        margin-bottom: 5.56vw;
+        margin-bottom: 0;
     }
 
     .breadcrumbs {

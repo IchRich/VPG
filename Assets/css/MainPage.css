@@ -366,7 +366,7 @@ img {
 .industries_grid {
     display: flex;
     flex-direction: column;
-    gap: 1.56vw;
+    gap: 2.6vw;
 }
 
 .industries_item {
@@ -423,7 +423,7 @@ img {
 }
 
 .about_us__image {
-    width: calc(50% - (1.04vw / 2));
+    /*width: calc(50% - (1.04vw / 2));*/
     height: auto;
     float: left;
     object-fit: cover;
@@ -432,7 +432,10 @@ img {
 }
 
 .about_us__spacer {
-    width: calc(50% - (1.04vw / 2));
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5vw;
+    /*width: calc(50% - (1.04vw / 2));*/
     height: 27.8vw;
     clear: none;
 }
@@ -528,7 +531,7 @@ img {
 .blog_header {
     display: flex;
     justify-content: space-between;
-    align-items: end;
+    align-items: center;
     margin-bottom: 2.6vw;
 }
 
@@ -859,7 +862,7 @@ img {
     }
 
     .about_us__main_text {
-        font-size: 2.08vw;
+        font-size: 1.7vw;
     }
 
     .about_us__column p {
@@ -924,6 +927,11 @@ img {
         padding-top: 5.2vw;
         padding-bottom: 5.2vw;
     }
+    .about_us__spacer{
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        height: 87vw;
+    }
 
     .main_footer
     {
@@ -973,9 +981,9 @@ img {
         height: 55.29vw;
     }
 
-    .catalog_section {
-        margin: 10.42vw auto;
-    }
+    /*.catalog_section {*/
+    /*    margin: 10.42vw auto;*/
+    /*}*/
 
     .catalog_grid {
         grid-template-columns: 1fr;
@@ -987,7 +995,6 @@ img {
         padding: 4vw;
     }
     .catalog_tags{
-        gap: 2.5vw;
         font-size: 2.1vw;
     }
     .catalog_item img
@@ -1013,6 +1020,7 @@ img {
     .producers_wrapper {
         grid-template-columns: 1fr 1fr;
         gap: 2.6vw;
+        margin-top: 5vw;
     }
 
     .producer_btn.active
@@ -1035,6 +1043,7 @@ img {
         padding: 3.91vw;
         height: 80%;
         justify-content: space-between;
+        line-height: 200%;
     }
 
     .industries_text p {
@@ -1174,9 +1183,7 @@ img {
     }
 
     .about_us__main_text {
-        font-size: 3.91vw;
-        margin-top: 37vw;
-        margin-bottom: 4vw;
+        font-size:2.9vw;
     }
     .about_us__column strong
     {
@@ -1498,7 +1505,9 @@ img {
     }
 
     .about_us__spacer {
-        display: none;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        height: 200vw;
     }
 
     .about_us__columns {

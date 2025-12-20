@@ -279,7 +279,7 @@ section
 
 .catalog_search__image
 {
-    width: 1.4vw;
+    width: 2.2vw;
     height: auto;
 }
 
@@ -582,7 +582,7 @@ section
         display: none;
     }
     .logo {
-        height: 5vw;
+        height: 5.73vw;
     }
 
     .main_header img.catalog_search__image
@@ -794,7 +794,7 @@ section
     }
 
     .logo {
-        height: 7.8vw;
+        height: 8.33vw;
     }
 
     /* Burger размеры для мобилки */

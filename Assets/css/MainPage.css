@@ -366,7 +366,7 @@ img {
 .industries_grid {
     display: flex;
     flex-direction: column;
-    gap: 2.6vw;
+    gap: 1.04vw;
 }
 
 .industries_item {
@@ -559,7 +559,7 @@ img {
     color: #fff;
     border-radius: 0.83vw;
     padding: 2.08vw;
-    height: 30.73vw;
+    height: 37.3vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -993,6 +993,7 @@ img {
     .catalog_item {
         width: 100%;
         padding: 4vw;
+        border-radius: 2vw;
     }
     .catalog_tags{
         font-size: 2.1vw;
@@ -1455,7 +1456,7 @@ img {
     }
 
     .industries_grid {
-        gap: 4.44vw;
+        gap: 3.33vw;
     }
 
     .industries_item {

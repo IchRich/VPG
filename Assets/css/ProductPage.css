@@ -24,7 +24,6 @@ body {
     color: var(--black);
 }
 
-/* ===== HEADER ===== */
 .main_navigation {
     max-width: var(--container);
     margin: 0 auto;
@@ -132,7 +131,6 @@ body {
     height: 1.25vw;
 }
 
-/* ===== MOBILE MENU ===== */
 .mobile_menu__overlay {
     position: fixed;
     top: 0;
@@ -268,8 +266,6 @@ body {
     background: #001f66;
 }
 
-/* PRODUCT CARD */
-
 .product {
     background: var(--grey);
 }
@@ -278,15 +274,20 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1vw;
+    align-items: start;
 }
 
 .product__left-wrapper {
     display: flex;
     flex-direction: column;
     gap: 1.56vw;
+    position: sticky;
+    top: 1.04vw;
+    align-self: flex-start;
+    height: fit-content;
+    z-index: 5;
 }
 
-/* Карточка с фоном - 410px = 21.35vw */
 .product__card {
     background-image: url('../Image/backgroundCard.svg');
     background-size: cover;
@@ -339,7 +340,6 @@ body {
     transform: translateY(-0.1vw);
 }
 
-/* Аккордеон - отдельно от карточки */
 .product__accordion {
     display: flex;
     flex-direction: column;
@@ -404,8 +404,6 @@ body {
     margin: 0;
 }
 
-/* Правая часть: изображения */
-
 .product__right {
     width: 100%;
 }
@@ -436,7 +434,6 @@ body {
     object-fit: cover;
 }
 
-/* Показать десктоп, скрыть мобильную версию */
 .product--desktop {
     display: block;
 }
@@ -445,14 +442,12 @@ body {
     display: none;
 }
 
-/* Слайдер с индикаторами */
 .product__slider-wrapper {
     position: relative;
     width: 100%;
     margin-bottom: 2.6vw;
 }
 
-/* Индикаторы-точки */
 .product__slider-dots {
     display: flex;
     justify-content: center;
@@ -475,8 +470,6 @@ body {
     width: 2.78vw;
     height: 2.78vw;
 }
-
-/* RELEVANT PRODUCTS */
 
 .relevant__title {
     margin-bottom: 3.13vw;
@@ -527,8 +520,6 @@ body {
     letter-spacing: -0.04em;
 }
 
-/* PAGINATION */
-
 .pagination {
     display: flex;
     align-items: center;
@@ -574,9 +565,6 @@ body {
 .pagination__dots span:nth-child(7) { height: 1.15vw; }
 .pagination__dots span:nth-child(8) { height: 1.25vw; }
 
-
-
-/* TABLET и MOBILE - скрыть десктоп, показать мобильную */
 @media (max-width: 1024px) {
     .product--desktop {
         display: none;
@@ -586,7 +574,10 @@ body {
         display: block;
     }
 
-    /* Слайдер для фото продукта */
+    .product__left-wrapper {
+        position: static;
+    }
+
     .product__images-slider {
         display: flex;
         overflow-x: auto;
@@ -614,7 +605,6 @@ body {
         font-size: 3.9vw;
     }
 
-    /* Слайдер для relevant карточек */
     .relevant__grid {
         display: flex;
         overflow-x: auto;
@@ -641,7 +631,6 @@ body {
     }
 }
 
-/* TABLET */
 @media (min-width: 768px) and (max-width: 1024px) {
     .mobile_menu {
         padding: 5vw 4vw;
@@ -689,7 +678,6 @@ body {
         padding: 2.5vw 5vw;
     }
 
-    /* Header */
     .main_navigation__list,
     .main_navigation__right {
         display: none !important;
@@ -736,7 +724,6 @@ body {
         font-size: 2.6vw;
     }
 
-    /* Slider dots */
     .product__slider-dots
     {
         gap: 0.7vw;
@@ -813,18 +800,17 @@ body {
     {
         border-radius: 1.3vw;
     }
-    
+
     .product
     {
         padding-bottom: 5.2vw;
     }
-    
+
     .accordion__header
     {
         padding: 2.5vw;
     }
 
-    /* Relevant */
     .relevant__grid .relevant__card {
         flex: 0 0 49%;
         scroll-snap-align: start;
@@ -839,10 +825,9 @@ body {
         height: 20vw;
     }
 
- 
+
 }
 
-/* MOBILE */
 @media (max-width: 767px) {
     .main_navigation__phone {
         display: none;
@@ -855,7 +840,6 @@ body {
         gap: 5.56vw;
     }
 
-    /* Header */
     .main_navigation__list,
     .main_navigation__right {
         display: none !important;
@@ -888,7 +872,6 @@ body {
         height: 6.67vw;
     }
 
-    /* Product */
     .product__card {
         height: auto;
         min-height: 80vw;
@@ -919,7 +902,7 @@ body {
     .accordion__title {
         font-size: 3.9vw;
     }
-    
+
     .accordion__header
     {
         padding: 2.8vw;
@@ -939,7 +922,6 @@ body {
         height: 88vw;
     }
 
-    /* Slider dots */
     .slider-dot {
         width: 2.33vw;
         height: 2.33vw;
@@ -949,7 +931,6 @@ body {
         gap: 1.4vw;
     }
 
-    /* Relevant */
     .relevant__grid
     {
         margin-bottom: 5.6vw;
@@ -967,7 +948,7 @@ body {
     .relevant__card-image {
         height: 30vw;
     }
-    
+
     .pagination
     {
         gap: 5.56vw;
@@ -996,5 +977,5 @@ body {
     {
         font-size: 4.85vw;
     }
-  
+
 }

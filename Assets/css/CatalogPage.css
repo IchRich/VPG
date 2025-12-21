@@ -362,7 +362,9 @@ body {
         gap: 1.39vw;
         margin-bottom: 4.44vw;
     }
-
+    .main_header{
+        padding: 5.6vw 0 0 !important;
+    }
     .breadcrumbs span {
         font-size: 3.33vw;
         font-weight: 400;
@@ -521,6 +523,7 @@ body {
     header.main_header{
         padding-top: 2.6vw;
     }
+
     .breadcrumbs span {
         font-size: 2.08vw;
         font-weight: 400;

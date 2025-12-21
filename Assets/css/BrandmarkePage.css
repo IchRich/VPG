@@ -56,7 +56,7 @@ img {
 .hero__container {
     position: relative;
     z-index: 1;
-    max-width: 95%;
+    max-width: 90%;
     margin: 0 auto;
     padding: 0 0 5.21vw;
     display: flex;
@@ -459,6 +459,7 @@ img {
     .hero__container {
         padding: 1.56vw  0 6.25vw;
         min-height: 118.9vw;
+        max-width: 95%;
     }
 
     .hero__title {

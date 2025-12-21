@@ -191,7 +191,7 @@ img {
 .catalog_item {
     width: 100%;
     background: rgba(255, 255, 255, 1);
-    border-radius: 0.63vw;
+    border-radius: 1vw;
     padding: 1.56vw;
     display: flex;
     flex-direction: column;
@@ -336,7 +336,7 @@ img {
 
 .producers_image_wrapper {
     background: #fff;
-    border-radius: 0.63vw;
+    border-radius: 1vw;
     padding: 2.08vw;
     display: flex;
     align-items: center;
@@ -376,7 +376,7 @@ img {
     gap: 1.04vw;
     align-items: center;
     text-decoration: none;
-    border-radius: 0.63vw;
+    border-radius: 1vw;
 }
 
 .industries_text {
@@ -410,7 +410,7 @@ img {
     width: 100%;
     height: 31.25vw;
     object-fit: cover;
-    border-radius: 0.63vw;
+    border-radius: 1vw;
 }
 
 /* ===== ABOUT US ===== */
@@ -425,7 +425,7 @@ img {
     height: auto;
     float: left;
     object-fit: cover;
-    border-radius: 0.83vw;
+    border-radius: 1vw;
     margin-right: 1.04vw;
 }
 
@@ -555,7 +555,7 @@ img {
 .blog_main_card {
     background: var(--blog-bg);
     color: #fff;
-    border-radius: 0.83vw;
+    border-radius: 1vw;
     padding: 2.08vw;
     height: 37.3vw;
     display: flex;
@@ -646,7 +646,7 @@ img {
     object-fit: cover;
     display: block;
     transition: transform 0.3s ease;
-    border-radius: 0.63vw;
+    border-radius: 1vw;
 }
 
 .blog_post__date {
@@ -959,7 +959,9 @@ img {
         width: 3.65vw;
         height: 0.52vw;
     }
-
+    .producers_image_wrapper{
+        border-radius: 2vw;
+    }
     .promo_section {
         padding-top: 6.4vw;
         padding-bottom: 6.4vw;
@@ -1034,6 +1036,7 @@ img {
         grid-template-columns: 1fr;
         width: 100%;
         height: 71.75vw;
+        border-radius: 2vw;
     }
 
     .industries_text {
@@ -1097,6 +1100,7 @@ img {
     .blog_post img {
         width: 100%;
         height: 32.55vw;
+        border-radius: 2vw;
     }
 
     .about_text_section {

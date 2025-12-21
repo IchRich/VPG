@@ -56,7 +56,7 @@ section {
 
 /* BREADCRUMBS */
 .breadcrumbs {
-    padding: 1.6vw 0 !important;
+    padding: 1.2vw 0 !important;
 }
 
 .breadcrumbs__container {
@@ -493,6 +493,9 @@ section {
     /* HERO */
     .hero {
         padding-top: 8.4vw;
+    }
+    .breadcrumbs {
+        padding: 4.15vw 0 0 !important;;
     }
 
     .hero__container {

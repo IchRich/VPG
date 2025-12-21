@@ -376,6 +376,7 @@ img {
     gap: 1.04vw;
     align-items: center;
     text-decoration: none;
+    border-radius: 0.63vw;
 }
 
 .industries_text {

@@ -341,7 +341,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 26.25vw;
+    min-height: 34.25vw;
     box-shadow: 0 0.1vw 0.42vw rgba(0, 0, 0, 0.08);
 }
 
@@ -379,18 +379,20 @@ img {
 }
 
 .industries_text {
-    align-items: center;
-    text-align: center;
+    align-items: start;
+    text-align: start;
     display: flex;
     flex-direction: column;
-    gap: 5.73vw;
+    gap: 16.73vw;
     position: relative;
+    padding: 1.6vw;
 }
 
 .industries_text h3 {
     font-weight: 500;
     margin: 0 0 1.04vw 0;
     color: black;
+
 }
 
 .industries_text p {
@@ -401,12 +403,7 @@ img {
     color: black;
 }
 
-.industries_number {
-    font-weight: 700;
-    color: black;
-    display: block;
-    margin-top: 1.04vw;
-}
+
 
 .industries_item img {
     width: 100%;
@@ -853,9 +850,6 @@ img {
         font-size: 1.25vw;
     }
 
-    .industries_number {
-        font-size: 5.21vw;
-    }
 
     .about_us h2 {
         font-size: 3.2vw;
@@ -1175,9 +1169,6 @@ img {
         font-size: 2.9vw;
     }
 
-    .industries_number {
-        font-size: 9.15vw;
-    }
 
     .about_us h2 {
         font-size: 6.5vw;
@@ -1489,13 +1480,10 @@ img {
 
     .industries_text p {
         width: 100%;
-        text-align: center;
+        text-align: start;
     }
 
-    .industries_number {
-        font-weight: 800;
-        font-size: 14vw;
-    }
+
 
     .about_us__image {
         width: 100%;

@@ -186,6 +186,7 @@ section {
     font-weight: 500;
     line-height: 100%;
     letter-spacing: -0.04vw;
+    white-space: nowrap;
 }
 
 .rubricator__btn:hover {

@@ -505,6 +505,9 @@ html, body {
         flex-direction: column;
         padding: 4.17vw;
     }
+    .hero_content{
+        margin-top: auto;
+    }
 
     .hero_content h1 {
         font-family: var(--heading-font);

@@ -321,15 +321,22 @@ section {
 @media (min-width: 768px) and (max-width: 1024px) {
     /* HEADER */
     .main_header {
-        width: calc(100% - 40px);
-        padding: 2.6vw 0 0 !important;
+        width: 100%;
+        padding: 1.04vw 0;
     }
 
     /* BREADCRUMBS */
     .breadcrumbs {
         padding: 5.2vw 0 3.9vw;
     }
+    .hero .main_navigation {
+        max-width: 100%;
+        width: 100%;
+    }
 
+    header.main_header {
+        padding-top: 2.5vw;
+    }
     .breadcrumbs__container {
         gap: 0.65vw;
     }

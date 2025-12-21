@@ -89,7 +89,7 @@ section {
 
 .hero__container {
     display: grid;
-    grid-template-columns: auto 36.7vw;
+    grid-template-columns: auto 44.7vw;
     column-gap: 1.04vw;
 }
 

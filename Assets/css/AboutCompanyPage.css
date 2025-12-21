@@ -40,6 +40,9 @@ section {
     color: var(--white);
     gap: 0.42vw;
 }
+.breadcrumbs a{
+    text-decoration: none;
+}
 
 .main_navigation__search {
     cursor: pointer;
@@ -445,6 +448,9 @@ section {
     /* HERO */
     .hero {
         padding: 1.56vw 0 6.5vw; 
+    }
+    .breadcrumbs{
+        padding: 1.6vw 0 3.9vw !important;
     }
 
     .hero .main_navigation

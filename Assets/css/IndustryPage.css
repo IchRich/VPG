@@ -21,6 +21,9 @@ html, body {
     color: black;
     background: var(--bg-color);
 }
+.breadcrumbs__container svg{
+    color: #ffffff;
+}
 
 /* МОБИЛЬНЫЙ АДАПТИВ: 360px - 767px */
 @media (min-width: 360px) and (max-width: 767px) {

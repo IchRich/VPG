@@ -928,7 +928,7 @@ img {
         height: 87vw;
     }
     header.main_header {
-        padding-top: 2.5vw;
+        padding-top: 2.6vw;
     }
     .main_footer
     {
@@ -966,7 +966,7 @@ img {
         flex-direction: column;
         gap: 7.81vw;
         align-items: center;
-        max-width: 100%;
+        max-width: 90%;
     }
 
     .promo_section__content h1 {

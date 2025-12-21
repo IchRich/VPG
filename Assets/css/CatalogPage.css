@@ -363,16 +363,6 @@ body {
         margin-bottom: 4.44vw;
     }
 
-    .main_navigation{
-        max-width: 100%;
-
-    }
-    .main_header {
-        width: calc(100% - 40px);
-        padding: 5.6vw 0 0 !important;
-        margin: 0 auto;
-    }
-
     .breadcrumbs span {
         font-size: 3.33vw;
         font-weight: 400;
@@ -522,22 +512,15 @@ body {
 
 /* ПЛАНШЕТНЫЙ АДАПТИВ: 768px - 1024px */
 @media (min-width: 768px) and (max-width: 1024px) {
-
-    .hero .main_navigation {
-        max-width: 100%;
-        width: 100%;
-    }
-
-    header.main_header {
-        padding-top: 2.5vw;
-    }
     .breadcrumbs {
         display: flex;
         align-items: center;
         gap: 0.65vw;
         margin-bottom: 2.08vw;
     }
-
+    header.main_header{
+        padding-top: 2.6vw;
+    }
     .breadcrumbs span {
         font-size: 2.08vw;
         font-weight: 400;

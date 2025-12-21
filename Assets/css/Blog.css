@@ -326,8 +326,10 @@ section {
     }
 
     /* BREADCRUMBS */
-    .breadcrumbs {
-        padding: 5.2vw 0 3.9vw;
+     .breadcrumbs {
+         padding: 2.6vw 0 3.9vw !important;
+         width: 95%;
+         margin: 0 auto;
     }
     .hero .main_navigation {
         max-width: 100%;
@@ -335,7 +337,7 @@ section {
     }
 
     header.main_header {
-        padding-top: 2.5vw;
+        padding-top: 2.6vw;
     }
     .breadcrumbs__container {
         gap: 0.65vw;

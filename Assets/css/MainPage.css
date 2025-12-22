@@ -563,7 +563,25 @@ img {
     justify-content: space-between;
     cursor: pointer;
     transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
 }
+.blog_main_card__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1vw;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+.blog_main_card:hover .blog_main_card__img {
+    opacity: 0;
+}
+
 
 
 .blog_main_text {
@@ -572,14 +590,29 @@ img {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
+    z-index: 0;
 }
 
 .blog_main_arrow {
     position: absolute;
     top: 0;
     right: 0;
-    font-weight: 900;
     transition: transform 0.3s ease;
+    z-index: 3;
+}
+
+.blog_main_arrow img {
+    width: 3.3vw;
+    height: 3.3vw;
+    filter: brightness(0) invert(1);
+}
+
+.blog_main_title {
+    font-weight: 500;
+    line-height: 1;
+    font-size: 3.13vw;
+    z-index: 3;
+    position: relative;
 }
 
 
@@ -641,6 +674,7 @@ img {
     cursor: pointer;
     transition: all 0.3s ease;
     flex: 1;
+    position: relative;
 }
 
 
@@ -652,7 +686,18 @@ img {
     transition: transform 0.3s ease;
     border-radius: 1vw;
 }
+.blog_post__arrow img {
+    height: 0.5vw;
+    width: 1vw;
+    display: flex;
+}
 
+.blog_post__arrow img {
+    width: 3.3vw;
+    height: 3.3vw;
+    filter: brightness(0) invert(1);
+    opacity: 1 !important;
+}
 .blog_post__date {
     display: block;
     padding-top: 0.55vw;
@@ -789,7 +834,10 @@ img {
 .mobile_navigation__buttons {
     display: none;
 }
-
+.blog_post__hover{
+    width: 3.3vw;
+    height: 3.3vw;
+}
 /* ===== DESKTOP >= 1025px ===== */
 @media (min-width: 1025px) {
     .burger,
@@ -1749,20 +1797,12 @@ img {
     margin: 0;
 }
 
-.blog_post__hover img {
-
-    filter: brightness(0) invert(1);
-    position: relative;
-    right: 0;
-    top: 0;
-}
 
 .blog_post img {
     transition: opacity 0.3s ease;
     position: relative;
     z-index: 1;
     width: 100%;
-    height: 15vw;
     object-fit: cover;
     display: block;
     border-radius: 1vw;

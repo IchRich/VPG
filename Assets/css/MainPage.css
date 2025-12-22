@@ -1783,7 +1783,9 @@ img {
 
 
 @media (min-width: 768px) and (max-width: 1024px) {
-
+    .blog_post__hover{
+        display: none;
+    }
     .blog_post:hover img {
         opacity: 1;
     }
@@ -1807,7 +1809,7 @@ img {
 @media (max-width: 767px) {
 
     .blog_post__hover{
-        height: 76.67vw;
+        display: none;
     }
 
     .blog_post__hover p{

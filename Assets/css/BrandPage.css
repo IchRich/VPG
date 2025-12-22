@@ -678,7 +678,7 @@ section.hero div.hero__container .main_navigation
     /* HERO */
     .hero {
         height: 100vh;
-        padding-inline: 40px;
+        padding-inline: 2%
     }
 
     .hero__content {
@@ -686,7 +686,7 @@ section.hero div.hero__container .main_navigation
     }
 
     .hero__container {
-        padding: 2.6vw 0 6.25vw;
+        padding: 1.6vw 0 6.25vw;
         height: 100vh;
     }
 
@@ -703,7 +703,9 @@ section.hero div.hero__container .main_navigation
     .hero_description {
         gap: 2.6vw;
     }
-
+    .breadcrumbs {
+        padding: 1.6vw 0 3.9vw !important;
+    }
     .hero__btn {
         width: calc(50% - (1.3vw / 2));
         padding: 1.82vw 2.08vw;

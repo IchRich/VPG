@@ -630,6 +630,10 @@ img {
     gap: 1.04vw;
 }
 
+.blog_flex a {
+    text-decoration: none;
+}
+
 .blog_post {
     background: rgba(245, 245, 245, 1);
     border-radius: 0.63vw;

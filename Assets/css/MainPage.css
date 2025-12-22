@@ -1705,3 +1705,123 @@ img {
         display:none;
     }
 }
+.blog_post {
+    position: relative;
+    overflow: hidden;
+}
+
+.blog_post__hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 15vw;
+    background-color: var(--blog-bg);
+    opacity: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1.6vw;
+    border-radius: 1vw;
+    transition: all 0.3s ease;
+    pointer-events: none;
+    z-index: 2;
+    box-sizing: border-box;
+}
+
+.blog_post:hover .blog_post__hover {
+    opacity: 1;
+}
+
+.blog_post__hover p {
+    max-width: 8.4vw;
+    color: var(--white);
+    font-family: var(--main-font);
+    text-transform: uppercase;
+    font-size: 2.1vw;
+    line-height: 110%;
+    letter-spacing: -0.04vw;
+    font-weight: 600;
+    margin: 0;
+}
+
+.blog_post__hover img {
+
+    filter: brightness(0) invert(1);
+    position: relative;
+    right: 0;
+    top: 0;
+}
+
+.blog_post img {
+    transition: opacity 0.3s ease;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+    display: block;
+    border-radius: 1vw;
+}
+
+.blog_post:hover img {
+    opacity: 0;
+}
+
+.blog_post__image_container {
+    position: relative;
+    width: 100%;
+    height: 15vw;
+    border-radius: 1vw;
+    overflow: hidden;
+}
+
+.blog_post {
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .blog_post:hover img {
+        opacity: 1;
+    }
+
+    .blog_post__image_container {
+        height: 32.55vw;
+    }
+
+    .blog_post img {
+        height: 32.55vw;
+    }
+    .blog_post__hover{
+        height: 32.55vw;
+    }
+
+    .blog_post__hover p{
+        font-size: 3.13vw;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .blog_post__hover{
+        height: 76.67vw;
+    }
+
+    .blog_post__hover p{
+        font-size: 6.11vw;
+    }
+    .blog_post:hover img {
+        opacity: 1;
+    }
+
+    .blog_post__image_container {
+        height: 76.67vw;
+    }
+
+    .blog_post img {
+        height: 76.67vw;
+    }
+}

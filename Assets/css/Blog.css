@@ -415,6 +415,8 @@ section {
         gap: 2.6vw;
         flex-wrap: nowrap;
         overflow-x: scroll;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
     }
 
     .blog__rubricator {
@@ -555,6 +557,8 @@ section {
         gap: 5.56vw;
         flex-wrap: nowrap;
         overflow-x: scroll;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
     }
 
     .blog__rubricator {

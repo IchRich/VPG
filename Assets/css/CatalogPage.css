@@ -29,7 +29,19 @@ body {
     align-items: center;
     gap: 2.08vw;
 }
+.breadcrumbs {
+    width: 90%;
+    margin: 0 auto;
+    text-decoration: none;
+}
+.breadcrumbs a {
+    color: #000000 !important;
+    text-decoration: none;
+}
 
+.breadcrumbs {
+    padding: 1.2vw 0px !important;
+}
 .logo {
     height: 2.6vw;
     margin-right: auto;
@@ -510,6 +522,9 @@ body {
     .filter_checkbox span {
         font-size: 3.9vw;
     }
+    .breadcrumbs {
+        padding: 4.15vw 0px 0px !important;
+    }
 }
 
 /* ПЛАНШЕТНЫЙ АДАПТИВ: 768px - 1024px */
@@ -522,6 +537,11 @@ body {
     }
     header.main_header{
         padding-top: 2.6vw;
+    }
+    .breadcrumbs {
+        width: 95%;
+        margin: 0px auto;
+        padding: 2.6vw 0px 3.9vw !important;
     }
 
     .breadcrumbs span {

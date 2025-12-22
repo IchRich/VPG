@@ -377,6 +377,11 @@ img {
     align-items: center;
     text-decoration: none;
     border-radius: 1vw;
+    background-image: url(../Image/backgroundCard.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-content: space-between;
 }
 
 .industries_text {
@@ -1079,6 +1084,11 @@ img {
     {
         padding: 2.65vw;
     }
+
+    .industries_grid
+    {
+        gap: 2vw;
+    }
     
     .industries_section {
         margin: 10.42vw auto;
@@ -1093,8 +1103,7 @@ img {
 
     .industries_text {
         gap: 5.21vw;
-        padding: 3.91vw;
-        height: 80%;
+        padding: 4vw;
         justify-content: space-between;
         line-height: 200%;
     }
@@ -1103,8 +1112,14 @@ img {
         width: 80%;
     }
 
+    .industries_item {
+        align-items: stretch;
+        height: 100vw;
+    }
+
     .industries_item img {
-        display: none;
+        /* display: none; */
+        height: 59.25vw;
     }
 
     .about_us {
@@ -1510,10 +1525,14 @@ img {
         color: #fff;
     }
 
-    .producers_image_wrapper,
+    .producers_image_wrapper
+    {
+        width: 100%;
+    }
+    /* .producers_image_wrapper,
     .producers_image {
         display: none;
-    }
+    } */
 
     .industries_grid {
         gap: 3.33vw;
@@ -1524,16 +1543,14 @@ img {
         flex-direction: column;
         align-items: center;
         gap: 0;
-        background: #fff;
-        padding: 4.44vw 3.33vw;
-        border-radius: 2.22vw;
+        padding: 0;
+        border-radius: 2.8vw;
         box-shadow: 0 0.14vw 0.42vw rgba(0, 0, 0, 0.08);
-        height: 110vw;
         justify-content: space-around;
     }
 
     .industries_item img {
-        display: none !important;
+        height: 59.25vw;
     }
 
     .industries_text {
@@ -1541,6 +1558,7 @@ img {
         gap: 3.33vw;
         height: 100%;
         justify-content: space-around;
+        padding: 2.8vw;
     }
 
     .industries_text h3 {

@@ -963,6 +963,10 @@ section.hero div.hero__container .main_navigation
     }
 
     .breadcrumbs {
+        padding: 2.15vw 0 0 !important;
+    }
+
+    .breadcrumbs {
         font-size: 3.89vw;
         margin-bottom: 5.56vw;
     }

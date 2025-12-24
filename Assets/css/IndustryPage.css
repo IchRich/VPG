@@ -209,7 +209,7 @@ html, body {
         background-position: center;
         display: flex;
         flex-direction: column;
-        padding: 5%;
+        padding: 3.6vw 5% 5%;
     }
 
     .hero_content {
@@ -762,7 +762,7 @@ html, body {
         background-position: center;
         display: flex;
         flex-direction: column;
-        padding: 5.5vw;
+        padding: 5vw;
         padding-top: 0;
     }
 
